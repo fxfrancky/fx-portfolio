@@ -1,0 +1,380 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&family=Roboto&family=Poppins&family=Staatliches&display=swap");
+
+:root {
+  /* Border */
+  --border: 1px solid var(--gray-1);
+  --border_small: 1px solid hsla(210, 4%, 78%, 0.25);
+  --border_small_gold: 1px solid var(--secondary-color);
+  --border_small_primary: 1px solid hsl(207, 51%, 36%);
+  --mn: #2d608b;
+  --text-color-dark: hsl(0, 0%, 40%);
+  /* Colors */
+  --primary-bg-color: hsla(207, 51%, 36%, 0.95);
+  --primary-color: hsl(207, 51%, 36%);
+  --primary-color-dark: hsl(207, 51%, 18%);
+  /* --primary-color: #2d608b; */
+  /* hsl(36, 100%, 49%) */
+  /* --secondary-color: hsl(42, 100%, 55%); */
+  --secondary-color: hsl(36, 100%, 50%);
+
+  /* --tertiary-color: #f60404; */
+  --tertiary-color: #ff0000;
+
+  --secondary-color-two: hsl(46, 97%, 65%);
+  --secondary-color-border: hsl(22, 78%, 26%);
+  --text-ligcolor: hsl(210, 4%, 80%);
+  --dark-color: hsl(208, 51%, 34%);
+  --footer-text-color: #89b4d9;
+  --link-text-color: hsl(207, 51%, 44%);
+  --link-text--hover-color: hsl(210, 9%, 91%);
+  /* Gray Colors */
+  --gray-1: hsl(210, 6%, 13%);
+  --gray-2: hsl(0, 0%, 18%);
+  --gray-3: hsl(210, 2%, 34%);
+  --gray-4: hsl(210, 2%, 44%);
+  --gray-5: hsl(210, 2%, 53%);
+  --gray-6: hsl(210, 2%, 67%);
+  --gray-7: hsl(210, 4%, 78%);
+  --gray-8: hsl(210, 4%, 80%);
+  --gray-9: #dcdee0;
+  --gray-10: hsl(210, 7%, 95%);
+  --gray-11: hsl(0, 0%, 97%);
+
+  --green: hsl(94, 73%, 25%);
+  --green-light: hsl(122, 62%, 61%);
+  --pink: hsl(344, 49%, 58%);
+  --pink-light: hsl(342, 81%, 96%);
+  --purple: hsl(270, 48%, 33%);
+  --shark: hsl(210, 4%, 18%);
+  --slate: hsl(210, 29%, 18%); /* Footer background. */
+  --tundora: hsl(0, 0%, 25%);
+  --white: hsl(0, 0%, 100%);
+
+  --playground-input-color: hsl(60, 100%, 93%);
+
+  --color-background-logo: var(--background-color);
+  --color-background-banner-secondary: var(--background-color);
+
+  --ff-primary: "Lato", sans-serif;
+  --ff-secondary: "Staatliches", cursive;
+  --ff-tertiary: "Poppins", sans-serif;
+
+  --fw-300: 300;
+  --fw-400: 400;
+  --fw-500: 500;
+  --fw-600: 600;
+  --fw-700: 700;
+
+  --fs-normal: 62.5%;
+  --fs-large-screen: 75%;
+  --fs-tablet-large: 56.25%;
+  --fs-tablet-portrait: 50%;
+  --fs-mobile-phone: 37.5%;
+
+  /** CONTAINER MAX-SIZE **/
+  /* FOR SCREEN LARGER THAN 1400px */
+  --max-width-xxl: 1320px;
+  /* FOR SCREEN LARGER THAN 1200px */
+  --max-width-xl: 1140px;
+  /* FOR SCREEN LARGER THAN 992px */
+  --max-width-l: 960px;
+  /* FOR SCREEN LARGER THAN 768px */
+  --max-width-m: 720px;
+  /* FOR SCREEN LARGER THAN 576px */
+  --max-width-s: 540px;
+  /* FOR SCREEN SMALLER THAN 576px */
+  --max-width-e-s: 100%;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 40px;
+  overflow: auto;
+}
+
+body {
+  font-size: 62.5%;
+  font-family: var(--ff-primary);
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  color: var(--gray-2);
+  line-height: 1.4;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: 100%;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+ul,
+ol {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: var(--gray-2);
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+img {
+  width: 100%;
+  display: inline-block;
+}
+
+p {
+  margin: 0.7rem 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin: 0.7rem 0;
+  font-weight: var(--fw-300);
+  font-family: var(--ff-tertiary);
+}
+
+/** BUTTONS **/
+.btn {
+  padding: 10px 30px;
+  display: inline-block;
+  cursor: pointer;
+  color: var(--gray-10);
+  background-color: var(--primary-color);
+  border: none;
+  text-align: center;
+  font-weight: var(--fw-600);
+  border: var(--border_small);
+  border-radius: 5px;
+}
+
+.btn:hover {
+  transform: scale(0.98);
+}
+
+.btn-outline {
+  background-color: transparent;
+  color: var(--gray-11);
+  border: var(--border);
+}
+
+.card {
+  background-color: var(--gray-9);
+  color: var(--gray-2);
+  border-radius: 10px;
+  box-shadow: 0 3px 10px hsla(0, 0%, 0%, 0.2);
+  padding: 20px;
+  margin: 10px;
+}
+
+/** TEXT PROPRETIES **/
+.text-center {
+  text-align: center;
+}
+
+.text-primary {
+  color: var(--primary-color);
+}
+
+.text-dark {
+  color: var(--gray-2);
+}
+
+/* TEXT SIZE */
+.text-s0 {
+  font-size: 0.7rem;
+}
+
+.text-s1 {
+  font-size: 0.9rem;
+}
+.text-s2 {
+  font-size: 1rem;
+}
+
+.text-s3 {
+  font-size: 1.5rem;
+}
+.text-s4 {
+  font-size: 1.8rem;
+}
+
+.text-s5 {
+  font-size: 2rem;
+}
+
+.text-s6 {
+  font-size: 2.5rem;
+}
+
+.text-s7 {
+  font-size: 3rem;
+}
+.text-s8 {
+  font-size: 3.5rem;
+}
+
+.text-s9 {
+  font-size: 4rem;
+}
+.text-s10 {
+  font-size: 4.5rem;
+}
+
+/* PADDING */
+.py-1 {
+  padding: 1rem 0;
+}
+.py-2 {
+  padding: 1.5rem 0;
+}
+.py-3 {
+  padding: 2rem 0;
+}
+.py-4 {
+  padding: 2.5rem 0;
+}
+.py-5 {
+  padding: 3rem 0;
+}
+.py-6 {
+  padding: 3.5rem 0;
+}
+
+.px-1 {
+  padding: 0 1rem;
+}
+.px-2 {
+  padding: 0 1.5rem;
+}
+.px-3 {
+  padding: 0 2rem;
+}
+.px-4 {
+  padding: 0 2.5rem;
+}
+.px-5 {
+  padding: 3rem 0;
+}
+.px-6 {
+  padding: 0 3.5rem;
+}
+
+/* MARGIN */
+.my-1 {
+  margin: 1rem 0;
+}
+.my-2 {
+  margin: 1.5rem 0;
+}
+.my-3 {
+  margin: 2rem 0;
+}
+.my-4 {
+  margin: 2.5rem 0;
+}
+.my-5 {
+  margin: 3rem 0;
+}
+.my-6 {
+  margin: 3.5rem 0;
+}
+
+.my-7 {
+  margin: 7rem 0;
+}
+.mt-7 {
+  margin-top: 7rem;
+}
+.mb-7 {
+  margin-bottom: 7rem;
+}
+
+.mx-1 {
+  margin: 0 1rem;
+}
+.mx-2 {
+  margin: 0 1.5rem;
+}
+.mx-3 {
+  margin: 0 2rem;
+}
+.mx-4 {
+  margin: 0 2.5rem;
+}
+.mx-5 {
+  margin: 0 3rem;
+}
+.mx-6 {
+  margin: 0 3.5rem;
+}
+
+/* .section-title {
+  margin-top: 7rem;
+  margin-bottom: 2.5rem;
+} */
+
+/* .section-buttom {
+  margin-bottom: 7rem;
+  margin-top: 2.5rem;
+} */
+/* .section h1 {
+  margin-top: 5rem;
+} */
+/* .section {
+  height: 100%;
+} */
+.section-show {
+  /* padding: 12rem 5rem auto auto; */
+  padding-top: 12rem;
+  /* margin-top: 12rem; */
+  padding-bottom: 7rem;
+}
+.section {
+  padding-top: 5rem;
+  padding-bottom: 3rem;
+}
+/* #section-skills {
+  padding-top: 15rem;
+  padding-bottom: 5rem;
+} */
+.section h1 {
+  padding-bottom: 3rem;
+}
+
+.card {
+  background-color: hsl(0, 0%, 100%);
+  color: var(--gray-8);
+  border-radius: 10px;
+  /* box-shadow: 0 3px 10px hsla(0, 0%, 0%, 0.2); */
+  box-shadow: 0 3px 10px hsla(207, 51%, 46%, 0.2);
+  height: 40rem;
+  /* padding-top: 5rem; */
+  /* padding: 20px; */
+  /* margin: 10px; */
+}
+
+.showcase-form {
+  position: relative;
+  top: 60px;
+  height: 350px;
+  width: 400px;
+  padding: 40px;
+  z-index: 100;
+  animation: slideInFromRight 1s ease-in;
+}
+
+.hidden {
+  visibility: hidden;
+  height: 0;
+}

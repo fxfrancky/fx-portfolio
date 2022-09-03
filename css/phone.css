@@ -1,0 +1,4 @@
+.container {
+  font-size: 37.5%;
+  max-width: var(--max-width-s);
+}
