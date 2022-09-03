@@ -28,36 +28,7 @@
     />
     <link rel="stylesheet" href="css/theme.css" />
     <link rel="stylesheet" href="css/style.css" />
-    <link
-      rel="stylesheet"
-      href="css/extra_large_screen.css"
-      media="screen and (min-width:1400px)"
-    />
-    <link
-      rel="stylesheet"
-      href="css/large_screen.css"
-      media="screen and (max-width:1400px)"
-    />
-    <link
-      rel="stylesheet"
-      href="css/tablet_landscape.css"
-      media="screen and (max-width:1200px)"
-    />
-    <link
-      rel="stylesheet"
-      href="css/tablet_portrait.css"
-      media="screen and (max-width:992px)"
-    />
-    <link
-      rel="stylesheet"
-      href="css/tablet.css"
-      media="screen and (max-width:768px)"
-    />
-    <link
-      rel="stylesheet"
-      href="css/phone.css"
-      media="screen and (max-width:500px)"
-    />
+
     <link rel="shortcut icon" type="image/x-icon" href="img/favicon2.ico" />
   </head>
   <body>
@@ -86,26 +57,32 @@
       </nav>
       <!-- SHOWCASE -->
       <section id="showcase">
-        <div class="container section-show">
-          <div class="showcase-presentation">
-            <h1>Full Stack Golang Developer.</h1>
-            <div class="showcase-title-display">
-              <div class="showcase-title-display-text">Am a</div>
-              <div class="showcase-title-display-option">
-                <li><span>Programmer</span></li>
-                <li><span>Designer</span></li>
-                <li><span>Developer</span></li>
-                <li><span>Freelancer</span></li>
+        <div class="section-show">
+          <div class="container">
+            <div class="showcase-presentation">
+              <h1 class="h1">Full Stack Golang Developer.</h1>
+              <div class="showcase-title-display">
+                <div class="showcase-title-display-text">Am a</div>
+                <div class="showcase-title-display-option">
+                  <li><span>Programmer</span></li>
+                  <li><span>Designer</span></li>
+                  <li><span>Developer</span></li>
+                  <li><span>Freelancer</span></li>
+                </div>
               </div>
-            </div>
 
-            <p class="my-4">
-              I am a <strong>Full Stack Golang</strong> developer with with an
-              emphasis on responsive web design. My passion is to build solid
-              and scalable products with great user experiences.
-            </p>
+              <p>
+                I am a <strong>Full Stack Golang</strong> developer with with an
+                emphasis on responsive web design. My passion is to build solid
+                and scalable products with great user experiences.
+              </p>
+            </div>
+            <img
+              class="showcase-img"
+              src="img/img_cv.png"
+              alt="Photo of OWONA"
+            />
           </div>
-          <img class="showcase-img" src="img/img_cv.png" alt="Photo of OWONA" />
         </div>
       </section>
     </header>
@@ -115,7 +92,7 @@
       <div class="container">
         <!-- SECTION ABOUT -->
         <section id="section-about" class="section">
-          <h1>ABOUT ME</h1>
+          <h1 class="h1">ABOUT ME</h1>
 
           <div class="wrapper">
             <img src="./img/img_cv.png" alt="Photo About" />
@@ -150,7 +127,7 @@
         </section>
         <!-- SECTION SKILLS -->
         <section id="section-skills" class="section">
-          <h1 class="text-center">SKILLS</h1>
+          <h1 class="text-center h1">SKILLS</h1>
 
           <div class="skill-box">
             <span class="title">Golang</span>
@@ -261,8 +238,9 @@
         </section>
         <!-- SECTION WORK -->
         <section id="section-work" class="section">
-          <h1 class="text-center">WORK</h1>
-          <h2>A Selection Of Stuff I have Built</h2>
+          <div class="container">
+          <h1 class="text-center h1">WORK</h1>
+          <h2 class="h2">A Selection Of Stuff I have Built</h2>
           <div class="section-work-wrapper">
             <div class="section-work-text">
               <h2>Golang & Clone</h2>
@@ -305,11 +283,8 @@
               <img src="./img/golang-clone-responsive.png" alt="Golang Clone" />
             </div>
 
-            <div class="section-work-img">
-              <img src="./img/golang-clone-responsive.png" alt="Golang Clone" />
-            </div>
             <div class="section-work-text">
-              <h2>Golang & Clone</h2>
+              <h2 class="h2">Golang & Clone</h2>
               <p>
                 For when you need a break from your partner but already got a
                 babysitter. Now couples can go to different events in similar
@@ -346,8 +321,12 @@
               </div>
             </div>
 
+            <div class="section-work-img">
+              <img src="./img/golang-clone-responsive.png" alt="Golang Clone" />
+            </div>
+
             <div class="section-work-text">
-              <h2>Golang & Clone</h2>
+              <h2 class="h2">Golang & Clone</h2>
               <p>
                 For when you need a break from your partner but already got a
                 babysitter. Now couples can go to different events in similar
@@ -387,11 +366,8 @@
               <img src="./img/golang-clone-responsive.png" alt="Golang Clone" />
             </div>
 
-            <div class="section-work-img">
-              <img src="./img/golang-clone-responsive.png" alt="Golang Clone" />
-            </div>
             <div class="section-work-text">
-              <h2>Golang & Clone</h2>
+              <h2 class="h2">Golang & Clone</h2>
               <p>
                 For when you need a break from your partner but already got a
                 babysitter. Now couples can go to different events in similar
@@ -426,6 +402,9 @@
                   >View GitHub Repo</a
                 >
               </div>
+            </div>
+            <div class="section-work-img">
+              <img src="./img/golang-clone-responsive.png" alt="Golang Clone" />
             </div>
           </div>
         </section>
@@ -433,14 +412,14 @@
         <!-- <section id="section-testimonials" class="section"></section> -->
         <!-- SECTION CONTACT -->
         <section id="section-contact" class="section">
-          <h1>Contact</h1>
+          <h1 class="h1">Contact</h1>
           <div class="section-contact-wrapper">
             <div class="section-contact-wrapper-social card">
-              <h2 class="text-subtitle my-3">Get In Touch</h2>
+              <h2 class="text-subtitle my-3 h2">Get In Touch</h2>
               <div class="section-socials-logos">
                 <a href="/"
                   ><i class="fa-regular fa-envelope fa-4x"></i>
-                  <span>francoisxavier.owona@gmail.com</span></a
+                  <span>francoisxavier.owona@owonafx.com</span></a
                 >
                 <a href="https://github.com/fxfrancky" target="_blank"
                   ><i class="fab fa-github fa-4x"></i> <span>GitHub</span></a
@@ -458,7 +437,7 @@
               </div>
             </div>
             <div class="section-contact-wrapper-form card">
-              <h2 class="text-subtitle my-3">Leave a Message</h2>
+              <h2 class="text-subtitle my-3 h2">Leave a Message</h2>
               <form
                 name="contact"
                 method="POST"
