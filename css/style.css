@@ -39,7 +39,7 @@
 #main-header .navbar .container ul li a {
   font-size: 1.4rem;
   color: var(--secondary-color);
-  padding: 1.6rem 1.2rem;
+  padding: 1.4rem 1.2rem;
   /* margin: ; */
   text-decoration: none;
   transition: border-width 0.25s ease-in-out;
@@ -64,8 +64,6 @@
   grid-template-areas: "showcase-presentation showcase-img";
   height: auto;
   gap: 3rem;
-  /* margin-top: 7rem; */
-  /* padding: 3rem; */
 }
 
 #showcase .container .showcase-presentation {
@@ -347,6 +345,7 @@
   font-size: 1.1rem;
   font-weight: var(--fw-300);
   border-radius: 10px;
+  border: 1px solid var(--secondary-color-border);
   color: var(--primary-color);
 
   align-self: center;

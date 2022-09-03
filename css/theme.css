@@ -4,17 +4,13 @@
   /* Border */
   --border: 1px solid var(--gray-1);
   --border_small: 1px solid hsla(210, 4%, 78%, 0.25);
-  --border_small_gold: 1px solid var(--secondary-color);
+  --border_small_gold: 1px solid var(--secondary-color-border);
   --border_small_primary: 1px solid hsl(207, 51%, 36%);
-  --mn: #2d608b;
   --text-color-dark: hsl(0, 0%, 40%);
   /* Colors */
   --primary-bg-color: hsla(207, 51%, 36%, 0.95);
   --primary-color: hsl(207, 51%, 36%);
   --primary-color-dark: hsl(207, 51%, 18%);
-  /* --primary-color: #2d608b; */
-  /* hsl(36, 100%, 49%) */
-  /* --secondary-color: hsl(42, 100%, 55%); */
   --secondary-color: hsl(36, 100%, 50%);
 
   /* --tertiary-color: #f60404; */
