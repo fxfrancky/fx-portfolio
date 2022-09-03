@@ -69,9 +69,11 @@
 
   /** CONTAINER MAX-SIZE **/
   /* FOR SCREEN LARGER THAN 1400px */
-  --max-width-xxl: 1320px;
+  --max-width-xxxl: 1320px;
+
+  --max-width-xl: 1200px;
   /* FOR SCREEN LARGER THAN 1200px */
-  --max-width-xl: 1140px;
+  --max-width-xl: 1100px;
   /* FOR SCREEN LARGER THAN 992px */
   --max-width-l: 960px;
   /* FOR SCREEN LARGER THAN 768px */
