@@ -424,3 +424,100 @@ h6 {
   visibility: hidden;
   height: 0;
 }
+
+/* DEFAULT RESPONSIVE SECTION */
+
+/* CONTAINERS MEDIA QUERIES  */
+@media (max-width: 576px) {
+  .container {
+    font-size: 36%;
+    max-width: 540px;
+  }
+}
+@media (min-width: 576px) {
+  .container {
+    font-size: 37.5%;
+    max-width: 540px;
+  }
+}
+@media (min-width: 768px) {
+  .container {
+    font-size: 52%;
+    max-width: 720px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    font-size: 56.5%;
+    max-width: 960px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    font-size: 62.5%;
+    max-width: 1140px;
+  }
+  h1,
+  .h1 {
+    font-size: 2.5rem;
+  }
+  h2,
+  .h2 {
+    font-size: 2rem;
+  }
+  h3,
+  .h3 {
+    font-size: 1.75rem;
+  }
+  h4,
+  .h4 {
+    font-size: 1.5rem;
+  }
+}
+@media (min-width: 1400px) {
+  .container {
+    font-size: 75%;
+    max-width: 1320px;
+  }
+}
+
+/* Animations */
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInFromRight {
+  0% {
+    transform: translateX(100%);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInFromTop {
+  0% {
+    transform: translateY(-100%);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInFromBottom {
+  0% {
+    transform: translateY(100%);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
