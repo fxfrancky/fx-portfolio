@@ -72,15 +72,13 @@
   border: var(--border_small);
   transition: transform 0.25s ease-in;
   animation: slideInFromRight 1s ease-in;
+  -webkit-animation: slideInFromRight 1s ease-in;
 }
 
 #showcase .section-show .container .showcase-img:hover {
   transform: translateY(-15px);
 }
 
-/* #showcase .container .showcase-presentation .h1 {
-  text-align: center !important;
-} */
 #showcase .container .showcase-presentation .showcase-title-display {
   justify-content: center;
 }
@@ -547,7 +545,7 @@ section.work .container-icons-mini {
 .form-control input[type="email"] {
   border: none;
   border-bottom: var(--border_small_primary);
-  width: 100%;
+  width: 90%;
   padding: 1rem;
   font-size: 1.2rem;
 }
@@ -563,19 +561,30 @@ textarea:focus {
 }
 
 .form-control textarea {
-  border: var(--border_small_primary);
-  width: 100%;
+  border: none;
+  border-bottom: var(--border_small_primary);
+  /* border-right: var(--border_small_primary); */
+  width: 98%;
   padding: 1rem;
   font-size: 1.2rem;
   margin-top: 2rem;
   border-radius: 0.5rem;
+}
+.form-control .fa-pencil-alt {
+  margin-top: 2rem;
+}
+
+.section-contact-wrapper-form {
+  height: auto;
 }
 
 .section-contact-wrapper > .card:first-child {
   border: none;
   box-shadow: none;
 }
-
+.section-contact-wrapper-social .h2 {
+  margin-bottom: 7rem;
+}
 .footer {
   font-size: 0.8125rem;
   font-weight: var(--fw-600);
@@ -583,10 +592,6 @@ textarea:focus {
 
 /* CONTAINERS MEDIA QUERIES  */
 @media (max-width: 576px) {
-  /* .container {
-    font-size: 36%;
-    max-width: 540px;
-  } */
   #main-header .navbar {
     border-bottom: none;
   }
@@ -702,6 +707,7 @@ textarea:focus {
 
   #showcase .section-show .container .showcase-img {
     animation: slideInFromBottom 1s ease-in !important;
+    -webkit-animation: slideInFromBottom 1s ease-in !important;
   }
 
   #showcase .container .showcase-presentation .h1 {
