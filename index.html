@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth bg-fxBgBody">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -13,481 +13,805 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css?family=Material+Icons"
     />
+    <!-- ICONSCOUT CDN -->
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
+    />
+    <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    
+    <!-- Cursor JS Css -->
+    <link
+      rel="stylesheet"
+      href="css/kursor.css"
+    />
     <meta name="og:title" content="OWONA Francois Xavier" />
     <title>OWONA Francois Xavier</title>
     <meta
       name="og:description"
-      content="OWONA Francois Xavier is a professional Full-Stack Golang developer based in France and Luxembourg"
+      content="A Golang Full Stack developer named OWONA Francois Xavier for France and Luxembourg"
     />
+    <meta name="description" content=" content="A Golang Full Stack developer
+    named OWONA Francois Xavier for France and Luxembourg" />
     <meta
-      name="description"
-      content="OWONA Francois Xavier is a professional Full-Stack Golang developer based in France and Luxembourg"
+      name="keywords"
+      content="Golang, Go, React, ReactJs, PostGreSQL, Oracle, web design, web development"
     />
+    <meta name="author" content="OWONA" />
     <link rel="stylesheet" href="css/theme.css" />
+    <link rel="stylesheet" href="css/menu.css" />
     <link rel="stylesheet" href="css/style.css" />
-
-    <link rel="shortcut icon" type="image/x-icon" href="img/favicon2.ico" />
+    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico" />
+   
   </head>
-  <body>
-    <!-- HEADER -->
-    <header id="main-header">
-      <!-- NAVBAR -->
-      <nav class="navbar">
-        <div class="container">
-          <a href="/"><img src="./img/logo333.png" alt="Logo OWONA" /></a>
+  <body class="dark:bg-darkBlue dark:text-white">
+    <!--======================================== Navigation Container ============================================-->
+    <section id="nav-header" class="fixed w-full bg-fxBgBody dark:bg-darkBlue dark:text-white md:mb-44 z-50 items-center">
+    <div class="section-container max-w-6xl mx-auto px-6 py-12 pb-0">
+        <!-- Menu/Logo Container -->
+        <nav class="flex items-end justify-between font-bold my-auto">
+          <!-- Logo -->
+          <!-- <img src="images/logo.svg" alt=""> -->
+          <a href="#" class="bg-logo-light-mode dark:bg-logo-dark-mode bg-no-repeat w-52 h-24"></a>
+          <!-- <div
+              class="bg-logo-light-mode dark:bg-logo-dark-mode bg-no-repeat mx-auto md:mx-0 md:absolute mt-10 w-52 h-24 md:h-44 logo-head before:bg-fxOrange dark:before:bg-fxBgBodyDark"
+            ></div> -->
+          <!-- Menu -->
+          <div class="hidden h-24 md:flex space-x-4 md:space-x-8 font-medium md:text-lg lg:text-xl text-fxDarkTextBlue">
+            <div class="group">
+              <a href="#home" class="nav_group_a">Home</a>
+              <div class="nav_group_div"></div>
+            </div>
+            <div class="group">
+              <a href="#about" class="nav_group_a">About</a>
+              <div class="nav_group_div"></div>
+            </div>
+            <div class="group">
+              <a href="#skills" class="nav_group_a">Skills</a>
+              <div class="nav_group_div"></div>
+            </div>
+            <div class="group">
+              <a href="#work" class="nav_group_a">Work</a>
+              <div class="nav_group_div"></div>
+            </div>
+            <div class="group">
+              <a href="#contact" class="nav_group_a">Contact</a>
+              <div class="nav_group_div"></div>
+            </div>
+          <!-- Dark/Light Mode Button -->
+          <div class="group">
+          <button
+            id="theme-toggle"
+            class="text-fxDarkBlue dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 duration-500 hover:scale-125 focus:outline-none focus:right-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-2 5"
+          >
+            <!-- Dark SVG Icon -->
+            <svg
+              id="theme-toggle-dark-icon"
+              class="w-5 h-5 hidden"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"
+              ></path>
+            </svg>
+            <!-- Light SVG Icon -->
+            <svg
+              id="theme-toggle-light-icon"
+              class="w-5 h-5 hidden"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z"
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+              ></path>
+            </svg>
+          </button>
+          </div>
+          </div>
+          <!-- @todo Hamburger Button -->
+          <div class="md:hidden">
+             <button
+                id="menu-btn"
+                class="block hamburger md:hidden focus:outline-none mr-3 md:-mt-60 md:mr-5 z-50 -mt-20"
+                type="button"
+              >
+                <span class="hamburger-top bg-fxTextHeader dark:bg-fxBgBody"></span>
+                <span class="hamburger-middle bg-fxTextHeader dark:bg-fxBgBody"></span>
+                <span class="hamburger-bottom bg-fxTextHeader dark:bg-fxBgBody"></span>
+            </button>
+          </div>
+        </nav>
+        <!-- @todo - Mobile Menu -->
+             <div
+        id="menu"
+        class="absolute hidden p-6 rounded-lg bg-darkViolet left-6 right-6 top-10 z-100 md:hidden"
+      >
+        <div
+          class="flex flex-col items-center justify-center w-full text-fxDarkTextBlue space-y-6 font-bold rounded-sm"
+        >
+          <a href="#home" class="hover:text-accentCyan">Home</a>
+          <a href="#about" class="hover:text-accentCyan">About</a>
+          <a href="#skills" class="hover:text-accentCyan">Skills</a>
+          <a href="#work" class="hover:text-accentCyan">Work</a>
+          <a href="#contact" class="hover:text-accentCyan">Contact</a>
+        </div>
+      </div>
 
-          <ul>
-            <li><a class="link" href="#main-header">Home</a></li>
-            <li><a class="link" href="#section-about">About</a></li>
+    </section>
+
+
+
+    
+    <!--======================================== Section Home ============================================-->
+    <!-- Home Section -->
+    <section id="home" class="pt-40">
+      <!-- Hero Container -->
+      <div
+        class="section-container my-0 flex flex-col-reverse lg:flex-row md:space-x-44"
+      >
+        <!-- Content Container -->
+        <div class="flex flex-col lg:mt-16 lg:w-1/2 mb-10 md:mb-24 lg:mb-40">
+
+          <div>
+       
+          <div
+            class="flex flex-row w-full space-x-0 space-y-0 text-3xl font-bold text-center lg:text-4xl md:text-left text-fxDarkTextBlue dark:text-fxBgBody mb-8"
+          >
+            Xavier
+            <span class="text-fxOrange dark:text-fxOrange ml-2 mr-2">OWONA.
+            
+                </span>
+                <a href="#" class="w-full mx-auto my-auto hover:-translate-y-3 transition-all duration-700 hover:scale-110" >
+            <img src="img/hand.svg" alt="" class="home_hand">
+                </a>
+              </div>
+          </div>
+          <h3 class="hidden lg:block home-subtitle text-base text-fxRealDarkGray mb-8 before:absolute md:before:w-10 xl:before:w-16 lg:before:h-0.5 lg:before:bg-fxRealDarkGray lg:before:left-0 lg:before:top-3">Full Stack Developer</h3>
+          <p
+            class="text-lg lg:text-2xl text-justify text-fxDarkTextBlue lg:text-left md:max-w-2xl md:leading-8 leading-7 dark:text-fxBgBodyDark "
+          >
+            Creative <span class="font-semibold">Full Stack Golang Developer</span> and<span class="font-semibold"> Freelancer</span>. I am Highly experienced in web design
+            and development. My passion is to build solid and scalable products
+            with great user experiences.
+          </p>
+
+          <!-- SOCIALS MEDIA ICONS -->
+          <ul class="flex justify-center md:justify-start space-x-6 mt-8">
             <li>
-              <a class="link" href="#section-skills" onclick="updateDiv();"
-                >Skills</a
-              >
+              <a
+                href="https://github.com/fxfrancky/"
+                target="_blank"
+                class="w-8 h-8 nav_socials grid items-center justify-center rounded-md"
+                ><i class="uil uil-github text-fxDarkGray text-xl"></i
+              ></a>
             </li>
-            <li><a class="link" href="#section-work">Work</a></li>
-            <!-- <li>
-              <a class="link" href="#section-testimonials">Testimonials</a>
-            </li> -->
-            <li><a class="link" href="#section-contact">Contact</a></li>
+            <li>
+              <a
+                href="https://www.linkedin.com/in/francois-xavier-owona-63258531/"
+                target="_blank"
+                class="w-8 h-8 nav_socials grid items-center justify-center rounded-md"
+                ><i class="uil uil-linkedin text-fxDarkGray text-xl"></i
+              ></a>
+            </li>
+            <li>
+              <a
+                href="https://www.youtube.com/channel/UCt_8wpSh7_cva2AI7eaNVIw"
+                target="_blank"
+                class="w-8 h-8 nav_socials grid items-center justify-center rounded-md"
+                ><i class="uil uil-youtube text-fxDarkGray text-xl"></i
+              ></a>
+            </li>
+            <li>
+              <a
+                href="skype:fxjonathan?call"
+                target="_blank"
+                class="w-8 h-8 nav_socials grid items-center justify-center rounded-md"
+                ><i class="uil uil-skype text-fxDarkGray text-xl"></i
+              ></a>
+            </li>
           </ul>
-        </div>
-      </nav>
-      <!-- SHOWCASE -->
-      <section id="showcase">
-        <div class="section-show">
-          <div class="container">
-            <div class="showcase-presentation">
-              <h1 class="h1">Full Stack Golang Developer.</h1>
-              <div class="showcase-title-display">
-                <div class="showcase-title-display-text">Am a</div>
-                <div class="showcase-title-display-option">
-                  <li><span>Programmer</span></li>
-                  <li><span>Designer</span></li>
-                  <li><span>Developer</span></li>
-                  <li><span>Freelancer</span></li>
-                </div>
-              </div>
 
-              <p>
-                I am a <strong>Full Stack Golang</strong> developer with with an
-                emphasis on responsive web design. My passion is to build solid
-                and scalable products with great user experiences.
-              </p>
-            </div>
-            <img
-              class="showcase-img"
-              src="img/img_cv.png"
-              alt="Photo of OWONA"
-            />
+           <button class="p-3 btn-hover rounded-full w-52 mt-10 bg-fxOrange text-white hover:text-fxDarkSocials hover:scale-95 duration-500 text-xl font-medium mx-auto md:ml-0">
+            Contact Me
+          <i class="fas fa-arrow-circle-right" aria-hidden="true"></i>
+        </button>
+        </div>
+        <!--========== Image Container =========-->
+        <div class="transition-all mb-24 lg:mb-0 lg:w-1/2 lg:mt-20 duration-1000 hover:scale-105 md:w-1/2">
+              <svg class="img_cv_head logo4" viewBox="0 0 479 467" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                  <linearGradient id="g1">
+                    <stop offset="0%" class="color1" />
+                    <stop offset="20%" class="color2" />
+                    <stop offset="40%" class="color5" />
+                    <stop offset="60%" class="color6" />
+                    <stop offset="80%" class="color4" />
+                    <stop offset="100%" class="color3" />
+                </linearGradient>
+                <radialGradient id="g2">
+                  <stop offset="0%" class="color6" />
+                  <stop offset="20%" class="color5" />
+                  <stop offset="40%" class="color4" />
+                  <stop offset="60%" class="color3" />
+                  <stop offset="80%" class="color2" />
+                  <stop offset="100%" class="color1" />
+                </radialGradient>  
+                <radialGradient id="g3">
+                  <stop offset="0%" class="color14" />
+                  <stop offset="20%" class="color13" />
+                  <stop offset="40%" class="color12" />
+                  <stop offset="60%" class="color11" />
+                  <stop offset="80%" class="color10" />
+                  <stop offset="100%" class="color10" />
+                </radialGradient>  
+                <radialGradient id="g4">
+                  <stop offset="0%" class="color20" />
+                  <stop offset="20%" class="color21" />
+                  <stop offset="40%" class="color23" />
+                  <stop offset="60%" class="color22" />
+                  <stop offset="80%" class="color21" />
+                  <stop offset="100%" class="color20" />
+                </radialGradient>  
+                <mask id="mask0" mask-type="alpha">
+                      <path d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z"/>
+                  </mask>
+                  <g mask="url(#mask0)">
+                      <path d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z"/>
+                      <image class="home__blob-img" x="50" y="60" href="img/img_cv head_clean_headless.png"/>
+                  </g>
+              </svg>
+          
           </div>
         </div>
+      </div>
+          <!--================= Wave Bottom ==================================-->
+    <!-- Hero Section -->
+    <div id="wave"
+    class="bg-curvy-light-mode dark:bg-curvy-dark-mode bg-no-repeat bg-contain bg-bottom h-32 bg-fxDarkGray dark:bg-darkBlue1 w-full border-none">
+     
+      </div>
+    </section>
+
+
+    <!--================= Section About ==================================-->
+    <!-- About Section -->
+    <section id="about" class="bg-fxDarkGray dark:bg-darkBlue1">
+      <div id="section-title" class="mx-auto text-center pt-16 xl:pt-36 mb-0">
+        <h1 class="section-title-01  text-5xl md:text-7xl font-bold bg-fxBgBody dark:bg-fxBgBody mb-10 md:mb-8">About Me</h1>
+        <h2 class="section-title-02  text-3xl md:text-4xl w-48 mx-auto before:w-6 md:before:w-10 md:right-0">About Me</h2>
+      </div>
+      
+      <!-- Main About Container -->
+      <div
+        class="section-container pt-0 md:pt-16 pb-0 md:pb-24 space-x-0 md:mt-10 grid grid-cols-1 md:grid-cols-2 items-center gap-x-0 md:gap-x-12 gap-y-10 md:gap-y-0"
+      >
+      <!--================ About Image ==================-->
+      <div id="about-img" class="w-56  md:w-80 rounded-3xl justify-center bg-fxDarkTextPrimary mx-auto transition-all duration-700 hover:scale-105">
+        <img src="img/img_cv_logo_clean.svg" alt="" class="rounded-3xl">
+      </div>
+
+      <!--================ About Complete Content ==================-->
+      <div id="about-content" class="space-x-0 md:space-y-6 max-w-full">
+         <!-- About Boxes Content -->
+        <div id="about-boxes" class="grid grid-cols-[200px] gap-y-10 md:grid-cols-[165px_165px] lg:grid-cols-[150px_150px_150px] gap-x-6 pb-8 border-b border-fxDarkTextPrimary justify-center transition-all duration-700">
+
+            <div class="flex flex-col space-y-3 border-fxDarkTextPrimary bg-fxBgBody hover:bg-fxBgBodyDark border py-5 px-6 rounded-xl text-center about-box hover:border-fxDarkSocials transition-all duration-700 hover:-translate-y-2">
+              <i class='bx bx-award text-2xl text-fxRealDarkGray hover:text-fxDarkSocials transition-all duration-700'></i>
+              <h5 class="font-bold text-fxRealDarkGray hover:text-fxDarkSocials transition-all duration-700">Experience</h5> 
+              <small class=" md:w-28 text-fxDarkTextBlue text-xs text-center">8+ Years Working</small>
+            </div>
+
+            <div class="flex flex-col space-y-3  border-fxDarkTextPrimary bg-fxBgBody  hover:bg-fxBgBodyDark border py-5 px-6 rounded-xl text-center about-box hover:border-fxDarkSocials transition-all duration-700 hover:-translate-y-2">
+              <i class='bx bx-briefcase-alt text-2xl text-fxRealDarkGray hover:text-fxDarkSocials transition-all duration-700'></i>
+              <h5 class="font-bold text-fxRealDarkGray hover:text-fxDarkSocials transition-all duration-700">Completed</h5> 
+              <small class="w-28 text-fxDarkTextBlue text-xs text-center">48+ Projects</small>
+            </div>
+
+            <div class="flex flex-col space-y-3  border-fxDarkTextPrimary bg-fxBgBody hover:bg-fxBgBodyDark border py-5 px-6 rounded-xl text-center about-box hover:border-fxDarkSocials transition-all duration-700 hover:-translate-y-2">
+              <i class='bx bx-support text-2xl text-fxRealDarkGray hover:text-fxDarkSocials transition-all duration-700'></i>
+              <h5 class="font-bold text-fxRealDarkGray hover:text-fxDarkSocials transition-all duration-700">Support</h5> 
+              <small class="w-28 text-fxDarkTextBlue text-xs">Online 24/7</small>
+            </div>
+
+        </div>
+
+        <p class="text-justify text-lg lg:text-2xl leading-7 md:leading-8 mb-8">
+          I like to <q><strong>keep it simple</strong></q> and this is the main reason that I like coding in <q><strong>GoLang</strong></q>. I focus a lot on crafting clean and testable code based on common design patterns. Am looking to develop go based applications with any mix of the technology listed In my skills section.
+        </p>
+
+        <div class="py-6 text-center md:text-left">
+          <a href="pdf/RESUME - FRANCOIS XAVIER OWONA.pdf" class="py-3 px-8 btn-hover rounded-full w-52 bg-fxOrange text-white hover:text-fxDarkSocials hover:scale-95 duration-500 text-xl font-medium mx-auto md:ml-0" download>
+            Download CV
+            <i class="fa-solid fa-file-arrow-down" aria-hidden="true"></i>
+        </a>
+
+        </div>
+        
+      </div>
+
+
+      </div>
       </section>
-    </header>
 
-    <!-- MAIN CONTENT -->
-    <main id="main-content">
-      <div class="container">
-        <!-- SECTION ABOUT -->
-        <section id="section-about" class="section">
-          <h1 class="h1">ABOUT ME</h1>
 
-          <div class="wrapper">
-            <img src="./img/img_cv.png" alt="Photo About" />
 
-            <p>
-              I'm a <strong>software engineer</strong> who lives in
-              Europe/France and I'm looking for interesting golang projects to
-              work with. Am passionate about programming, loves to learn, enjoys
-              the challenge inherent in the creation process. My current tech
-              stack is
-              <strong>
-                GoLang, ReactJS, Kafka , PostgreSQL, VsCode, Docker,
-                Git...</strong
-              ><br />
+    <!--================= Section Skills ==================================-->
+    <!-- Skills Section -->
+    <section id="skills" class="bg-fxBgBody dark:bg-darkBlue1 pt-20">
+      <div class="mx-auto text-center pt-14 mb-0 section-title">
+        <h1 class="section-title-01  text-5xl md:text-7xl font-bold bg-fxBgBody dark:bg-fxBgBody mb-10 md:mb-8">Skills</h1>
+        <h2 class="section-title-02  text-3xl md:text-4xl w-48 mx-auto before:w-6 md:before:w-10 md:right-0">Skills</h2>
+      </div>
+      
+      <!-- Main Skills Container -->
 
-              I like to 'keep it simple' and this is the main reason that I like
-              coding in GoLang. <br />
-              I focus a lot on crafting clean and testable code based on common
-              design patterns. I have more than 8 years of experience building
-              software projects. My past experience includes Java, Intellij,
-              Spring, Oracle. Am looking to develop go based applications with
-              any mix of the technology listed In my skills section.
-              <br />
-              I can work mainly in <strong>France</strong> and
-              <strong>Luxembourg</strong> but am open to remote for any country
-              in the world.
-            </p>
-            <a href="#" class="btn my-5"
-              >Download my CV <i class="fa-solid fa-file-arrow-down"></i
-            ></a>
-          </div>
-        </section>
-        <!-- SECTION SKILLS -->
-        <section id="section-skills" class="section">
-          <h1 class="text-center h1">SKILLS</h1>
+      <div
+        class="section-container  grid grid-cols-1 lg:grid-cols-2 gap-y-14 gap-x-6 py-20"
+      >
+        <!-- Main Frontend Skills Container -->
+        <div class="skills_content">
+          <h3 class="text-fxDarkTextBlue skills_title text-base md:text-xl font-semibold font-jamjuree flex justify-center items-center gap-x-2 mb-10 ">
+            <i class="ri-braces-line text-base font-normal"></i>Frontend Developer
+          </h3>
 
-          <div class="skill-box">
-            <span class="title">Golang</span>
-
-            <div class="skill-bar">
-              <span class="skill-per go">
-                <span class="tooltip">85%</span>
-              </span>
+        <div class="skills_info">
+          <div class="skills_data">
+            <div class="skills_blob">
+              <img src="img/skills/html-1.svg" alt="Skill image">
             </div>
+
+            <h3 class="skills_name">HTML</h3>
+            <span class="skills_subtitle">Advanced</span>
           </div>
-
-          <div class="skill-box">
-            <span class="title">Grpc</span>
-
-            <div class="skill-bar">
-              <span class="skill-per grpc">
-                <span class="tooltip">85%</span>
-              </span>
+          <div class="skills_data">
+            <div class="skills_blob">
+              <img src="img/skills/css-3.svg" alt="Skill image">
             </div>
+
+            <h3 class="skills_name">CSS</h3>
+            <span class="skills_subtitle">Advanced</span>
           </div>
-
-          <div class="skill-box">
-            <span class="title">React</span>
-
-            <div class="skill-bar">
-              <span class="skill-per react">
-                <span class="tooltip">90%</span>
-              </span>
+          <div class="skills_data">
+            <div class="skills_blob">
+              <img src="img/skills/javascript-1.svg" alt="Skill image">
             </div>
+
+            <h3 class="skills_name">JavaSript</h3>
+            <span class="skills_subtitle">Advanced</span>
           </div>
-
-          <div class="skill-box">
-            <span class="title">Kafka</span>
-
-            <div class="skill-bar">
-              <span class="skill-per kafka">
-                <span class="tooltip">75%</span>
-              </span>
+          <div class="skills_data">
+            <div class="skills_blob">
+              <img src="img/skills/react-2.svg" alt="Skill image">
             </div>
+
+            <h3 class="skills_name">React</h3>
+            <span class="skills_subtitle">Intermediate</span>
           </div>
-
-          <div class="skill-box">
-            <span class="title">Microservices</span>
-
-            <div class="skill-bar">
-              <span class="skill-per micro">
-                <span class="tooltip">80%</span>
-              </span>
+          <div class="skills_data">
+            <div class="skills_blob">
+              <img src="img/skills/tailwind-css-2.svg" alt="Skill image">
             </div>
+
+            <h3 class="skills_name">Tailwind Css</h3>
+            <span class="skills_subtitle">Intermediate</span>
+          </div>
+          <div class="skills_data">
+            <div class="skills_blob">
+              <img src="img/skills/git-icon.svg" alt="Skill image">
+            </div>
+
+            <h3 class="skills_name">Git</h3>
+            <span class="skills_subtitle">Advanced</span>
+          </div>
+          <div class="skills_data">
+            <div class="skills_blob">
+              <img src="img/skills/visual-studio-code-1.svg" alt="Skill image">
+            </div>
+
+            <h3 class="skills_name">Vs Code</h3>
+            <span class="skills_subtitle">Advanced</span>
+          </div>
+          <div class="skills_data">
+            <div class="skills_blob">
+              <img src="img/skills/intellij-idea-1.svg" alt="Skill image">
+            </div>
+
+            <h3 class="skills_name">Intellij</h3>
+            <span class="skills_subtitle">Advanced</span>
+          </div>
+          </div>
           </div>
 
-          <div class="skill-box">
-            <span class="title">Java</span>
+          <!-- Main BackEnd Skills Container -->
+        <div class="skills_content">
+          <h3 class="text-fxDarkTextBlue skills_title text-base md:text-xl font-semibold font-jamjuree flex justify-center items-center gap-x-2 mb-10 ">
+            <i class="ri-share-forward-box-fill text-base font-normal"></i>
+            <!-- <i class="ri-braces-line text-base font-normal"></i> -->
+            Backend Developer
+          </h3>
+        
 
-            <div class="skill-bar">
-              <span class="skill-per java">
-                <span class="tooltip">80%</span>
-              </span>
+        <div class="skills_info grid grid-cols-3">
+          <div class="skills_data">
+            <div class="skills_blob">
+              <img src="img/skills/go-8.svg" alt="Skill image">
             </div>
+
+            <h3 class="skills_name">Golang</h3>
+            <span class="skills_subtitle">Intermediate</span>
+          </div>
+          <div class="skills_data">
+            <div class="skills_blob">
+              <img src="img/skills/docker.svg" alt="Skill image">
+            </div>
+
+            <h3 class="skills_name">Docker</h3>
+            <span class="skills_subtitle">Advanced</span>
+          </div>
+          <div class="skills_data">
+            <div class="skills_blob">
+              <img src="img/skills/java-14.svg" alt="Skill image">
+            </div>
+
+            <h3 class="skills_name">Java</h3>
+            <span class="skills_subtitle">Advanced</span>
+          </div>
+          <div class="skills_data">
+            <div class="skills_blob">
+              <img src="img/skills/postgresql.svg" alt="Skill image">
+            </div>
+
+            <h3 class="skills_name">PostGreSQL</h3>
+            <span class="skills_subtitle">Intermediate</span>
+          </div>
+          <div class="skills_data">
+            <div class="skills_blob">
+              <img src="img/skills/kafka.svg" alt="Skill image">
+            </div>
+
+            <h3 class="skills_name">Kafka</h3>
+            <span class="skills_subtitle">Intermediate</span>
+          </div>
+          <div class="skills_data">
+            <div class="skills_blob">
+              <img src="img/skills/websocket.svg" alt="Skill image">
+            </div>
+
+            <h3 class="skills_name">Websocket</h3>
+            <span class="skills_subtitle">Intermediate</span>
+          </div>
+          
+          <div class="skills_data">
+            <div class="skills_blob">
+              <img src="img/skills/grpc-stacked-color.svg" alt="Skill image">
+            </div>
+
+            <h3 class="skills_name">Grpc</h3>
+            <span class="skills_subtitle">Intermediate</span>
+          </div>
+          <div class="skills_data">
+            <div class="skills_blob">
+              <img src="img/skills/tux.svg" alt="Skill image">
+            </div>
+
+            <h3 class="skills_name">Linux</h3>
+            <span class="skills_subtitle">Intermediate</span>
+          </div>
+          </div>
+          <!--=================== BackEnd Container ==========================-->
           </div>
 
-          <div class="skill-box">
-            <span class="title">Docker & Kubernetes</span>
+      </div>
+    </section>
 
-            <div class="skill-bar">
-              <span class="skill-per docker">
-                <span class="tooltip">70%</span>
-              </span>
-            </div>
-          </div>
-          <div class="skill-box">
-            <span class="title">Websocket</span>
 
-            <div class="skill-bar">
-              <span class="skill-per websocket">
-                <span class="tooltip">90%</span>
-              </span>
-            </div>
-          </div>
-          <div class="skill-box">
-            <span class="title">PostgreSQL</span>
+    <!--================= Section Work ==================================-->
+    <!-- Work Section -->
+    <section id="work" class="bg-fxDarkGray dark:bg-darkBlue1 pt-20">
+      <div class="mx-auto text-center pt-14 mb-0 section-title">
+        <h1 class="section-title-01  text-5xl md:text-7xl font-bold bg-fxBgBody dark:bg-fxBgBody mb-10 md:mb-8">Work</h1>
+        <h2 class="section-title-02  text-3xl md:text-4xl w-48 mx-auto before:w-6 md:before:w-10 md:right-0">Work</h2>
+      </div>
+      
+      <!-- Main Work Container -->
 
-            <div class="skill-bar">
-              <span class="skill-per postgresql">
-                <span class="tooltip">95%</span>
-              </span>
-            </div>
-          </div>
-          <div class="skill-box">
-            <span class="title">Git</span>
+      <div
+        class="section-container  grid grid-cols-1 lg:grid-cols-2 gap-y-40 gap-x-28 py-20 place-items-center"
+      >
 
-            <div class="skill-bar">
-              <span class="skill-per git">
-                <span class="tooltip">85%</span>
-              </span>
-            </div>
-          </div>
+      <!--========== Project 1 ==============-->
+      <div class="work-content">
+        <h3 class="work-content-title">Golang Clone</h3>
+        <p class="work-content-text">For when you need a break from your partner but already got a babysitter. Now couples can go to different events in similar locations and at the same time. A group programming project with Can Rozanes, Irene Truong and Jamie Yeung.</p>
+        <div class="work-content-socials">
+          <img src="img/skills/go-8.svg" alt="">
+          <img src="img/skills/react-2.svg" alt="">
+          <img src="img/skills/html-1.svg" alt="">
+          <img src="img/skills/css-3.svg" alt="">
+          <img src="img/skills/javascript-1.svg" alt="">
+        </div>
+        <div class="work-content-btn">
+           <button class="p-2 btn-hover rounded-full w-36  mt-5 bg-fxRealDarkGray text-fxDarkGray hover:text-white hover:scale-95 duration-500 text-base font-medium mx-auto md:ml-0">
+            Live Demo
+          <i class="fas fa-arrow-circle-right" aria-hidden="true"></i>
+        </button>
+         <button class="p-2 btn-hover rounded-full w-44 mt-5 bg-fxRealDarkGray text-fxDarkGray hover:text-white hover:scale-95 duration-500 text-base font-medium mx-auto md:ml-0">
+            View On GitHub
+          <i class="fas fa-arrow-circle-right" aria-hidden="true"></i>
+        </button>
+        </div>
+      </div>
 
-          <div class="skill-box">
-            <span class="title">RESTFull</span>
+      <div class="work-image">
+        <img src="img/golang-clone-responsive.png" alt="">
+      </div>
 
-            <div class="skill-bar">
-              <span class="skill-per rest">
-                <span class="tooltip">95%</span>
-              </span>
-            </div>
-          </div>
-        </section>
-        <!-- SECTION WORK -->
-        <section id="section-work" class="section">
-          <div class="container">
-          <h1 class="text-center h1">WORK</h1>
-          <h2 class="h2">A Selection Of Stuff I have Built</h2>
-          <div class="section-work-wrapper">
-            <div class="section-work-text">
-              <h2>Golang & Clone</h2>
-              <p>
-                For when you need a break from your partner but already got a
-                babysitter. Now couples can go to different events in similar
-                locations and at the same time. A group programming project with
-                Can Rozanes, Irene Truong and Jamie Yeung.
-              </p>
+      <!--========== Project 2 ==============-->
+      <div class="work-content">
+        <h3 class="work-content-title">Portfolio Project</h3>
+        <p class="work-content-text">For when you need a break from your partner but already got a babysitter. Now couples can go to different events in similar locations and at the same time. A group programming project with Can Rozanes, Irene Truong and Jamie Yeung.</p>
+        <div class="work-content-socials">
+          <img src="img/skills/go-8.svg" alt="">
+          <img src="img/skills/react-2.svg" alt="">
+          <img src="img/skills/html-1.svg" alt="">
+          <img src="img/skills/css-3.svg" alt="">
+          <img src="img/skills/javascript-1.svg" alt="">
+        </div>
+        <div class="work-content-btn">
+           <button class="p-2 btn-hover rounded-full w-36  mt-5 bg-fxRealDarkGray text-fxDarkGray hover:text-white hover:scale-95 duration-500 text-base font-medium mx-auto md:ml-0">
+            Live Demo
+          <i class="fas fa-arrow-circle-right" aria-hidden="true"></i>
+        </button>
+         <button class="p-2 btn-hover rounded-full w-44 mt-5 bg-fxRealDarkGray text-fxDarkGray hover:text-white hover:scale-95 duration-500 text-base font-medium mx-auto md:ml-0">
+            View On GitHub
+          <i class="fas fa-arrow-circle-right" aria-hidden="true"></i>
+        </button>
+        </div>
+      </div>
 
-              <div class="container-icons-mini my-1">
-                <i class="fa-brands fa-golang fa-5x"></i>
+      <div class="work-image">
+        <img src="img/Final-responsive-portfolio.png" alt="">
+      </div>
 
-                <i class="fa-brands fa-react fa-5x"></i>
+      <!--========== Project 3 ==============-->
+      <div class="work-content">
+        <h3 class="work-content-title">Golang Clone</h3>
+        <p class="work-content-text">For when you need a break from your partner but already got a babysitter. Now couples can go to different events in similar locations and at the same time. A group programming project with Can Rozanes, Irene Truong and Jamie Yeung.</p>
+        <div class="work-content-socials">
+          <img src="img/skills/go-8.svg" alt="">
+          <img src="img/skills/react-2.svg" alt="">
+          <img src="img/skills/html-1.svg" alt="">
+          <img src="img/skills/css-3.svg" alt="">
+          <img src="img/skills/javascript-1.svg" alt="">
+        </div>
+        <div class="work-content-btn">
+           <button class="p-2 btn-hover rounded-full w-36  mt-5 bg-fxRealDarkGray text-fxDarkGray hover:text-white hover:scale-95 duration-500 text-base font-medium mx-auto md:ml-0">
+            Live Demo
+          <i class="fas fa-arrow-circle-right" aria-hidden="true"></i>
+        </button>
+         <button class="p-2 btn-hover rounded-full w-44 mt-5 bg-fxRealDarkGray text-fxDarkGray hover:text-white hover:scale-95 duration-500 text-base font-medium mx-auto md:ml-0">
+            View On GitHub
+          <i class="fas fa-arrow-circle-right" aria-hidden="true"></i>
+        </button>
+        </div>
+      </div>
 
-                <i class="fa fa-html5 fa-5x" aria-hidden="true"></i>
+      <div class="work-image">
+        <img src="img/golang-clone-responsive.png" alt="">
+      </div>
 
-                <i class="fa-brands fa-css3-alt fa-5x"></i>
+      <!--========== Project 4 ==============-->
+      <div class="work-content">
+        <h3 class="work-content-title">Portfolio Project</h3>
+        <p class="work-content-text">For when you need a break from your partner but already got a babysitter. Now couples can go to different events in similar locations and at the same time. A group programming project with Can Rozanes, Irene Truong and Jamie Yeung.</p>
+        <div class="work-content-socials">
+          <img src="img/skills/go-8.svg" alt="">
+          <img src="img/skills/react-2.svg" alt="">
+          <img src="img/skills/html-1.svg" alt="">
+          <img src="img/skills/css-3.svg" alt="">
+          <img src="img/skills/javascript-1.svg" alt="">
+        </div>
+        <div class="work-content-btn">
+           <button class="p-2 btn-hover rounded-full w-36  mt-5 bg-fxRealDarkGray text-fxDarkGray hover:text-white hover:scale-95 duration-500 text-base font-medium mx-auto md:ml-0">
+            Live Demo
+          <i class="fas fa-arrow-circle-right" aria-hidden="true"></i>
+        </button>
+         <button class="p-2 btn-hover rounded-full w-44 mt-5 bg-fxRealDarkGray text-fxDarkGray hover:text-white hover:scale-95 duration-500 text-base font-medium mx-auto md:ml-0">
+            View On GitHub
+          <i class="fas fa-arrow-circle-right" aria-hidden="true"></i>
+        </button>
+        </div>
+      </div>
 
-                <i class="fa-brands fa-js fa-5x"></i>
+      <div class="work-image">
+        <img src="img/Final-responsive-portfolio.png" alt="">
+      </div>
 
-                <i class="fa-brands fa-github fa-5x"></i>
-              </div>
-              <div class="section-buttons">
-                <a
-                  href="https://sparkling-paprenjak-d789fd.netlify.app/"
-                  target="_blank"
-                  class="btn"
-                  >Live Demo</a
-                >
-                <a
-                  href="https://github.com/fxfrancky/golang-clone"
-                  class="btn"
-                  target="_blank"
-                  >View GitHub Repo</a
-                >
-              </div>
-            </div>
-            <div class="section-work-img">
-              <img src="./img/golang-clone-responsive.png" alt="Golang Clone" />
-            </div>
+      </div>
+    </section>
 
-            <div class="section-work-text">
-              <h2 class="h2">Golang & Clone</h2>
-              <p>
-                For when you need a break from your partner but already got a
-                babysitter. Now couples can go to different events in similar
-                locations and at the same time. A group programming project with
-                Can Rozanes, Irene Truong and Jamie Yeung.
-              </p>
 
-              <div class="container-icons-mini my-1">
-                <i class="fa-brands fa-golang fa-5x"></i>
+    <!--================= Section Contact ==================================-->
+    <!-- Skills Section -->
+    <section id="contact" class="bg-fxBgBody dark:bg-darkBlue1 pt-28 mb-28">
+      <div class="mx-auto text-center pt-14 mb-0 section-title">
+        <h1 class="section-title-01  text-5xl md:text-7xl font-bold bg-fxBgBody dark:bg-fxBgBody mb-10 md:mb-8">Contact</h1>
+        <h2 class="section-title-02  text-3xl md:text-4xl w-48 mx-auto before:w-6 md:before:w-10 md:right-0">Contact</h2>
+      </div>
+      
+      <!-- Main Contact Container -->
 
-                <i class="fa-brands fa-react fa-5x"></i>
+      <div
+        class="section-container  grid grid-cols-1 lg:grid-cols-2 gap-y-14 gap-x-6 py-20 contact-container rounded-xl bg-darkBlue"
+      >
+      <div class="contact-container-content">
+        
+        <h3 class="text-fxDarkGray text-2xl font-semibold py-10">Get In Touch</h3>
 
-                <i class="fa fa-html5 fa-5x" aria-hidden="true"></i>
+        <div class="contact-container-description w-full gap-x-10 flex justify-center items-center py-2">
+          <i class="fa-brands fa-skype text-fxOrange"> </i> 
+          <span class="text-lg text-fxDarkTextPrimary">fxjonathan</span>
+        </div>
+        <div class="contact-container-description w-full gap-x-6 flex justify-center items-center py-2">
+          <i class="fas fa-map-marker-alt text-fxOrange"> </i> 
+          <span class="text-lg text-fxDarkTextPrimary">Metz - France</span>
+        </div>
+        <div class="contact-container-description w-full gap-x-2 flex justify-center items-center py-2">
+          <i class="fas fa-phone text-fxOrange"> </i> 
+          <span class="text-lg text-fxDarkTextPrimary">+33649353760</span>
+        </div>
+        
+        <div class="contact-container-description w-full gap-x-2 flex justify-center items-center py-2">
+          <i class="far fa-envelope-open text-fxOrange"> </i> 
+          <span class="text-lg text-fxDarkTextPrimary">francoisxavier.owona@owonafx.com</span>
+        </div>
+        
 
-                <i class="fa-brands fa-css3-alt fa-5x"></i>
 
-                <i class="fa-brands fa-js fa-5x"></i>
+        <div class="contact-container-img flex justify-center items-center py-11 w-80 mx-auto">
+          <img src="img/map.png" alt="">
+        </div>
+        
+      </div>
 
-                <i class="fa-brands fa-github fa-5x"></i>
-              </div>
-              <div class="section-buttons">
-                <a
-                  href="https://sparkling-paprenjak-d789fd.netlify.app/"
-                  target="_blank"
-                  class="btn"
-                  >Live Demo</a
-                >
-                <a
-                  href="https://github.com/fxfrancky/golang-clone"
-                  class="btn"
-                  target="_blank"
-                  >View GitHub Repo</a
-                >
-              </div>
-            </div>
-
-            <div class="section-work-img">
-              <img src="./img/golang-clone-responsive.png" alt="Golang Clone" />
-            </div>
-
-            <div class="section-work-text">
-              <h2 class="h2">Golang & Clone</h2>
-              <p>
-                For when you need a break from your partner but already got a
-                babysitter. Now couples can go to different events in similar
-                locations and at the same time. A group programming project with
-                Can Rozanes, Irene Truong and Jamie Yeung.
-              </p>
-
-              <div class="container-icons-mini my-1">
-                <i class="fa-brands fa-golang fa-5x"></i>
-
-                <i class="fa-brands fa-react fa-5x"></i>
-
-                <i class="fa fa-html5 fa-5x" aria-hidden="true"></i>
-
-                <i class="fa-brands fa-css3-alt fa-5x"></i>
-
-                <i class="fa-brands fa-js fa-5x"></i>
-
-                <i class="fa-brands fa-github fa-5x"></i>
-              </div>
-              <div class="section-buttons">
-                <a
-                  href="https://sparkling-paprenjak-d789fd.netlify.app/"
-                  target="_blank"
-                  class="btn"
-                  >Live Demo</a
-                >
-                <a
-                  href="https://github.com/fxfrancky/golang-clone"
-                  class="btn"
-                  target="_blank"
-                  >View GitHub Repo</a
-                >
-              </div>
-            </div>
-            <div class="section-work-img">
-              <img src="./img/golang-clone-responsive.png" alt="Golang Clone" />
-            </div>
-
-            <div class="section-work-text">
-              <h2 class="h2">Golang & Clone</h2>
-              <p>
-                For when you need a break from your partner but already got a
-                babysitter. Now couples can go to different events in similar
-                locations and at the same time. A group programming project with
-                Can Rozanes, Irene Truong and Jamie Yeung.
-              </p>
-
-              <div class="container-icons-mini my-1">
-                <i class="fa-brands fa-golang fa-5x"></i>
-
-                <i class="fa-brands fa-react fa-5x"></i>
-
-                <i class="fa fa-html5 fa-5x" aria-hidden="true"></i>
-
-                <i class="fa-brands fa-css3-alt fa-5x"></i>
-
-                <i class="fa-brands fa-js fa-5x"></i>
-
-                <i class="fa-brands fa-github fa-5x"></i>
-              </div>
-              <div class="section-buttons">
-                <a
-                  href="https://sparkling-paprenjak-d789fd.netlify.app/"
-                  target="_blank"
-                  class="btn"
-                  >Live Demo</a
-                >
-                <a
-                  href="https://github.com/fxfrancky/golang-clone"
-                  class="btn"
-                  target="_blank"
-                  >View GitHub Repo</a
-                >
-              </div>
-            </div>
-            <div class="section-work-img">
-              <img src="./img/golang-clone-responsive.png" alt="Golang Clone" />
-            </div>
-          </div>
-        </section>
-        <!-- SECTION TESTIMONIALS -->
-        <!-- <section id="section-testimonials" class="section"></section> -->
-        <!-- SECTION CONTACT -->
-        <section id="section-contact" class="section">
-          <h1 class="h1">Contact</h1>
-          <div class="section-contact-wrapper">
-            <div class="section-contact-wrapper-social card">
-              <h2 class="text-subtitle my-3 h2">Get In Touch</h2>
-              <div class="section-socials-logos">
-                <a href="/"
-                  ><i class="fa-regular fa-envelope fa-3x"></i>
-                  <span>francoisxavier.owona@owonafx.com</span></a
-                >
-                <a href="https://github.com/fxfrancky" target="_blank"
-                  ><i class="fab fa-github fa-3x"></i> <span>GitHub</span></a
-                >
-                <a
-                  href="https://www.linkedin.com/in/francois-xavier-owona-63258531/"
-                  target="_blank"
-                  ><i class="fa-brands fa-linkedin fa-3x"></i>
-                  <span>Linkedin</span></a
-                >
-                <a href="#" target="_blank"
-                  ><i class="fa-solid fa-house fa-3x"></i>
-                  <span>Metz, FRANCE</span></a
-                >
-              </div>
-            </div>
-            <!-- CONTACT FORM -->
-            <div class="section-contact-wrapper-form card">
-              <h2 class="text-subtitle my-3 h2">Leave a Message</h2>
-              <form
-                name="contact"
-                method="POST"
-                netlify-honeypot="bot-field"
-                data-netlify="true"
-              >
-                <input type="hidden" name="form-name" value="contact" />
+      <div class="rounded-xl bg-white>
+             <!-- <h3 class="text-fxRealDarkGray  -->
+                 <!-- text-2xl font-semibold -->
+                  <!-- py-10">  -->
+                <!-- Leave a Message</h3>  -->
+              <!-- <h2 class="text-subtitle my-3 h2">Leave a Message</h2> -->
+              <div class="contact-form py-10">
+                <h3 class="text-fxRealDarkGray text-2xl font-semibold pt-5 pb-10">Leave a Message</h3>
+              <form name="contact" method="POST" netlify-honeypot="bot-field" data-netlify="true">
+                <input type="hidden" name="form-name" value="contact">
                 <p class="hidden">
                   <label>
                     Don’t fill this out if you’re human:
-                    <input name="bot-field" />
+                    <input name="bot-field">
                   </label>
                 </p>
-                <div class="form-control">
-                  <i class="fas fa-user prefix grey-text fa-2x"></i>
-                  <input type="text" name="name" placeholder="Name" required />
-                </div>
-                <div class="form-control">
-                  <i class="fas fa-envelope prefix grey-text fa-2x"></i>
-                  <input
-                    type="email"
-                    name="email"
-                    placeholder="Email"
-                    required
-                  />
-                </div>
-                <div class="form-control">
-                  <i class="fas fa-pencil-alt prefix grey-text fa-2x"></i>
-                  <textarea
-                    name="message"
-                    placeholder="Type Your Message Here"
-                    required
-                    rows="7"
-                  ></textarea>
-                </div>
+                <!-- <div class="form-control">
+                  <i class="fas fa-user prefix grey-text fa-2x" aria-hidden="true"></i>
+                  <input type="text" name="name" placeholder="Name" required="">
+                </div> -->
+                <label for="name" class="contact-form-label flex justify-start mb-2 ml-2 font-semibold">Name</label>
+                <input type="text" name="name" placeholder="Name" required="">
 
-                <input type="submit" value="Send" class="btn btn-primary" ></input>
+
+                <!-- <div class="form-control">
+                  <i class="fas fa-envelope prefix grey-text fa-2x" aria-hidden="true"></i>
+                  <input type="email" name="email" placeholder="Email" required="">
+                </div> -->
+
+                <label for="email" class="contact-form-label flex justify-start mb-2 ml-2 font-semibold">Email</label>
+                <input type="email" name="email" placeholder="Email" required="">
+
+
+                <!-- <div class="form-control">
+                  <i class="fas fa-pencil-alt prefix grey-text fa-2x" aria-hidden="true"></i>
+                  <textarea name="message" placeholder="Type Your Message Here" required="" rows="7"></textarea>
+                </div> -->
+
+                <label for="message" class="contact-form-label flex justify-start mb-2 ml-2 font-semibold">Message</label>
+                <textarea type="text" class="h-40" name="message" placeholder="Type Your Message Here"></textarea>
+
+                <!-- <input type="submit" value="Send" class="btn btn-primary"> -->
+                <div class="flex justify-start">
+                  <button type="submit" class="p-2 btn-hover rounded-full w-36  mt-5 bg-fxRealDarkGray text-fxDarkGray hover:text-white hover:scale-95 duration-500 text-base font-medium mx-auto md:ml-0">Contact Me <i class="fa fa-paper-plane"></i></button>
+                  <!-- <button class="p-2 btn-hover rounded-full w-36  mt-5 bg-fxRealDarkGray text-fxDarkGray hover:text-white hover:scale-95 duration-500 text-base font-medium mx-auto md:ml-0">
+            Live Demo
+          <i class="fas fa-arrow-circle-right" aria-hidden="true"></i>
+        </button> -->
+                </div>
               </form>
+              </div>
+            </div>
+
+      </div>
+      </section>
+
+
+    <!--========================== Footer Section =====================================-->
+       <!-- Footer -->
+    <footer class="bg-darkBlue">
+      <div class="section-container py-24">
+        <div class="flex flex-col items-center justify-between md:flex-row mx-auto  place-items-center">
+          <!-- Image -->
+          <a href="#home">
+          <img src="img/logo-dark-mode.png" alt=""  class="mb-8 md:mb-0" />
+          </a>
+          <!-- Container for Menus & Social -->
+          <div
+            class="flex flex-col items-center justify-between flex-1 mb-10 space-y-10 md:flex-row md:mb-0 md:space-y-0 text-fxDarkGray"
+          >
+            <div
+              class="flex flex-col space-y-4 md:flex-row md:ml-24 md:space-x-24 md:space-y-0"
+            >
+              <!-- Menu 1 -->
+              <div class="flex flex-col space-y-4 text-center md:text-left">
+                <div><a href="#home" class="ficon duration-700 transition">Home</a></div>
+                <div>
+                  <a href="#about" class="ficon duration-700 transition">About</a>
+                </div>
+              </div>
+              <!-- Menu 2 -->
+              <div class="flex flex-col space-y-4 text-center md:text-left">
+                <div>
+                  <a href="#skills" class="ficon duration-700 transition">Skills</a>
+                </div>
+                <div>
+                  <a href="#work" class="ficon duration-700 transition">Work</a>
+                </div>
+              </div>
+              <!-- Menu 3 -->
+              <div class="flex flex-col space-y-4 text-center md:text-left">
+                <div>
+                  <a href="#contact" class="ficon duration-700 transition">Contact</a>
+                </div>
+              </div>
             </div>
           </div>
-        </section>
-      </div>
-    </main>
 
-    <!-- FOOTER SECTION -->
-    <footer id="main-footer">
-      <div class="container py-2 text-center">
-        <!-- <section id="section-contact" class="section"></section> -->
-        <div class="footer">Copyright &copy; OWONA FRANCOIS XAVIER</div>
+          <!-- Social Icons -->
+          <!-- <div class="flex justify-between w-32 py-1 space-x-8 mx-auto"> -->
+          <div class="space-x-6 mx-auto">
+             <a
+                href="https://github.com/fxfrancky/"
+                target="_blank"
+                class="w-8 h-8 ficon duration-700 transition"
+                ><i class="uil uil-github text-fxDarkGray text-2xl"></i
+              ></a>
+             <a
+                href="https://www.linkedin.com/in/francois-xavier-owona-63258531/"
+                target="_blank"
+                class="w-8 h-8 ficon duration-700 transition"
+                ><i class="uil uil-linkedin text-fxDarkGray text-2xl"></i
+              ></a>
+             <a
+                href="https://www.youtube.com/channel/UCt_8wpSh7_cva2AI7eaNVIw"
+                target="_blank"
+                class="w-8 h-8 ficon duration-700 transition"
+                ><i class="uil uil-youtube text-fxDarkGray text-2xl"></i
+              ></a>
+               <a
+                href="skype:fxjonathan?call"
+                target="_blank"
+                class="w-8 h-8 ficon duration-700 transition"
+                ><i class="uil uil-skype text-fxDarkGray text-2xl"></i
+              ></a>
+          </div>
+        </div>
       </div>
     </footer>
-
+   
+    <!-- <h1 class="h1 font-bold font-nunito">Xavier Owona.</h1> -->
     <!-- To use font awsome and use icons -->
     <script
       src="https://kit.fontawesome.com/4547905d38.js"
@@ -499,6 +823,21 @@
       integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
       crossorigin="anonymous"
     ></script>
-    <script src="./js/main.js"></script>
+    <!-- Include js file -->
+    <script src="js/darkmode.js" defer></script>
+    <script src="js/mobile-menu.js" defer></script>
+    <script src="js/main.js" defer></script>
+    <script src="https://code.iconify.design/iconify-icon/1.0.1/iconify-icon.min.js"></script>
+    <!-- Mouse JS -->
+    <script type="text/javascript" src="js/kursor.js"></script>
+    <script type="text/javascript">
+       var kursorx = new kursor({
+          type: 4,
+          // color: 'rgba(45, 161, 210)',
+          color: 'rgba(255, 87, 36)',
+         })
+    </script>
+
+   
   </body>
 </html>
