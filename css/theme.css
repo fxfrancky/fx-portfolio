@@ -18,6 +18,14 @@
     var(--color-primary-variant)
   );
 } */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border-style: none;
+  border-color: transparent;
+}
 .nav_socials {
   /* background: linear-gradient(180deg, hsl(194, 23%, 60%), hsl(194, 23%, 77%)); */
   /* background: linear-gradient(180deg, hsl(191, 23%, 85%), hsl(191, 23%, 92%)); */
@@ -217,15 +225,15 @@ p {
   word-spacing: 1px;
 }
 
-.btn-hover:hover {
+/* .btn-hover:hover {
   box-shadow: 0 0.3rem 0.3rem rgba(0, 0, 0, 0.4);
   /* color: rgb(58, 189, 212); */
-  /* color: hsl(220, 6%, 91%); */
-  /* fxBgBody: "hsl(0, 0%, 96%)", */
-  /* hsl(220, 6%, 90%) */
-  color: rgb(45, 161, 210);
-  /* color: hsl(210, 22%, 96%); */
-}
+/* color: hsl(220, 6%, 91%); */
+/* fxBgBody: "hsl(0, 0%, 96%)", */
+/* hsl(220, 6%, 90%) */
+/* color: rgb(45, 161, 210); */
+/* color: hsl(210, 22%, 96%); */
+/* }  */
 
 /* Section Title */
 .section-title-01 {
@@ -251,9 +259,10 @@ p {
   /* right: 0; */
   /* left: -10; */
   bottom: -0.65rem;
-  background-color: hsl(14, 100%, 57%);
+  background-color: hsl(158, 100%, 33%);
+  /* background-color: hsl(198, 76%, 47%); */
   /* color: rgb(17, 146, 238); */
-  color: hsl(200, 65%, 48%);
+  color: hsl(0, 0%, 39%);
 }
 
 /* Nav class on scroll */
@@ -266,22 +275,22 @@ p {
 
 /* Colors for svg gradient */
 .color1 {
-  stop-color: hsl(200, 65%, 50%);
+  stop-color: hsl(198, 76%, 47%);
 }
 .color2 {
-  stop-color: hsl(200, 65%, 55%);
+  stop-color: hsl(198, 76%, 55%);
 }
 .color3 {
-  stop-color: hsl(200, 65%, 60%);
+  stop-color: hsl(198, 76%, 60%);
 }
 .color4 {
-  stop-color: hsl(200, 65%, 65%);
+  stop-color: hsl(198, 76%, 65%);
 }
 .color5 {
-  stop-color: hsl(200, 65%, 70%);
+  stop-color: hsl(198, 76%, 70%);
 }
 .color6 {
-  stop-color: hsl(200, 65%, 80%);
+  stop-color: hsl(198, 76%, 75%);
 }
 
 .logo1 {
@@ -381,12 +390,124 @@ p {
   color: hsl(194, 23%, 60%);
   color: hsl(193, 15%, 12%);
   color: hsl(216, 17%, 12%);
+
+  /* Green color */
+  color: hsl(158, 100%, 33%);
+  color: #00a86b;
+  color: hsl(208, 34%, 20%);
+
+  /* color: hsl(240, 10%, 4%); */
+  /* TEXT COLOR 1 */
+  color: hsl(240, 10%, 4%);
+  /* TEXT COLOR 2 */
+  color: hsl(0, 0%, 25%);
+  /* TEXT COLOR 3 */
+  color: hsl(0, 0%, 35%);
+
+  /* GRAY COLOR */
+  color: hsl(0, 0%, 60%);
+
+  /* Paragraph color */
+  color: hsl(0, 0%, 25%);
+
+  color: hsl(240, 10%, 4%);
+
+  /* Title Color */
+  color: hsl(90, 10%, 4%);
+
+  /* Blue color to fill */
+  color: hsl(198, 76%, 47%);
+  /* .fill-blue {
+    background: #1d9ad1;
+    
+} */
+  color: hsl(208, 28%, 78%);
+  color: hsl(211, 28%, 44%);
+  color: hsl(0, 0%, 25%);
+  /* Blue Text */
+  color: hsl(198, 76%, 47%);
+  /* Logo Color */
+  color: hsl(198, 76%, 47%);
+
+  /* background color */
+  color: white;
+
+  /* DarkBackgroundGray */
+  color: hsl(0, 0%, 98%);
+
+  /* Dark Icon color: ; */
+  color: hsl(0, 0%, 60%);
+
+  /* footer Link color */
+  color: hsl(60, 0%, 42%);
+
+  /* Link Text Title */
+  color: hsl(240, 10%, 4%);
+
+  /* color logo footer */
+  color: hsl(0, 0%, 39%);
+
+  color: #237b7b7b;
+
+  /* line value */
+  color: hsl(0, 0%, 85%);
+
+  color: hsl(0, 0%, 98%);
+  color: hsl(146, 50%, 81%);
+
+  /* hr {
+    background: #d8d8d8;
+    height: 0.125rem;
+    width: 100%;
+    border: 0;
+    margin: 1.5625rem 0;
+} */
+
+  /* border-radius: 100%!important;
+    margin-bottom: 15px!important; */
+
+  /* LOGO Color And properties */
+  /* background-color: #b7b7b7 */
+
+  /* Filter color */
+  /* -webkit-filter: grayscale(100%); */
+  /* filter: grayscale(100%); */
+  /* height: 24px;
+  width: 24px; */
+
+  /* square box linear -color */
+  /* .hero-blocks.-blue-blocks .hero-blocks-right-blocks-stripes {
+    margin-left: -40px;
+    margin-top: -80px;
+    width: 10.3125rem;
+    height: 10.3125rem;
+    background: repeating-linear-gradient(-45deg,#1D9AD1,#FFFFFF 2px,#FFFFFF 13px,#1D9AD1 13px);
+    opacity: .5;
+    transition: all .25s ease;
+} */
+  /* White box shadow */
+  /* .cta-shadow {
+    box-shadow: 0 0.25rem 0.5rem rgb(0 0 0 / 20%);
+    transition: box-shadow 240ms cubic-bezier(0.2, 0.3, 0.25, 0.9);
+  } */
 }
+
+/* section-rich-text
+  .addthis_inline_share_toolbox
+  .at-share-btn-elements
+  .at-share-btn {
+  height: 24px;
+  width: 24px;
+  background-color: #b7b7b7 !important;
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+} */
 
 .home_hand {
   width: 38px;
   height: 38px;
   margin-left: 0.4rem;
+  color: hsl(0, 0%, 25%);
 }
 
 .home-subtitle {

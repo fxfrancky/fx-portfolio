@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth bg-fxBgBody">
+<html lang="en" class="scroll-smooth bg-portfolioWhiteBg">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -23,11 +23,8 @@
 
   <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
     
-    <!-- Cursor JS Css -->
-    <link
-      rel="stylesheet"
-      href="css/kursor.css"
-    />
+    <!-- AOS Animation On Scroll -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <meta name="og:title" content="OWONA Francois Xavier" />
     <title>OWONA Francois Xavier</title>
     <meta
@@ -49,37 +46,34 @@
   </head>
   <body class="dark:bg-darkBlue dark:text-white">
     <!--======================================== Navigation Container ============================================-->
-    <section id="nav-header" class="fixed w-full bg-fxBgBody dark:bg-darkBlue dark:text-white md:mb-44 z-50 items-center">
-    <div class="section-container max-w-6xl mx-auto px-6 py-12 pb-0">
+    <section id="nav-header" class="fixed w-full bg-portfolioWhiteBg hr dark:bg-darkBlue dark:text-white mb-0 z-50 items-center my-auto place-items-center">
+    <div class="section-container max-w-6xl mx-auto">
         <!-- Menu/Logo Container -->
-        <nav class="flex items-end justify-between font-bold my-auto">
+        <nav class="flex items-center place-items-center justify-between font-bold my-auto py-7" data-aos="fade-down">
           <!-- Logo -->
-          <!-- <img src="images/logo.svg" alt=""> -->
-          <a href="#" class="bg-logo-light-mode dark:bg-logo-dark-mode bg-no-repeat w-52 h-24"></a>
-          <!-- <div
-              class="bg-logo-light-mode dark:bg-logo-dark-mode bg-no-repeat mx-auto md:mx-0 md:absolute mt-10 w-52 h-24 md:h-44 logo-head before:bg-fxOrange dark:before:bg-fxBgBodyDark"
-            ></div> -->
+          <a href="#" class="bg-logo-light-mode dark:bg-logo-dark-mode bg-no-repeat  w-10 h-9 logo-rotate"></a>
+  
           <!-- Menu -->
-          <div class="hidden h-24 md:flex space-x-4 md:space-x-8 font-medium md:text-lg lg:text-xl text-fxDarkTextBlue">
+          <div class="hidden md:flex space-x-4 md:space-x-9 font-medium md:text-lg lg:text-xl text-portfolioNavText">
             <div class="group">
-              <a href="#home" class="nav_group_a">Home</a>
-              <div class="nav_group_div"></div>
+              <a href="#home" class="group-hover:transition group-hover:duration-500 group-hover:text-portfolioTextP dark:text-white">Home</a>
+              <div class="mx-2 group-hover:border-b-2 group-hover:border-portfolioGreenBg group-hover:transition group-hover:duration-700"></div>
             </div>
             <div class="group">
-              <a href="#about" class="nav_group_a">About</a>
-              <div class="nav_group_div"></div>
+              <a href="#about" class="group-hover:transition group-hover:duration-500 group-hover:text-portfolioTextP dark:text-white">About</a>
+              <div class="mx-2 group-hover:border-b-2 group-hover:border-portfolioGreenBg group-hover:transition group-hover:duration-700"></div>
             </div>
             <div class="group">
-              <a href="#skills" class="nav_group_a">Skills</a>
-              <div class="nav_group_div"></div>
+              <a href="#skills" class="group-hover:transition group-hover:duration-500 group-hover:text-portfolioTextP dark:text-white">Skills</a>
+              <div class="mx-2 group-hover:border-b-2 group-hover:border-portfolioGreenBg group-hover:transition group-hover:duration-700"></div>
             </div>
             <div class="group">
-              <a href="#work" class="nav_group_a">Work</a>
-              <div class="nav_group_div"></div>
+              <a href="#work" class="group-hover:transition group-hover:duration-500 group-hover:text-portfolioTextP dark:text-white">Work</a>
+              <div class="mx-2 group-hover:border-b-2 group-hover:border-portfolioGreenBg group-hover:transition group-hover:duration-700"></div>
             </div>
             <div class="group">
-              <a href="#contact" class="nav_group_a">Contact</a>
-              <div class="nav_group_div"></div>
+              <a href="#contact" class="group-hover:transition group-hover:duration-500 group-hover:text-portfolioTextP dark:text-white">Contact</a>
+              <div class="mx-2 group-hover:border-b-2 group-hover:border-portfolioGreenBg group-hover:transition group-hover:duration-700"></div>
             </div>
           <!-- Dark/Light Mode Button -->
           <div class="group">
@@ -128,7 +122,7 @@
                 <span class="hamburger-bottom bg-fxTextHeader dark:bg-fxBgBody"></span>
             </button>
           </div>
-        </nav>
+        </div>
         <!-- @todo - Mobile Menu -->
              <div
         id="menu"
@@ -158,15 +152,15 @@
         class="section-container my-0 flex flex-col-reverse lg:flex-row md:space-x-44"
       >
         <!-- Content Container -->
-        <div class="flex flex-col lg:mt-16 lg:w-1/2 mb-10 md:mb-24 lg:mb-40">
+        <div class="flex flex-col lg:mt-16 lg:w-1/2 mb-16" data-aos="fade-right">
 
           <div>
        
           <div
-            class="flex flex-row w-full space-x-0 space-y-0 text-3xl font-bold text-center lg:text-4xl md:text-left text-fxDarkTextBlue dark:text-fxBgBody mb-8"
+            class="flex flex-row w-full space-x-0 space-y-0 text-3xl font-bold text-center lg:text-4xl md:text-left text-portfolioTitle dark:text-fxBgBody mb-8"
           >
             Xavier
-            <span class="text-fxOrange dark:text-fxOrange ml-2 mr-2">OWONA.
+            <span class="text-portfolioGreenBg dark:text-portfolioGreenBg ml-2 mr-2">OWONA.
             
                 </span>
                 <a href="#" class="w-full mx-auto my-auto hover:-translate-y-3 transition-all duration-700 hover:scale-110" >
@@ -174,9 +168,9 @@
                 </a>
               </div>
           </div>
-          <h3 class="hidden lg:block home-subtitle text-base text-fxRealDarkGray mb-8 before:absolute md:before:w-10 xl:before:w-16 lg:before:h-0.5 lg:before:bg-fxRealDarkGray lg:before:left-0 lg:before:top-3">Full Stack Developer</h3>
+          <h3 class="hidden lg:block home-subtitle text-base text-portfolioBlue mb-8 before:absolute md:before:w-10 xl:before:w-16 lg:before:h-0.5 lg:before:bg-portfolioBlue lg:before:left-0 lg:before:top-3">Full Stack Developer</h3>
           <p
-            class="text-lg lg:text-2xl text-justify text-fxDarkTextBlue lg:text-left md:max-w-2xl md:leading-8 leading-7 dark:text-fxBgBodyDark "
+            class="text-lg lg:text-xl text-justify text-portfolioTextP lg:text-left md:max-w-2xl md:leading-7 leading-6 dark:text-fxBgBodyDark"
           >
             Creative <span class="font-semibold">Full Stack Golang Developer</span> and<span class="font-semibold"> Freelancer</span>. I am Highly experienced in web design
             and development. My passion is to build solid and scalable products
@@ -189,52 +183,45 @@
               <a
                 href="https://github.com/fxfrancky/"
                 target="_blank"
-                class="w-8 h-8 nav_socials grid items-center justify-center rounded-md"
-                ><i class="uil uil-github text-fxDarkGray text-xl"></i
+                class="grid items-center justify-center"
+                ><i class="uil uil-github text-portfolioBlue text-2xl hover:text-portfolioBlueHover hover:scale-110 duration-400"></i
               ></a>
             </li>
             <li>
               <a
                 href="https://www.linkedin.com/in/francois-xavier-owona-63258531/"
                 target="_blank"
-                class="w-8 h-8 nav_socials grid items-center justify-center rounded-md"
-                ><i class="uil uil-linkedin text-fxDarkGray text-xl"></i
+                class="grid items-center justify-center"
+                ><i class="uil uil-linkedin text-portfolioBlue text-2xl hover:text-portfolioBlueHover hover:scale-110 duration-400"></i
               ></a>
             </li>
             <li>
               <a
                 href="https://www.youtube.com/channel/UCt_8wpSh7_cva2AI7eaNVIw"
                 target="_blank"
-                class="w-8 h-8 nav_socials grid items-center justify-center rounded-md"
-                ><i class="uil uil-youtube text-fxDarkGray text-xl"></i
+                class="grid items-center justify-center"
+                ><i class="uil uil-youtube text-portfolioBlue text-2xl hover:text-portfolioBlueHover hover:scale-110 duration-400"></i
               ></a>
             </li>
             <li>
               <a
                 href="skype:fxjonathan?call"
                 target="_blank"
-                class="w-8 h-8 nav_socials grid items-center justify-center rounded-md"
-                ><i class="uil uil-skype text-fxDarkGray text-xl"></i
+                class="grid items-center justify-center"
+                ><i class="uil uil-skype text-portfolioBlue text-2xl hover:text-portfolioBlueHover hover:scale-110 duration-400"></i
               ></a>
             </li>
           </ul>
 
-           <button class="p-3 btn-hover rounded-full w-52 mt-10 bg-fxOrange text-white hover:text-fxDarkSocials hover:scale-95 duration-500 text-xl font-medium mx-auto md:ml-0">
+        <button class="p-3 btn-hover transition border border-portfolioGreenBg hover:bg-portfolioGreenBg hover:text-portfolioWhiteBg rounded-[5px] w-52 mt-10 bg-transparent text-portfolioGreenBg duration-700 text-xl font-medium mx-auto md:ml-0">
             Contact Me
           <i class="fas fa-arrow-circle-right" aria-hidden="true"></i>
         </button>
         </div>
         <!--========== Image Container =========-->
-        <div class="transition-all mb-24 lg:mb-0 lg:w-1/2 lg:mt-20 duration-1000 hover:scale-105 md:w-1/2">
-              <svg class="img_cv_head logo4" viewBox="0 0 479 467" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                  <linearGradient id="g1">
-                    <stop offset="0%" class="color1" />
-                    <stop offset="20%" class="color2" />
-                    <stop offset="40%" class="color5" />
-                    <stop offset="60%" class="color6" />
-                    <stop offset="80%" class="color4" />
-                    <stop offset="100%" class="color3" />
-                </linearGradient>
+        <div class="transition-all mb-24 lg:mb-0 lg:w-1/2 lg:mt-20 duration-1000 hover:scale-105 md:w-1/2" data-aos="fade-left">
+              <svg class="img_cv_head logo1" viewBox="0 0 479 467" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+
                 <radialGradient id="g2">
                   <stop offset="0%" class="color6" />
                   <stop offset="20%" class="color5" />
@@ -259,6 +246,15 @@
                   <stop offset="80%" class="color21" />
                   <stop offset="100%" class="color20" />
                 </radialGradient>  
+                <radialGradient id="g1">
+                  <stop offset="0%" class="color1" />
+                  <stop offset="20%" class="color6" />
+                  <stop offset="40%" class="color5" />
+                  <stop offset="50%" class="color4" />
+                  <stop offset="60%" class="color3" />
+                  <stop offset="80%" class="color2" />
+                  <stop offset="100%" class="color1" />
+                </radialGradient>  
                 <mask id="mask0" mask-type="alpha">
                       <path d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z"/>
                   </mask>
@@ -274,18 +270,22 @@
           <!--================= Wave Bottom ==================================-->
     <!-- Hero Section -->
     <div id="wave"
-    class="bg-curvy-light-mode dark:bg-curvy-dark-mode bg-no-repeat bg-contain bg-bottom h-32 bg-fxDarkGray dark:bg-darkBlue1 w-full border-none">
+    class="wave-bg dark:bg-curvy-dark-mode bg-portfolioGrayBg dark:bg-darkBlue1 border-none">
      
       </div>
+    <!-- <div id="wave"
+    class="bg-curvy-light-mode dark:bg-curvy-dark-mode bg-no-repeat bg-contain bg-bottom h-32 bg-fxDarkGray dark:bg-darkBlue1 w-full border-none">
+     
+      </div> -->
     </section>
 
 
     <!--================= Section About ==================================-->
     <!-- About Section -->
-    <section id="about" class="bg-fxDarkGray dark:bg-darkBlue1">
-      <div id="section-title" class="mx-auto text-center pt-16 xl:pt-36 mb-0">
+    <section id="about" class="bg-portfolioGrayBg dark:bg-darkBlue1">
+      <div id="section-title" class="mx-auto text-center pt-16 xl:pt-36 mb-0"  data-aos="zoom-in-up">
         <h1 class="section-title-01  text-5xl md:text-7xl font-bold bg-fxBgBody dark:bg-fxBgBody mb-10 md:mb-8">About Me</h1>
-        <h2 class="section-title-02  text-3xl md:text-4xl w-48 mx-auto before:w-6 md:before:w-10 md:right-0">About Me</h2>
+        <h2 class="section-title-02  text-3xl md:text-4xl w-48 text-portfolioTitle mx-auto before:w-6 md:before:w-10 md:right-0">About Me</h2>
       </div>
       
       <!-- Main About Container -->
@@ -293,44 +293,45 @@
         class="section-container pt-0 md:pt-16 pb-0 md:pb-24 space-x-0 md:mt-10 grid grid-cols-1 md:grid-cols-2 items-center gap-x-0 md:gap-x-12 gap-y-10 md:gap-y-0"
       >
       <!--================ About Image ==================-->
-      <div id="about-img" class="w-56  md:w-80 rounded-3xl justify-center bg-fxDarkTextPrimary mx-auto transition-all duration-700 hover:scale-105">
+      <div id="about-img" class="w-56  md:w-80 rounded-3xl justify-center about-img-bg mx-auto transition-all duration-700 hover:scale-105" data-aos="fade-up-right">
         <img src="img/img_cv_logo_clean.svg" alt="" class="rounded-3xl">
       </div>
 
       <!--================ About Complete Content ==================-->
-      <div id="about-content" class="space-x-0 md:space-y-6 max-w-full">
+      <div id="about-content" class="space-x-0 md:space-y-6 max-w-full" data-aos="fade-up-left">
          <!-- About Boxes Content -->
-        <div id="about-boxes" class="grid grid-cols-[200px] gap-y-10 md:grid-cols-[165px_165px] lg:grid-cols-[150px_150px_150px] gap-x-6 pb-8 border-b border-fxDarkTextPrimary justify-center transition-all duration-700">
+        <div id="about-boxes" class="grid grid-cols-[200px] gap-y-10 md:grid-cols-[165px_165px] lg:grid-cols-[150px_150px_150px] gap-x-6 pb-8 border-b-2 border-portfolioLineColor justify-center transition-all duration-700">
 
-            <div class="flex flex-col space-y-3 border-fxDarkTextPrimary bg-fxBgBody hover:bg-fxBgBodyDark border py-5 px-6 rounded-xl text-center about-box hover:border-fxDarkSocials transition-all duration-700 hover:-translate-y-2">
-              <i class='bx bx-award text-2xl text-fxRealDarkGray hover:text-fxDarkSocials transition-all duration-700'></i>
-              <h5 class="font-bold text-fxRealDarkGray hover:text-fxDarkSocials transition-all duration-700">Experience</h5> 
-              <small class=" md:w-28 text-fxDarkTextBlue text-xs text-center">8+ Years Working</small>
+            <div class="box-shadow flex flex-col space-y-3 border-portfolioBlue hover:border-portfolioBlueHover bg-portfolioWhiteBg hover:bg-portfolioGrayBg border py-5 px-6 rounded-xl text-center about-box transition duration-700 hover:-translate-y-0.5">
+              <i class='bx bx-award text-2xl text-portfolioBlue hover:text-portfolioBlueHover transition-all duration-700'></i>
+              <h5 class="font-bold text-portfolioBlue hover:text-portfolioBlueHover transition-all duration-700">Experience</h5> 
+              <small class=" md:w-28 text-portfolioGrayText text-xs text-center">8+ Years Working</small>
             </div>
 
-            <div class="flex flex-col space-y-3  border-fxDarkTextPrimary bg-fxBgBody  hover:bg-fxBgBodyDark border py-5 px-6 rounded-xl text-center about-box hover:border-fxDarkSocials transition-all duration-700 hover:-translate-y-2">
-              <i class='bx bx-briefcase-alt text-2xl text-fxRealDarkGray hover:text-fxDarkSocials transition-all duration-700'></i>
-              <h5 class="font-bold text-fxRealDarkGray hover:text-fxDarkSocials transition-all duration-700">Completed</h5> 
-              <small class="w-28 text-fxDarkTextBlue text-xs text-center">48+ Projects</small>
+            <div class="box-shadow flex flex-col space-y-3 border-portfolioBlue hover:border-portfolioBlueHover bg-portfolioWhiteBg hover:bg-portfolioGrayBg border py-5 px-6 rounded-xl text-center about-box transition duration-700 hover:-translate-y-0.5">
+              <i class='bx bx-briefcase-alt text-2xl text-portfolioBlue hover:text-portfolioBlueHover transition-all duration-700'></i>
+              <h5 class="font-bold text-portfolioBlue hover:text-portfolioBlueHover transition-all duration-700">Completed</h5> 
+              <small class="w-28 text-portfolioGrayText text-xs text-center">48+ Projects</small>
             </div>
 
-            <div class="flex flex-col space-y-3  border-fxDarkTextPrimary bg-fxBgBody hover:bg-fxBgBodyDark border py-5 px-6 rounded-xl text-center about-box hover:border-fxDarkSocials transition-all duration-700 hover:-translate-y-2">
-              <i class='bx bx-support text-2xl text-fxRealDarkGray hover:text-fxDarkSocials transition-all duration-700'></i>
-              <h5 class="font-bold text-fxRealDarkGray hover:text-fxDarkSocials transition-all duration-700">Support</h5> 
-              <small class="w-28 text-fxDarkTextBlue text-xs">Online 24/7</small>
+            <div class="box-shadow flex flex-col space-y-3 border-portfolioBlue hover:border-portfolioBlueHover bg-portfolioWhiteBg hover:bg-portfolioGrayBg border py-5 px-6 rounded-xl text-center about-box transition duration-700 hover:-translate-y-0.5">
+              <i class='bx bx-support text-2xl text-portfolioBlue hover:text-portfolioBlueHover transition-all duration-700'></i>
+              <h5 class="font-bold text-portfolioBlue hover:text-portfolioBlueHover transition-all duration-700">Support</h5> 
+              <small class="w-28 text-portfolioGrayText text-xs">Online 24/7</small>
             </div>
 
         </div>
 
-        <p class="text-justify text-lg lg:text-2xl leading-7 md:leading-8 mb-8">
+        <p class="text-justify text-md lg:text-xl leading-6 md:leading-7 mb-8 text-portfolioTextP">
           I like to <q><strong>keep it simple</strong></q> and this is the main reason that I like coding in <q><strong>GoLang</strong></q>. I focus a lot on crafting clean and testable code based on common design patterns. Am looking to develop go based applications with any mix of the technology listed In my skills section.
         </p>
 
         <div class="py-6 text-center md:text-left">
-          <a href="pdf/RESUME - FRANCOIS XAVIER OWONA.pdf" class="py-3 px-8 btn-hover rounded-full w-52 bg-fxOrange text-white hover:text-fxDarkSocials hover:scale-95 duration-500 text-xl font-medium mx-auto md:ml-0" download>
+          <a href="pdf/RESUME - FRANCOIS XAVIER OWONA.pdf" class="p-3 btn-hover transition border border-portfolioGreenBg hover:bg-portfolioGreenBg hover:text-portfolioWhiteBg rounded-[5px] w-52 mt-10 bg-transparent text-portfolioGreenBg duration-700 text-xl font-medium mx-auto md:ml-0" download>
             Download CV
             <i class="fa-solid fa-file-arrow-down" aria-hidden="true"></i>
         </a>
+
 
         </div>
         
@@ -344,10 +345,10 @@
 
     <!--================= Section Skills ==================================-->
     <!-- Skills Section -->
-    <section id="skills" class="bg-fxBgBody dark:bg-darkBlue1 pt-20">
-      <div class="mx-auto text-center pt-14 mb-0 section-title">
-        <h1 class="section-title-01  text-5xl md:text-7xl font-bold bg-fxBgBody dark:bg-fxBgBody mb-10 md:mb-8">Skills</h1>
-        <h2 class="section-title-02  text-3xl md:text-4xl w-48 mx-auto before:w-6 md:before:w-10 md:right-0">Skills</h2>
+    <section id="skills" class="bg-portfolioWhiteBg dark:bg-darkBlue1 pt-20">
+      <div class="mx-auto text-center pt-14 mb-0 section-title" data-aos="zoom-in-up">
+        <h1 class="section-title-01  text-5xl md:text-7xl font-bold bg-portfolioSectionTitle1 dark:bg-fxBgBody mb-10 md:mb-8">Skills</h1>
+        <h2 class="section-title-02  text-3xl md:text-4xl w-48 text-portfolioTitle mx-auto before:w-6 md:before:w-10 md:right-0">Skills</h2>
       </div>
       
       <!-- Main Skills Container -->
@@ -356,8 +357,8 @@
         class="section-container  grid grid-cols-1 lg:grid-cols-2 gap-y-14 gap-x-6 py-20"
       >
         <!-- Main Frontend Skills Container -->
-        <div class="skills_content">
-          <h3 class="text-fxDarkTextBlue skills_title text-base md:text-xl font-semibold font-jamjuree flex justify-center items-center gap-x-2 mb-10 ">
+        <div class="skills_content" data-aos="zoom-in-right">
+          <h3 class="text-portfolioTitle skills_title text-base md:text-xl font-semibold font-jamjuree flex justify-center items-center gap-x-2 mb-10 ">
             <i class="ri-braces-line text-base font-normal"></i>Frontend Developer
           </h3>
 
@@ -430,8 +431,8 @@
           </div>
 
           <!-- Main BackEnd Skills Container -->
-        <div class="skills_content">
-          <h3 class="text-fxDarkTextBlue skills_title text-base md:text-xl font-semibold font-jamjuree flex justify-center items-center gap-x-2 mb-10 ">
+        <div class="skills_content" data-aos="zoom-in-left">
+          <h3 class="text-portfolioTitle skills_title text-base md:text-xl font-semibold font-jamjuree flex justify-center items-center gap-x-2 mb-10 ">
             <i class="ri-share-forward-box-fill text-base font-normal"></i>
             <!-- <i class="ri-braces-line text-base font-normal"></i> -->
             Backend Developer
@@ -514,10 +515,10 @@
 
     <!--================= Section Work ==================================-->
     <!-- Work Section -->
-    <section id="work" class="bg-fxDarkGray dark:bg-darkBlue1 pt-20">
-      <div class="mx-auto text-center pt-14 mb-0 section-title">
-        <h1 class="section-title-01  text-5xl md:text-7xl font-bold bg-fxBgBody dark:bg-fxBgBody mb-10 md:mb-8">Work</h1>
-        <h2 class="section-title-02  text-3xl md:text-4xl w-48 mx-auto before:w-6 md:before:w-10 md:right-0">Work</h2>
+    <section id="work" class="bg-portfolioGrayBg dark:bg-darkBlue1 pt-20">
+      <div class="mx-auto text-center pt-14 mb-0 section-title" data-aos="zoom-in-up">
+        <h1 class="section-title-01  text-5xl md:text-7xl font-bold bg-portfolioSectionTitle1 dark:bg-fxBgBody mb-10 md:mb-8">Work</h1>
+        <h2 class="section-title-02  text-3xl md:text-4xl w-48 text-portfolioTitle mx-auto before:w-6 md:before:w-10 md:right-0">Work</h2>
       </div>
       
       <!-- Main Work Container -->
@@ -527,7 +528,7 @@
       >
 
       <!--========== Project 1 ==============-->
-      <div class="work-content">
+      <div class="work-content box-shadow p-6" data-aos="fade-up-right">
         <h3 class="work-content-title">Golang Clone</h3>
         <p class="work-content-text">For when you need a break from your partner but already got a babysitter. Now couples can go to different events in similar locations and at the same time. A group programming project with Can Rozanes, Irene Truong and Jamie Yeung.</p>
         <div class="work-content-socials">
@@ -549,12 +550,12 @@
         </div>
       </div>
 
-      <div class="work-image">
+      <div class="work-image" data-aos="fade-up-left">
         <img src="img/golang-clone-responsive.png" alt="">
       </div>
 
       <!--========== Project 2 ==============-->
-      <div class="work-content">
+      <div class="work-content box-shadow p-6" data-aos="fade-up-right">
         <h3 class="work-content-title">Portfolio Project</h3>
         <p class="work-content-text">For when you need a break from your partner but already got a babysitter. Now couples can go to different events in similar locations and at the same time. A group programming project with Can Rozanes, Irene Truong and Jamie Yeung.</p>
         <div class="work-content-socials">
@@ -576,12 +577,12 @@
         </div>
       </div>
 
-      <div class="work-image">
+      <div class="work-image" data-aos="fade-up-left">
         <img src="img/Final-responsive-portfolio.png" alt="">
       </div>
 
       <!--========== Project 3 ==============-->
-      <div class="work-content">
+      <div class="work-content box-shadow p-6" data-aos="fade-up-right">
         <h3 class="work-content-title">Golang Clone</h3>
         <p class="work-content-text">For when you need a break from your partner but already got a babysitter. Now couples can go to different events in similar locations and at the same time. A group programming project with Can Rozanes, Irene Truong and Jamie Yeung.</p>
         <div class="work-content-socials">
@@ -603,12 +604,12 @@
         </div>
       </div>
 
-      <div class="work-image">
+      <div class="work-image" data-aos="fade-up-left">
         <img src="img/golang-clone-responsive.png" alt="">
       </div>
 
       <!--========== Project 4 ==============-->
-      <div class="work-content">
+      <div class="work-content box-shadow p-6" data-aos="fade-up-right">
         <h3 class="work-content-title">Portfolio Project</h3>
         <p class="work-content-text">For when you need a break from your partner but already got a babysitter. Now couples can go to different events in similar locations and at the same time. A group programming project with Can Rozanes, Irene Truong and Jamie Yeung.</p>
         <div class="work-content-socials">
@@ -630,7 +631,7 @@
         </div>
       </div>
 
-      <div class="work-image">
+      <div class="work-image" data-aos="fade-up-left">
         <img src="img/Final-responsive-portfolio.png" alt="">
       </div>
 
@@ -640,39 +641,39 @@
 
     <!--================= Section Contact ==================================-->
     <!-- Skills Section -->
-    <section id="contact" class="bg-fxBgBody dark:bg-darkBlue1 pt-28 mb-28">
-      <div class="mx-auto text-center pt-14 mb-0 section-title">
-        <h1 class="section-title-01  text-5xl md:text-7xl font-bold bg-fxBgBody dark:bg-fxBgBody mb-10 md:mb-8">Contact</h1>
-        <h2 class="section-title-02  text-3xl md:text-4xl w-48 mx-auto before:w-6 md:before:w-10 md:right-0">Contact</h2>
+    <section id="contact" class="bg-portfolioWhiteBg dark:bg-darkBlue1 pt-28 mb-28">
+      <div class="mx-auto text-center pt-14 mb-0 section-title" data-aos="zoom-in-up">
+        <h1 class="section-title-01  text-5xl md:text-7xl font-bold bg-portfolioSectionTitle1 dark:bg-fxBgBody mb-10 md:mb-8">Contact</h1>
+        <h2 class="section-title-02  text-3xl md:text-4xl w-48 text-portfolioTitle mx-auto before:w-6 md:before:w-10 md:right-0">Contact</h2>
       </div>
       
       <!-- Main Contact Container -->
 
       <div
-        class="section-container  grid grid-cols-1 lg:grid-cols-2 gap-y-14 gap-x-6 py-20 contact-container rounded-xl bg-darkBlue"
+        class="section-container  grid grid-cols-1 lg:grid-cols-2 gap-y-14 gap-x-6 py-20 contact-container rounded-xl bg-portfolioFooterBg" data-aos="flip-up"
       >
       <div class="contact-container-content">
         
-        <h3 class="text-fxDarkGray text-2xl font-semibold py-10">Get In Touch</h3>
+        <h3 class="text-portfolioWhiteBg text-2xl font-semibold py-10">Get In Touch</h3>
 
         <div class="contact-container-description w-full gap-x-10 flex justify-center items-center py-2">
-          <i class="fa-brands fa-skype text-fxOrange"> </i> 
-          <span class="text-lg text-fxDarkTextPrimary">fxjonathan</span>
+          <i class="fa-brands fa-skype text-portfolioGreenBg"> </i> 
+          <span class="text-lg text-portfolioFooterTextColor hover:text-portfolioFooterTextColorHover">fxjonathan</span>
         </div>
         <div class="contact-container-description w-full gap-x-6 flex justify-center items-center py-2">
-          <i class="fas fa-map-marker-alt text-fxOrange"> </i> 
-          <span class="text-lg text-fxDarkTextPrimary">Metz - France</span>
+          <i class="fas fa-map-marker-alt text-portfolioGreenBg"> </i> 
+          <span class="text-lg text-portfolioFooterTextColor hover:text-portfolioFooterTextColorHover">Metz - France</span>
         </div>
         <div class="contact-container-description w-full gap-x-2 flex justify-center items-center py-2">
-          <i class="fas fa-phone text-fxOrange"> </i> 
-          <span class="text-lg text-fxDarkTextPrimary">+33649353760</span>
+          <i class="fas fa-phone text-portfolioGreenBg"> </i> 
+          <span class="text-lg text-portfolioFooterTextColor hover:text-portfolioFooterTextColorHover">+33649353760</span>
         </div>
         
         <div class="contact-container-description w-full gap-x-2 flex justify-center items-center py-2">
-          <i class="far fa-envelope-open text-fxOrange"> </i> 
-          <span class="text-lg text-fxDarkTextPrimary">francoisxavier.owona@owonafx.com</span>
+          <i class="far fa-envelope-open text-portfolioGreenBg"> </i> 
+          <span class="text-lg text-portfolioGrayDarkBg200">contact@owonafx.com</span>
         </div>
-        
+       
 
 
         <div class="contact-container-img flex justify-center items-center py-11 w-80 mx-auto">
@@ -688,7 +689,7 @@
                 <!-- Leave a Message</h3>  -->
               <!-- <h2 class="text-subtitle my-3 h2">Leave a Message</h2> -->
               <div class="contact-form py-10">
-                <h3 class="text-fxRealDarkGray text-2xl font-semibold pt-5 pb-10">Leave a Message</h3>
+                <h3 class="text-portfolioTitle text-2xl font-semibold pt-5 pb-10 bg-portfolioWhiteBg">Leave a Message</h3>
               <form name="contact" method="POST" netlify-honeypot="bot-field" data-netlify="true">
                 <input type="hidden" name="form-name" value="contact">
                 <p class="hidden">
@@ -724,11 +725,8 @@
 
                 <!-- <input type="submit" value="Send" class="btn btn-primary"> -->
                 <div class="flex justify-start">
-                  <button type="submit" class="p-2 btn-hover rounded-full w-36  mt-5 bg-fxRealDarkGray text-fxDarkGray hover:text-white hover:scale-95 duration-500 text-base font-medium mx-auto md:ml-0">Contact Me <i class="fa fa-paper-plane"></i></button>
-                  <!-- <button class="p-2 btn-hover rounded-full w-36  mt-5 bg-fxRealDarkGray text-fxDarkGray hover:text-white hover:scale-95 duration-500 text-base font-medium mx-auto md:ml-0">
-            Live Demo
-          <i class="fas fa-arrow-circle-right" aria-hidden="true"></i>
-        </button> -->
+                  <button type="submit" class="p-3 btn-hover transition border bg-portfolioGreenBg border-portfolioGreenBg hover:bg-portfolioWhiteBg hover:text-portfolioGreenBg rounded-[5px] w-52 mt-10 bg-transparent text-portfolioWhiteBg duration-700 text-xl font-medium mx-auto md:ml-0">Contact Me <i class="fa fa-paper-plane"></i></button>
+                  
                 </div>
               </form>
               </div>
@@ -740,40 +738,40 @@
 
     <!--========================== Footer Section =====================================-->
        <!-- Footer -->
-    <footer class="bg-darkBlue">
-      <div class="section-container py-24">
-        <div class="flex flex-col items-center justify-between md:flex-row mx-auto  place-items-center">
+    <footer class="bg-portfolioFooterBg">
+      <div class="section-container">
+        <div class="flex flex-col items-center justify-between md:flex-row mx-auto  place-items-center border-b border-portfolioFooterTextColor py-10">
           <!-- Image -->
-          <a href="#home">
+          <!-- <a href="#home">
           <img src="img/logo-dark-mode.png" alt=""  class="mb-8 md:mb-0" />
-          </a>
+          </a> -->
           <!-- Container for Menus & Social -->
           <div
-            class="flex flex-col items-center justify-between flex-1 mb-10 space-y-10 md:flex-row md:mb-0 md:space-y-0 text-fxDarkGray"
+            class="flex flex-col items-center justify-between flex-1 mb-10 space-y-10 md:flex-row md:mb-0 md:space-y-0 text-portfolioFooterTextColor"
           >
             <div
-              class="flex flex-col space-y-4 md:flex-row md:ml-24 md:space-x-24 md:space-y-0"
+              class="flex flex-col space-y-4 md:flex-row md:space-x-24 md:space-y-0"
             >
               <!-- Menu 1 -->
               <div class="flex flex-col space-y-4 text-center md:text-left">
-                <div><a href="#home" class="ficon duration-700 transition">Home</a></div>
+                <div><a href="#home" class="hover:text-portfolioFooterTextColorHover hover:underline font-semibold text-sm duration-700 transition">Home</a></div>
                 <div>
-                  <a href="#about" class="ficon duration-700 transition">About</a>
+                  <a href="#about" class="hover:text-portfolioFooterTextColorHover hover:underline font-semibold text-sm duration-700 transition">About</a>
                 </div>
               </div>
               <!-- Menu 2 -->
               <div class="flex flex-col space-y-4 text-center md:text-left">
                 <div>
-                  <a href="#skills" class="ficon duration-700 transition">Skills</a>
+                  <a href="#skills" class="hover:text-portfolioFooterTextColorHover hover:underline font-semibold text-sm duration-700 transition">Skills</a>
                 </div>
                 <div>
-                  <a href="#work" class="ficon duration-700 transition">Work</a>
+                  <a href="#work" class="hover:text-portfolioFooterTextColorHover hover:underline font-semibold text-sm duration-700 transition">Work</a>
                 </div>
               </div>
               <!-- Menu 3 -->
               <div class="flex flex-col space-y-4 text-center md:text-left">
                 <div>
-                  <a href="#contact" class="ficon duration-700 transition">Contact</a>
+                  <a href="#contact" class="hover:text-portfolioFooterTextColorHover hover:underline font-semibold text-sm duration-700 transition">Contact</a>
                 </div>
               </div>
             </div>
@@ -786,27 +784,36 @@
                 href="https://github.com/fxfrancky/"
                 target="_blank"
                 class="w-8 h-8 ficon duration-700 transition"
-                ><i class="uil uil-github text-fxDarkGray text-2xl"></i
+                ><i class="uil uil-github text-portfolioFooterTextColor text-2xl"></i
               ></a>
              <a
                 href="https://www.linkedin.com/in/francois-xavier-owona-63258531/"
                 target="_blank"
                 class="w-8 h-8 ficon duration-700 transition"
-                ><i class="uil uil-linkedin text-fxDarkGray text-2xl"></i
+                ><i class="uil uil-linkedin text-portfolioFooterTextColor text-2xl"></i
               ></a>
              <a
                 href="https://www.youtube.com/channel/UCt_8wpSh7_cva2AI7eaNVIw"
                 target="_blank"
                 class="w-8 h-8 ficon duration-700 transition"
-                ><i class="uil uil-youtube text-fxDarkGray text-2xl"></i
+                ><i class="uil uil-youtube text-portfolioFooterTextColor text-2xl"></i
               ></a>
                <a
                 href="skype:fxjonathan?call"
                 target="_blank"
                 class="w-8 h-8 ficon duration-700 transition"
-                ><i class="uil uil-skype text-fxDarkGray text-2xl"></i
+                ><i class="uil uil-skype text-portfolioFooterTextColor text-2xl"></i
               ></a>
           </div>
+        </div>
+
+        <div class="flex flex-col md:flex-row items-center justify-between py-10">
+          <!-- Image -->
+          <a href="#home">
+          <img src="img/logo-dark-mode.png" alt=""  class="mb-8 md:mb-0 logo-rotate" />
+          </a>
+          <span class="text-sm text-portfolioFooterTextColor hover:text-portfolioFooterTextColorHover font-semibold">Copyright © 2022 Xavier OWONA.</span>
+          <!-- <span class="text-base text-portfolioGrayDarkBg200">contact@owonafx.com</span> -->
         </div>
       </div>
     </footer>
@@ -828,16 +835,16 @@
     <script src="js/mobile-menu.js" defer></script>
     <script src="js/main.js" defer></script>
     <script src="https://code.iconify.design/iconify-icon/1.0.1/iconify-icon.min.js"></script>
-    <!-- Mouse JS -->
-    <script type="text/javascript" src="js/kursor.js"></script>
-    <script type="text/javascript">
-       var kursorx = new kursor({
-          type: 4,
-          // color: 'rgba(45, 161, 210)',
-          color: 'rgba(255, 87, 36)',
-         })
-    </script>
+    <!-- AOS Js JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
+    <script>
+      AOS.init({
+        offset: 400, // offset (in px) from the original trigger point
+        delay: 0, // values from 0 to 3000, with step 50ms
+        duration: 1000, // values from 0 to 3000, with step 50ms
+      });
+    </script>
    
   </body>
 </html>
