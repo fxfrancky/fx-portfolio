@@ -43,7 +43,7 @@ module.exports = {
         fxRealDark: "hsl(216, 17%, 12%)",
 
         portfolioWhiteBg: "hsl(0, 0%, 100%)",
-        portfolioGrayBg: "hsl(0, 0%, 98%)",
+        portfolioGrayBg: "hsl(0, 0%, 97%)",
         portfolioGreenBg: "hsl(158, 100%, 33%)",
         portfolioNavText: "hsl(240, 10%, 4%)",
         portfolioBlue: "hsl(198, 76%, 47%)",

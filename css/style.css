@@ -973,7 +973,7 @@ video {
 
 .bg-portfolioGrayBg{
   --tw-bg-opacity: 1;
-  background-color: hsl(0 0% 98% / var(--tw-bg-opacity));
+  background-color: hsl(0 0% 97% / var(--tw-bg-opacity));
 }
 
 .bg-fxDarkGray{
@@ -1224,14 +1224,14 @@ video {
   color: hsl(90 10% 4% / var(--tw-text-opacity));
 }
 
-.text-portfolioGreenBg{
-  --tw-text-opacity: 1;
-  color: hsl(158 100% 33% / var(--tw-text-opacity));
-}
-
 .text-portfolioBlue{
   --tw-text-opacity: 1;
   color: hsl(198 76% 47% / var(--tw-text-opacity));
+}
+
+.text-portfolioGreenBg{
+  --tw-text-opacity: 1;
+  color: hsl(158 100% 33% / var(--tw-text-opacity));
 }
 
 .text-portfolioTextP{
@@ -1259,14 +1259,14 @@ video {
   color: hsl(208 28% 78% / var(--tw-text-opacity));
 }
 
-.text-portfolioGrayDarkBg200{
-  --tw-text-opacity: 1;
-  color: hsl(0 0% 85% / var(--tw-text-opacity));
-}
-
 .text-fxRealDarkGray{
   --tw-text-opacity: 1;
   color: hsl(192 22% 51% / var(--tw-text-opacity));
+}
+
+.text-portfolioGrayDarkBg200{
+  --tw-text-opacity: 1;
+  color: hsl(0 0% 85% / var(--tw-text-opacity));
 }
 
 .transition-all{
@@ -1587,7 +1587,7 @@ textarea {
   border: 2px solid transparent;
   outline: none;
   /* background-color: hsl(191, 23%, 91%); */
-  background-color: hsl(0, 0%, 98%);
+  background-color: hsl(0, 0%, 97%);
   /* background-color: hsla(0, 0%, 90.2%, 0.6); */
   padding: 0.5rem 1rem;
   font-size: 1.1rem;
@@ -1682,7 +1682,7 @@ textarea {
 
 .hover\:bg-portfolioGrayBg:hover{
   --tw-bg-opacity: 1;
-  background-color: hsl(0 0% 98% / var(--tw-bg-opacity));
+  background-color: hsl(0 0% 97% / var(--tw-bg-opacity));
 }
 
 .hover\:bg-portfolioWhiteBg:hover{
@@ -2044,10 +2044,10 @@ textarea {
     height: 0px;
   }
 
-  .lg\:before\:bg-portfolioBlue::before{
+  .lg\:before\:bg-portfolioGreenBg::before{
     content: var(--tw-content);
     --tw-bg-opacity: 1;
-    background-color: hsl(198 76% 47% / var(--tw-bg-opacity));
+    background-color: hsl(158 100% 33% / var(--tw-bg-opacity));
   }
 }
 
