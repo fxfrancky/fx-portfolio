@@ -9,22 +9,13 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css"
     />
 
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css?family=Material+Icons"
-    />
-    <!-- ICONSCOUT CDN -->
-    <link
-      rel="stylesheet"
-      href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
-    />
-    <link rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
-
-  <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
     
-    <!-- AOS Animation On Scroll -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+   
+
+  
+    
+    
     <meta name="og:title" content="OWONA Francois Xavier" />
     <title>OWONA Francois Xavier</title>
     <meta
@@ -41,12 +32,14 @@
     <link rel="stylesheet" href="css/theme.css" />
     <link rel="stylesheet" href="css/menu.css" />
     <link rel="stylesheet" href="css/style.css" />
+    <!-- AOS Animation On Scroll -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico" />
    
   </head>
   <body class="dark:bg-darkBlue dark:text-white">
     <!--======================================== Navigation Container ============================================-->
-    <section id="nav-header" class="fixed w-full bg-portfolioWhiteBg hr dark:bg-darkBlue dark:text-white mb-0 z-50 items-center my-auto place-items-center">
+    <section id="nav-header" class="fixed w-full bg-portfolioWhiteBg hr dark:bg-darkBlue dark:text-white mb-0 z-40 items-center my-auto place-items-center">
     <div class="section-container max-w-6xl mx-auto">
         <!-- Menu/Logo Container -->
         <nav class="flex items-center place-items-center justify-between font-bold my-auto py-7" data-aos="fade-up">
@@ -114,19 +107,20 @@
           <div class="md:hidden">
              <button
                 id="menu-btn"
-                class="block hamburger md:hidden focus:outline-none mr-3 md:-mt-60 md:mr-5 z-50 -mt-20"
+                class="z-50 block hamburger md:hidden focus:outline-none my-auto mr-5"
+                
                 type="button"
               >
-                <span class="hamburger-top bg-fxTextHeader dark:bg-fxBgBody"></span>
-                <span class="hamburger-middle bg-fxTextHeader dark:bg-fxBgBody"></span>
-                <span class="hamburger-bottom bg-fxTextHeader dark:bg-fxBgBody"></span>
+                <span class="hamburger-top bg-portfolioBlue dark:bg-fxBgBody"></span>
+                <span class="hamburger-middle bg-portfolioBlue dark:bg-fxBgBody"></span>
+                <span class="hamburger-bottom bg-portfolioBlue dark:bg-fxBgBody"></span>
             </button>
           </div>
         </div>
         <!-- @todo - Mobile Menu -->
              <div
         id="menu"
-        class="absolute hidden p-6 rounded-lg bg-darkViolet left-6 right-6 top-10 z-100 md:hidden"
+        class="absolute top-0 bottom-0 left-0 hidden flex-col self-end w-full min-h-screen py-1 pt-40 pl-12 space-y-3 text-lg text-white uppercase bg-black md:hidden"
       >
         <div
           class="flex flex-col items-center justify-center w-full text-fxDarkTextBlue space-y-6 font-bold rounded-sm"
@@ -149,7 +143,8 @@
     <section id="home" class="pt-40">
       <!-- Hero Container -->
       <div
-        class="section-container my-0 flex flex-col-reverse lg:flex-row md:space-x-44"
+      class="section-container my-0 space-x-0 flex flex-col-reverse lg:flex-row lg:space-x-44"
+        
       >
         <!-- Content Container -->
         <div class="flex flex-col lg:mt-16 lg:w-1/2 mb-16" data-aos="fade-right">
@@ -431,7 +426,9 @@
           </div>
 
           <!-- Main BackEnd Skills Container -->
-        <div class="skills_content" data-aos="zoom-in-left">
+        <div class="skills_content" data-aos="zoom-in-left" data-aos="flip-left"
+     data-aos-easing="ease-out-cubic" data-aos-delay="150"
+     data-aos-duration="1500">
           <h3 class="text-portfolioTitle skills_title text-base md:text-xl font-semibold font-jamjuree flex justify-center items-center gap-x-2 mb-10 ">
             <i class="ri-share-forward-box-fill text-base font-normal"></i>
             <!-- <i class="ri-braces-line text-base font-normal"></i> -->
@@ -839,19 +836,20 @@
       integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
       crossorigin="anonymous"
     ></script>
-    <!-- Include js file -->
-    <script src="js/darkmode.js" defer></script>
-    <script src="js/mobile-menu.js" defer></script>
-    <script src="js/main.js" defer></script>
-    <script src="https://code.iconify.design/iconify-icon/1.0.1/iconify-icon.min.js"></script>
+        <script src="https://code.iconify.design/iconify-icon/1.0.1/iconify-icon.min.js"></script>
     <!-- AOS Js JS -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- Include js file -->
+    <script src="js/darkmode.js" ></script>
+    <script src="js/mobile-menu.js"></script>
+    <script src="js/main.js"></script>
 
+<!-- AOS Js JS -->
     <script>
       AOS.init({
         offset: 400, // offset (in px) from the original trigger point
-        delay: 0, // values from 0 to 3000, with step 50ms
-        duration: 700, // values from 0 to 3000, with step 50ms
+        delay: 50, // values from 0 to 3000, with step 50ms
+        duration: 800, // values from 0 to 3000, with step 50ms
       });
     </script>
    

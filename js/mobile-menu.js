@@ -13,12 +13,12 @@ function navToggle() {
   menu.classList.toggle("hidden");
 }
 
-(function ($) {
-  "use strict";
+// (function ($) {
+//   "use strict";
 
-  if (matchMedia("only screen and (max-width: 1024px)").matches) {
-    $(".menu li a").on("click", function () {
-      $(".sydney-offcanvas-menu").removeClass("toggled");
-    });
-  }
-})(jQuery);
+//   if (matchMedia("only screen and (max-width: 1024px)").matches) {
+//     $(".menu li a").on("click", function () {
+//       $(".sydney-offcanvas-menu").removeClass("toggled");
+//     });
+//   }
+// })(jQuery);
