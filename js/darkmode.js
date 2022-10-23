@@ -13,6 +13,12 @@ const themeToggleBtn = document.getElementById("theme-toggle");
 const themeToggleDarkIcon = document.getElementById("theme-toggle-dark-icon");
 const themeToggleLightIcon = document.getElementById("theme-toggle-light-icon");
 
+const themeToggleBtn2 = document.getElementById("theme-toggle2");
+const themeToggleDarkIcon2 = document.getElementById("theme-toggle-dark-icon2");
+const themeToggleLightIcon2 = document.getElementById(
+  "theme-toggle-light-icon2"
+);
+
 if (
   localStorage.getItem("color-theme") === "dark" ||
   (!("color-theme" in localStorage) &&
@@ -20,17 +26,22 @@ if (
 ) {
   // Show light icon
   themeToggleLightIcon.classList.remove("hidden");
+  themeToggleLightIcon2.classList.remove("hidden");
 } else {
   themeToggleDarkIcon.classList.remove("hidden");
+  themeToggleDarkIcon2.classList.remove("hidden");
 }
 
 // Listen for toggle button click
 themeToggleBtn.addEventListener("click", toggleMode);
+themeToggleBtn2.addEventListener("click", toggleMode);
 
 function toggleMode() {
   // Toggle icon
   themeToggleDarkIcon.classList.toggle("hidden");
   themeToggleLightIcon.classList.toggle("hidden");
+  themeToggleDarkIcon2.classList.toggle("hidden");
+  themeToggleLightIcon2.classList.toggle("hidden");
 
   // If is set in localstorage
   if (localStorage.getItem("color-theme")) {

@@ -4,10 +4,15 @@ module.exports = {
   darkMode: "class",
   theme: {
     screens: {
-      sm: "480px",
+      // sm: "480px",
+      // md: "768px",
+      // lg: "976px",
+      // xl: "1440px",
+      sm: "640px",
       md: "768px",
-      lg: "976px",
-      xl: "1440px",
+      lg: "1024px",
+      xl: "1280px",
+      "2xl": "1536px",
     },
     extend: {
       colors: {
@@ -69,7 +74,7 @@ module.exports = {
       },
       backgroundImage: (theme) => ({
         "logo-dark-mode": "url('../img/logo-dark-mode.png')",
-        "logo-light-mode": "url('../img/logo-light-mode1.svg')",
+        "logo-light-mode": "url('../img/logo-light-mode3.png')",
         "curvy-dark-mode": "url('../img/bg-curvy-dark-mode.svg')",
         "curvy-light-mode": "url('../img/bg-curvy-light-mode.svg')",
       }),

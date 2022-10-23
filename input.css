@@ -9,7 +9,7 @@ font-family: 'Poppins', sans-serif; */
 @tailwind utilities;
 
 .section-container {
-  @apply max-w-6xl mx-auto text-center px-10;
+  @apply max-w-6xl mx-auto text-center;
 }
 
 .logo-rotate {
@@ -46,7 +46,7 @@ font-family: 'Poppins', sans-serif; */
   display: block;
   height: 220px;
   width: 100%;
-  min-width: 600px;
+  /* min-width: 600px; */
   transform-origin: top;
   -webkit-animation: animateWave 2000ms cubic-bezier(0.23, 1, 0.32, 1) forwards;
   animation: animateWave 2000ms cubic-bezier(0.23, 1, 0.32, 1) forwards;
@@ -161,10 +161,10 @@ font-family: 'Poppins', sans-serif; */
 }
 
 .work-content-socials {
-  @apply flex flex-row gap-x-8 place-content-center;
+  @apply flex flex-row gap-x-4 md:gap-x-8 place-content-center;
 }
 .work-content-socials img {
-  @apply w-8;
+  @apply w-6 md:w-8;
 }
 
 .work-image img {
@@ -222,4 +222,34 @@ textarea {
   background-color: #fff;
   box-shadow: 0 0 20px -2px hsl(208, 34%, 20%);
   border-radius: 12px;
+}
+
+#navbar .nav-items li {
+  margin: 0 1rem;
+}
+
+#navbar .nav-items li a {
+  text-decoration: none;
+  /* color: ; */
+  cursor: pointer;
+}
+
+#nav-header.scrolledy {
+  /* position: fixed; */
+  height: 7rem;
+  background-color: hsl(0, 0%, 95%);
+  transition: all 0.5s ease-in-out;
+  z-index: 100;
+  border-bottom: 0.1rem solid hsl(0, 0%, 80%);
+  box-shadow: 0 0.2rem 0.2rem hsla(0, 0%, 0%, 0.3);
+}
+
+#navbar .logo {
+  width: 5rem;
+  margin-left: 5rem;
+  z-index: 100;
+}
+
+#navbar .logo a {
+  width: 100%;
 }
