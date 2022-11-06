@@ -29,26 +29,18 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="shortcut icon" type="image/x-icon" href="img/favicon7.ico" />
   </head>
-  <!-- <body class="dark:bg-darkBlue dark:text-white"> -->
   <body>
     <!-- Header -->
-    <!-- Home Section -->
-    <section
-      id="home"
-      class="bg-portfolioBlueBackGroundColor text-portfolioPrimaryText z-100"
-    >
-      <!-- Home Container -->
-      <div class="container mx-auto px-6 py-12 overflow-hidden">
-        <!-- Menu/Logo Container -->
-        <nav id="navbar" class="container max-w-6xl mx-auto flex items-center justify-between font-bold">
-          <!-- Logo -->
+    <header id="nav-header" class="container px-0 lg:max-w-full fixed z-[100]">
+      <div class="container max-w-6xl mx-auto px-10 xl:px-0">
+        <nav id="navbar" class="h-28 flex justify-between items-center">
+ <!-- Logo -->
           <!-- Logo -->
           <a
             href="#home"
             class="bg-logo-light-mode dark:bg-logo-dark-mode bg-no-repeat w-16 h-14 logo-rotate"
           ></a>
           <!-- Menu -->
-          <!-- <div class="hidden h-10 font-alata md:flex md:space-x-8"> -->
           <ul class="hidden h-10 font-alata lg:flex md:space-x-8">
             <li>
               <a
@@ -101,12 +93,13 @@
             <span class="line line2"></span>
             <span class="line line3"></span>
           </div>
+        
         </nav>
 
-        <!-- @todo Mobile Menu -->
+          <!-- @todo Mobile Menu -->
         <div
           id="menu-mobile"
-          class="container hidden rounded-lg py-24 z-50 w-3/4 mx-auto bg-portfolioNavBgColor lg:hidden"
+          class="container hidden rounded-lg py-24 z-50 w-3/4 mx-auto bg-portfolioBackgroundCard lg:hidden"
         >
           <div
             class="flex flex-col items-center justify-center space-y-8 font-bold text-portfolioPrimaryText rounded-sm"
@@ -121,15 +114,17 @@
           </div>
         </div>
       </div>
-    </section>
+    </header>
 
+
+  
     <!-- END HEADER -->
 
     <!--================= Section home ==================================-->
     <!-- Home Section -->
     <section
-      id="hero"
-      class="bg-portfolioBlueBackGroundColor dark:bg-darkBlue1 pt-20 overflow-hidden"
+      id="home"
+      class="bg-portfolioBlueBackGroundColor dark:bg-darkBlue1 pt-40 overflow-hidden"
     >
       <!-- Main Home Container -->
       <div

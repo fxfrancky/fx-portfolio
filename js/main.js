@@ -11,6 +11,7 @@
 // });
 
 window.addEventListener("scroll", function () {
-  let navBar = document.getElementById("navbar");
+  // let navBar = document.getElementById("navbar");
+  let navBar = document.getElementById("nav-header");
   navBar.classList.toggle("scrolledy", this.window.scrollY > 0);
 });
