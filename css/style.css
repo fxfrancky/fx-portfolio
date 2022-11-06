@@ -1039,14 +1039,19 @@ video {
   background-color: hsl(0 0% 100% / var(--tw-bg-opacity));
 }
 
-.bg-portfolioNavBgColor{
+.bg-portfolioBackgroundCard{
   --tw-bg-opacity: 1;
-  background-color: hsl(214 32% 91% / var(--tw-bg-opacity));
+  background-color: hsl(205 100% 94% / var(--tw-bg-opacity));
 }
 
 .bg-portfolioBlueBackGroundColor{
   --tw-bg-opacity: 1;
   background-color: hsl(210 75% 97% / var(--tw-bg-opacity));
+}
+
+.bg-portfolioNavBgColor{
+  --tw-bg-opacity: 1;
+  background-color: hsl(214 32% 91% / var(--tw-bg-opacity));
 }
 
 .bg-portfolioLigthBlueBackGroundColor{
@@ -1096,21 +1101,6 @@ video {
 .bg-portfolioSectionTitle1{
   --tw-bg-opacity: 1;
   background-color: hsl(192 24% 96% / var(--tw-bg-opacity));
-}
-
-.bg-portfolioMenuColor{
-  --tw-bg-opacity: 1;
-  background-color: hsl(166 81% 96% / var(--tw-bg-opacity));
-}
-
-.bg-portfolioTextcolorCard{
-  --tw-bg-opacity: 1;
-  background-color: hsl(214 94% 43% / var(--tw-bg-opacity));
-}
-
-.bg-portfolioBackgroundCard{
-  --tw-bg-opacity: 1;
-  background-color: hsl(205 100% 94% / var(--tw-bg-opacity));
 }
 
 .bg-logo-light-mode{
@@ -1727,7 +1717,7 @@ textarea {
 }
 
 .contact-form {
-  width: auto;
+  /* width: auto; */
   box-shadow: 0 0 2px 1px #fff;
   display: flex;
   color: hsl(90, 10%, 4%);

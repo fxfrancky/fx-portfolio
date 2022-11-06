@@ -191,7 +191,7 @@ textarea {
 }
 
 .contact-form {
-  width: auto;
+  /* width: auto; */
   box-shadow: 0 0 2px 1px #fff;
   display: flex;
   color: hsl(90, 10%, 4%);
