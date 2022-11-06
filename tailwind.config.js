@@ -1,19 +1,34 @@
 /** @type {import('tailwindcss').Config} */
+// const defaultTheme = require("tailwindcss/defaultTheme");
+
 module.exports = {
   content: ["./*.html"],
   darkMode: "class",
   theme: {
     screens: {
-      // sm: "480px",
-      // md: "768px",
-      // lg: "976px",
-      // xl: "1440px",
-      sm: "640px",
+      // xs: "320px",
+      sm: "480px",
       md: "768px",
       lg: "1024px",
       xl: "1280px",
       "2xl": "1536px",
+      // xs: "320px",
+      // sm: "480px",
+      // ...defaultTheme.screens,
     },
+    // screens: {
+    //   // sm: "480px",
+    //   // md: "768px",
+    //   // lg: "976px",
+    //   // xl: "1440px",
+
+    //   sm: "320px",
+    //   md: "480px",
+    //   lg: "760px",
+    //   xl: "960px",
+    //   "2xl": "1200px",
+    //   "3xl": "1600px",
+    // },
     extend: {
       colors: {
         darkBlue: "hsl(217, 28%, 15%)",
@@ -64,6 +79,21 @@ module.exports = {
         portfolioFooterBg: "hsl(208, 34%, 20%)",
         portfolioFooterTextColor: "hsl(208, 28%, 78%)",
         portfolioFooterTextColorHover: "hsl(146, 50%, 81%)",
+        portfolioGreenText: "hsl(167, 92%, 29%)",
+        portfolioPrimaryText: "hsl(220, 54%, 20%)",
+        portfolioSecondaryText: "hsl(220, 30%, 39%)",
+        portfolioBlueText: "hsl(215, 91%, 50%)",
+        portfolioBlueTextHover: "hsl(214, 87%, 40%)",
+        portfolioBlueBackGroundColor: "hsl(210, 75%, 97%)",
+        // portfolioLigthBlueBackGroundColor: "hsl(209, 87%, 94%)",
+        portfolioLigthBlueBackGroundColor: "hsl(210, 100%, 91%)",
+        portfolioLigthBlueBackGroundHoverColor: "hsl(209, 87%, 94%)",
+        portfolioNavColor: "hsl(220, 30%, 39%)",
+        portfolioNavBgColor: "hsl(214, 32%, 91%)",
+        // portfolioNavColorHover: "hsl(220, 30%, 50%)",
+        portfolioNavColorHover: "hsl(221, 25%, 60%)",
+        portfolioBackgroundCard: "hsl(205, 100%, 94%)",
+        portfolioTextcolorCard: "hsl(214, 94%, 43%)",
       },
       fontFamily: {
         sans: ["Josefin Sans", "sans-serif"],
@@ -74,7 +104,7 @@ module.exports = {
       },
       backgroundImage: (theme) => ({
         "logo-dark-mode": "url('../img/logo-dark-mode.png')",
-        "logo-light-mode": "url('../img/logo-light-mode3.png')",
+        "logo-light-mode": "url('../img/logo-light-mode10.png')",
         "curvy-dark-mode": "url('../img/bg-curvy-dark-mode.svg')",
         "curvy-light-mode": "url('../img/bg-curvy-light-mode.svg')",
       }),

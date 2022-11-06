@@ -225,25 +225,16 @@ p {
   word-spacing: 1px;
 }
 
-/* .btn-hover:hover {
-  box-shadow: 0 0.3rem 0.3rem rgba(0, 0, 0, 0.4);
-  /* color: rgb(58, 189, 212); */
-/* color: hsl(220, 6%, 91%); */
-/* fxBgBody: "hsl(0, 0%, 96%)", */
-/* hsl(220, 6%, 90%) */
-/* color: rgb(45, 161, 210); */
-/* color: hsl(210, 22%, 96%); */
-/* }  */
-
 /* Section Title */
 .section-title-01 {
   /* font-size: 4.5rem; */
   font-weight: 700;
   margin-bottom: 2rem;
-  background: linear-gradient(to top, transparent 0%, hsl(198, 28%, 25%) 50%);
+  /* background: linear-gradient(to top, transparent 0%, hsl(198, 28%, 25%) 50%); */
+  background: linear-gradient(to top, transparent 0%, hsl(215, 91%, 25%) 50%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  opacity: 0.1;
+  opacity: 0.15;
 }
 
 .section-title-02 {
@@ -259,10 +250,12 @@ p {
   /* right: 0; */
   /* left: -10; */
   bottom: -0.65rem;
-  background-color: hsl(158, 100%, 33%);
+  /* background-color: hsl(158, 100%, 33%); */
+  /* background-color: hsl(215, 91%, 50%); */
+  background-color: hsl(167, 92%, 29%);
   /* background-color: hsl(198, 76%, 47%); */
   /* color: rgb(17, 146, 238); */
-  color: hsl(0, 0%, 39%);
+  /* color: hsl(0, 0%, 39%); */
 }
 
 /* Nav class on scroll */
@@ -270,8 +263,30 @@ p {
   /* background: hsl(150, 9%, 85%); */
   /* background: hsla(191, 23%, 91%, 0.95) !important; */
   border-bottom: 0.1rem solid hsl(0, 0%, 80%);
-  box-shadow: 0 0.2rem 0.2rem hsla(0, 0%, 0%, 0.3);
+  /* box-shadow: 0 0.2rem 0.2rem hsla(0, 0%, 0%, 0.3); */
+  /* box-shadow: 0 4px 15px 0 rgba(13, 90, 191, 0.08), */
+  box-shadow: 0 0 0 3px rgba(66, 153, 225, 0.6);
 }
+
+/* .css-1m3z3gb {
+  width: 100%;
+  margin-inline: auto;
+  max-width: 100%;
+  padding-inline-start: var(--chakra-space-space-24);
+  padding-inline-end: var(--chakra-space-space-24);
+  display: flex;
+  flex-direction: column;
+  -webkit-box-align: center;
+  align-items: center;
+  background-color: var(--chakra-colors-white);
+  position: sticky;
+  transition-property: background-color, box-shadow;
+  transition-duration: 0.3s;
+  transition-timing-function: var(--chakra-transition-easing-ease-out);
+  box-shadow: var(--chakra-shadows-sm-light);
+  top: 0px;
+  z-index: var(--chakra-zIndices-navbar);
+} */
 
 /* Colors for svg gradient */
 .color1 {
@@ -554,4 +569,21 @@ p {
   /* background: hsl(0, 0%, 42%); */
   /* background: hsl(0, 0%, 62%); */
   background: hsl(192, 22%, 51%);
+  /* color: #068e71; */
+  color: hsl(220, 54%, 20%);
+  color: hsl(220, 30%, 39%);
+  color: hsl(215, 91%, 50%);
+  color: hsl(210, 75%, 97%);
+  color: #0b6cf4;
+  color: #ecfdf9;
+  color: #ecfdf9;
+  color: #e2f0fd;
+  color: #e2f0fd;
+  color: hsl(210, 100%, 91%);
+  color: #465a81;
+  color: hsl(221, 25%, 60%);
+  color: hsl(214, 32%, 91%);
+  color: hsl(214, 87%, 40%);
+  color: hsl(205, 100%, 94%);
+  color: hsl(214, 94%, 43%);
 }

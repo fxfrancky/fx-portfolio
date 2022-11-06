@@ -27,113 +27,164 @@
     <link rel="stylesheet" href="css/style.css" />
     <!-- AOS Animation On Scroll -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-    <link rel="shortcut icon" type="image/x-icon" href="img/favicon7.ico" />
+    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico" />
   </head>
-  <!-- <body class="dark:bg-darkBlue dark:text-white"> -->
-  <body>
+  <body class="dark:bg-darkBlue dark:text-white">
     <!-- Header -->
-    <!-- Home Section -->
-    <section
-      id="home"
-      class="bg-portfolioBlueBackGroundColor text-portfolioPrimaryText z-100"
-    >
-      <!-- Home Container -->
-      <div class="container mx-auto px-6 py-12">
-        <!-- Menu/Logo Container -->
-        <nav id="navbar" class="container max-w-6xl mx-auto flex items-center justify-between font-bold">
-          <!-- Logo -->
+    <header id="nav-header" class="container px-0 lg:max-w-full fixed z-[100]">
+      <div class="section-container max-w-6xl mx-auto px-10 xl:px-0">
+        <nav id="navbar" class="h-28 flex justify-between items-center">
           <!-- Logo -->
           <a
             href="#home"
             class="bg-logo-light-mode dark:bg-logo-dark-mode bg-no-repeat w-16 h-14 logo-rotate"
           ></a>
-          <!-- Menu -->
-          <!-- <div class="hidden h-10 font-alata md:flex md:space-x-8"> -->
-          <ul class="hidden h-10 font-alata lg:flex md:space-x-8">
+
+          <!-- Hamburger -->
+          <input type="checkbox" class="checkbox" id="checkbox-theme" />
+          <!-- Dark/Light Mode Button -->
+          <div class="checkbox-theme hidden md:flex md:group my-auto lg:hidden">
+            <button
+              id="theme-toggle2"
+              class="text-fxDarkBlue dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 duration-500 hover:scale-125 focus:outline-none focus:right-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-2 5 lg:hidden"
+            >
+              <!-- Dark SVG Icon -->
+              <svg
+                id="theme-toggle-dark-icon2"
+                class="w-5 h-5 hidden"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"
+                ></path>
+              </svg>
+              <!-- Light SVG Icon -->
+              <svg
+                id="theme-toggle-light-icon2"
+                class="w-5 h-5 hidden"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z"
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                ></path>
+              </svg>
+            </button>
+          </div>
+          <div class="hamburger-lines lg:hidden">
+            <span class="line line1"></span>
+            <span class="line line2"></span>
+            <span class="line line3"></span>
+          </div>
+
+          <ul class="nav-items list-none hidden lg:flex">
             <li>
               <a
                 href="#home"
-                class="transition duration-500 font-medium text-base md:text-lg lg:text-xl text-portfolioPrimaryText hover:text-portfolioBlueText dark:text-white"
+                class="transition duration-500 font-medium text-base md:text-lg lg:text-xl text-portfolioNavText hover:text-portfolioBlue dark:text-white"
                 >Home</a
               >
             </li>
             <li>
               <a
                 href="#about"
-                class="transition duration-500 font-medium text-base md:text-lg lg:text-xl text-portfolioPrimaryText hover:text-portfolioBlueText dark:text-white"
+                class="transition duration-500 font-medium text-base md:text-lg lg:text-xl text-portfolioNavText hover:text-portfolioBlue dark:text-white"
                 >About</a
               >
             </li>
             <li>
               <a
                 href="#skills"
-                class="transition duration-500 font-medium text-base md:text-lg lg:text-xl text-portfolioPrimaryText hover:text-portfolioBlueText dark:text-white"
+                class="transition duration-500 font-medium text-base md:text-lg lg:text-xl text-portfolioNavText hover:text-portfolioBlue dark:text-white"
                 >Skills</a
               >
             </li>
             <li>
               <a
                 href="#work"
-                class="transition duration-500 font-medium text-base md:text-lg lg:text-xl text-portfolioPrimaryText hover:text-portfolioBlueText dark:text-white"
+                class="transition duration-500 font-medium text-base md:text-lg lg:text-xl text-portfolioNavText hover:text-portfolioBlue dark:text-white"
                 >Work</a
               >
             </li>
             <li>
               <a
                 href="#contact"
-                class="transition duration-500 font-medium text-base md:text-lg lg:text-xl text-portfolioPrimaryText hover:text-portfolioBlueText dark:text-white"
+                class="transition duration-500 font-medium text-base md:text-lg lg:text-xl text-portfolioNavText hover:text-portfolioBlue dark:text-white"
                 >Contact</a
               >
             </li>
-
+            <li>
+              <a
+                ><!-- Dark/Light Mode Button -->
+                <div class="hidden md:flex md:group my-auto">
+                  <button
+                    id="theme-toggle"
+                    class="text-fxDarkBlue dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 duration-500 hover:scale-125 focus:outline-none focus:right-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-2 5"
+                  >
+                    <!-- Dark SVG Icon -->
+                    <svg
+                      id="theme-toggle-dark-icon"
+                      class="w-5 h-5 hidden"
+                      fill="currentColor"
+                      viewBox="0 0 20 20"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"
+                      ></path>
+                    </svg>
+                    <!-- Light SVG Icon -->
+                    <svg
+                      id="theme-toggle-light-icon"
+                      class="w-5 h-5 hidden"
+                      fill="currentColor"
+                      viewBox="0 0 20 20"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z"
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                      ></path>
+                    </svg>
+                  </button></div
+              ></a>
+            </li>
           </ul>
-          <!-- </div> -->
-          <!-- @todo Hamburger Button -->
-          <!-- Hamburger -->
-          <input
-            type="checkbox"
-            class="checkbox lg:hidden"
-            id="checkbox-theme"
-          />
-
-          <div class="hamburger-lines lg:hidden">
-            <span class="line line1"></span>
-            <span class="line line2"></span>
-            <span class="line line3"></span>
-          </div>
         </nav>
-
         <!-- @todo Mobile Menu -->
         <div
           id="menu-mobile"
-          class="container hidden rounded-lg py-24 z-50 w-3/4 mx-auto bg-portfolioNavBgColor lg:hidden"
+          class="container hidden left-10 rounded-lg right-10 py-20 z-100 bg-portfolioGreenBg lg:hidden"
         >
           <div
-            class="flex flex-col items-center justify-center space-y-8 font-bold text-portfolioPrimaryText rounded-sm"
+            class="flex flex-col items-center justify-center w-full space-y-6 font-bold text-white rounded-sm"
           >
-            <ul class="space-y-6">
-              <li><a href="#home" class="w-full text-center">Home</a></li>
-              <li><a href="#about" class="w-full text-center">About</a></li>
-              <li><a href="#skills" class="w-full text-center">Skills</a></li>
-              <li><a href="#work" class="w-full text-center">Work</a></li>
-              <li><a href="#contact" class="w-full text-center">Contact</a></li>
-            </ul>
+            <a href="#home" class="w-full text-center">Home</a>
+            <a href="#about" class="w-full text-center">About</a>
+            <a href="#skills" class="w-full text-center">Skills</a>
+            <a href="#work" class="w-full text-center">Work</a>
+            <a href="#contact" class="w-full text-center">Contact</a>
           </div>
         </div>
       </div>
-    </section>
-
+    </header>
     <!-- END HEADER -->
 
     <!--================= Section home ==================================-->
     <!-- Home Section -->
     <section
-      id="hero"
-      class="bg-portfolioBlueBackGroundColor dark:bg-darkBlue1 pt-20"
+      id="home"
+      class="bg-portfolioWhiteBg dark:bg-darkBlue1 pt-40 lg:pt-20"
     >
-      <!-- Main Home Container -->
+      <!-- Main About Container -->
       <div
-        class="container max-w-6xl mx-auto px-10 grid grid-cols-1 lg:grid-cols-2 gap-x-0 lg:gap-x-28 gap-y-10 lg:gap-y-0"
+        class="section-container px-10 pt-0 md:pt-16 pb-0 md:pb-0 md:mt-10 grid grid-cols-1 lg:grid-cols-2 gap-x-0 lg:gap-x-28 gap-y-10 lg:gap-y-0"
       >
         <!--================ Home Complete Content ==================-->
         <div
@@ -142,32 +193,30 @@
           data-aos-delay="25"
           data-aos-offset="0"
         >
-          <h3
-            class="hidden lg:block home-subtitle text-base strokeThis mb-8 before:absolute md:before:w-8 xl:before:w-8 lg:before:h-0.5 lg:before:bg-portfolioGreenText lg:before:left-0 lg:before:top-3"
-          >
-            Full Stack Developer
-          </h3>
-
           <div>
             <div
-              class="flex flex-row w-full space-x-0 space-y-0 text-3xl font-bold text-center lg:text-4xl md:text-left text-portfolioPrimaryText dark:text-fxBgBody mb-8"
+              class="flex flex-row w-full space-x-0 space-y-0 text-3xl font-bold text-center lg:text-4xl md:text-left text-portfolioTitle dark:text-fxBgBody mb-8"
             >
               Xavier
               <span
-                class="text-portfolioBlueText dark:text-portfolioGreenBg ml-2 mr-2"
+                class="text-portfolioBlue dark:text-portfolioGreenBg ml-2 mr-2"
                 >OWONA.
               </span>
               <a
                 href="#"
-                class="w-full mx-auto my-auto hover:-translate-y-3 transition-all duration-700 hover:scale-125"
+                class="w-full mx-auto my-auto hover:-translate-y-3 transition-all duration-700 hover:scale-110"
               >
                 <img src="img/hand.svg" alt="" class="home_hand" />
               </a>
             </div>
           </div>
-
+          <h3
+            class="hidden lg:block home-subtitle text-base text-portfolioGreenBg mb-8 before:absolute md:before:w-10 xl:before:w-16 lg:before:h-0.5 lg:before:bg-portfolioGreenBg lg:before:left-0 lg:before:top-3"
+          >
+            Full Stack Developer
+          </h3>
           <p
-            class="text-lg lg:text-xl text-justify text-portfolioSecondaryText lg:text-left md:max-w-2xl md:leading-7 leading-6 dark:text-fxBgBodyDark"
+            class="text-lg lg:text-xl text-justify text-portfolioTextP lg:text-left md:max-w-2xl md:leading-7 leading-6 dark:text-fxBgBodyDark"
           >
             Creative
             <span class="font-semibold">Full Stack Golang Developer</span>
@@ -177,60 +226,56 @@
           </p>
 
           <!-- SOCIALS MEDIA ICONS -->
-          <div class="mx-auto md:ml-2">
-            <ul class="flex space-x-6 my-10">
-              <li>
-                <a
-                  href="https://github.com/fxfrancky/"
-                  target="_blank"
-                  class="grid items-center justify-center"
-                  ><i
-                    class="fa-brands fa-github text-2xl text-portfolioNavColor hover:scale-110 duration-400 p-2 rounded-md bg-portfolioNavBgColor hover:bg-white"
-                  ></i
-                ></a>
-              </li>
-              <li>
-                <a
-                  href="https://www.linkedin.com/in/francois-xavier-owona-63258531/"
-                  target="_blank"
-                  class="grid items-center justify-center"
-                  ><i
-                    class="fa-brands fa-linkedin text-2xl text-portfolioNavColor hover:scale-110 duration-400 p-2 rounded-md bg-portfolioNavBgColor hover:bg-white"
-                  ></i
-                ></a>
-              </li>
-              <li>
-                <a
-                  href="https://www.youtube.com/channel/UCt_8wpSh7_cva2AI7eaNVIw"
-                  target="_blank"
-                  class="grid items-center justify-center"
-                  ><i
-                    class="fa-brands fa-youtube text-2xl text-portfolioNavColor hover:scale-110 duration-400 p-2 rounded-md bg-portfolioNavBgColor hover:bg-white"
-                  ></i
-                ></a>
-              </li>
-              <li>
-                <a
-                  href="skype:fxjonathan?call"
-                  target="_blank"
-                  class="grid items-center justify-center"
-                  ><i
-                    class="fa fa-skype text-2xl text-portfolioNavColor hover:scale-110 duration-400 p-2 rounded-md bg-portfolioNavBgColor hover:bg-white"
-                  ></i
-                ></a>
-              </li>
-            </ul>
-            <a
-              href="mailto:contact@owonafx.com"
-              class="group px-6 py-3 btn-hover transition text-center md:justify-start bg-portfolioLigthBlueBackGroundColor hover:bg-portfolioLigthBlueBackGroundHoverColor rounded-full w-64 md:w-72 mt-10 text-portfolioBlueText duration-700 text-xl font-medium mx-auto"
-            >
-              Contact Me
-              <i
-                class="fas fa-arrow-circle-right ml-2 group-hover:ml-4 duration-700 transition"
-                aria-hidden="true"
-              ></i>
-            </a>
-          </div>
+          <ul class="flex justify-center md:justify-start space-x-6 mt-8">
+            <li>
+              <a
+                href="https://github.com/fxfrancky/"
+                target="_blank"
+                class="grid items-center justify-center"
+                ><i
+                  class="fa-brands fa-github text-portfolioBlue text-2xl hover:text-portfolioBlueHover hover:scale-110 duration-400"
+                ></i
+              ></a>
+            </li>
+            <li>
+              <a
+                href="https://www.linkedin.com/in/francois-xavier-owona-63258531/"
+                target="_blank"
+                class="grid items-center justify-center"
+                ><i
+                  class="fa-brands fa-linkedin text-portfolioBlue text-2xl hover:text-portfolioBlueHover hover:scale-110 duration-400"
+                ></i
+              ></a>
+            </li>
+            <li>
+              <a
+                href="https://www.youtube.com/channel/UCt_8wpSh7_cva2AI7eaNVIw"
+                target="_blank"
+                class="grid items-center justify-center"
+                ><i
+                  class="fa-brands fa-youtube text-portfolioBlue text-2xl hover:text-portfolioBlueHover hover:scale-110 duration-400"
+                ></i
+              ></a>
+            </li>
+            <li>
+              <a
+                href="skype:fxjonathan?call"
+                target="_blank"
+                class="grid items-center justify-center"
+                ><i
+                  class="fa fa-skype text-portfolioBlue text-2xl hover:text-portfolioBlueHover hover:scale-110 duration-400"
+                ></i
+              ></a>
+            </li>
+          </ul>
+
+          <a
+            href="mailto:contact@owonafx.com"
+            class="p-3 btn-hover transition border border-portfolioGreenBg hover:bg-portfolioGreenBg hover:text-portfolioWhiteBg rounded-[5px] w-52 mt-10 bg-transparent text-portfolioGreenBg duration-700 text-xl font-medium mx-auto md:ml-0"
+          >
+            Contact Me
+            <i class="fas fa-arrow-circle-right" aria-hidden="true"></i>
+          </a>
         </div>
 
         <!--================ Home Image ==================-->
@@ -247,6 +292,30 @@
             xmlns="http://www.w3.org/2000/svg"
             xmlns:xlink="http://www.w3.org/1999/xlink"
           >
+            <radialGradient id="g2">
+              <stop offset="0%" class="color6" />
+              <stop offset="20%" class="color5" />
+              <stop offset="40%" class="color4" />
+              <stop offset="60%" class="color3" />
+              <stop offset="80%" class="color2" />
+              <stop offset="100%" class="color1" />
+            </radialGradient>
+            <radialGradient id="g3">
+              <stop offset="0%" class="color14" />
+              <stop offset="20%" class="color13" />
+              <stop offset="40%" class="color12" />
+              <stop offset="60%" class="color11" />
+              <stop offset="80%" class="color10" />
+              <stop offset="100%" class="color10" />
+            </radialGradient>
+            <radialGradient id="g4">
+              <stop offset="0%" class="color20" />
+              <stop offset="20%" class="color21" />
+              <stop offset="40%" class="color23" />
+              <stop offset="60%" class="color22" />
+              <stop offset="80%" class="color21" />
+              <stop offset="100%" class="color20" />
+            </radialGradient>
             <radialGradient id="g1">
               <stop offset="0%" class="color1" />
               <stop offset="20%" class="color6" />
@@ -277,116 +346,116 @@
       </div>
     </section>
 
-    <!--=========================== Section About ==================================-->
+    <!--================= Section About ==================================-->
     <!-- About Section -->
-    <!-- <div class="container max-w-6xl mx-auto px-6 py-12"></div> -->
-    <section id="about">
-      <div class="container max-w-6xl mx-auto px-6 py-12 h-full">
-        <!--===========================  ABOUT TITLE SECTION ==================================-->
+    <section id="about" class="bg-portfolioGrayBg dark:bg-darkBlue1">
+      <div class="section-container mx-auto">
         <div
           id="section-title"
-          class="container max-w-6xl mx-auto text-center pt-16 xl:pt-28 mb-72 xl:mb-32"
+          class="mx-auto text-center pt-16 xl:pt-36 mb-0"
           data-aos="zoom-in-up"
         >
           <h1
-            class="section-title-01 text-5xl md:text-7xl font-bold bg-white dark:bg-fxBgBody mb-10 md:mb-8"
+            class="section-title-01 text-5xl md:text-7xl font-bold bg-fxBgBody dark:bg-fxBgBody mb-10 md:mb-8"
           >
             About Me
           </h1>
           <h2
-            class="section-title-02 text-3xl md:text-4xl w-48 text-portfolioPrimaryText mx-auto before:w-6 md:before:w-10 md:right-0"
+            class="section-title-02 text-3xl md:text-4xl w-48 text-portfolioTitle mx-auto before:w-6 md:before:w-10 md:right-0"
           >
             About Me
           </h2>
         </div>
-        <!-- <div class="flex flex-col md:flex-row gap-y-10 md:gap-y-0 md:gap-x-6"> -->
+
+        <!-- Main About Container -->
         <div
-          class="grid grid-cols-1 lg:grid-cols-2 gap-x-0 lg:gap-x-10 gap-y-10 lg:gap-y-0"
+          class="mx-auto pt-0 md:pt-16 pb-0 md:pb-24 space-x-0 md:mt-10 grid grid-cols-1 md:grid-cols-2 items-center gap-x-0 md:gap-x-12 gap-y-10 md:gap-y-0"
         >
           <!--================ About Image ==================-->
           <div
             id="about-img"
-            class="w-56 md:w-80 rounded-3xl justify-center bg-portfolioPrimaryText mx-auto transition-all duration-700 hover:scale-105"
+            class="w-56 md:w-80 rounded-3xl justify-center about-img-bg mx-auto transition-all duration-700 hover:scale-105"
             data-aos="fade-up-right"
           >
-            <img
-              src="img/img_cv_logo_clean.svg"
-              alt=""
-              class="absolute rounded-3xl bottom-0"
-            />
+            <img src="img/img_cv_logo_clean.svg" alt="" class="rounded-3xl" />
           </div>
 
-          <!--================ About Content ==================-->
-          <div class="about_content">
-            <!-- about_cards -->
+          <!--================ About Complete Content ==================-->
+          <div
+            id="about-content"
+            class="space-x-0 md:space-y-6 max-w-full"
+            data-aos="fade-up-left"
+          >
+            <!-- About Boxes Content -->
             <div
-              class="grid grid-rows-1 gap-y-5 md:gap-x-5 md:grid-cols-2 xl:grid-cols-3 place-content-center pb-10 border-b-2 border-portfolioLineColor"
+              id="about-boxes"
+              class="grid grid-cols-[200px] gap-y-10 md:grid-cols-[165px_165px] lg:grid-cols-[150px_150px_150px] gap-x-6 pb-8 border-b-2 border-portfolioLineColor justify-center transition-all duration-700"
             >
-              <article class="about_card box-shadow">
+              <div
+                class="box-shadow flex flex-col space-y-3 border-portfolioBlue hover:border-portfolioBlueHover bg-portfolioWhiteBg hover:bg-portfolioGrayBg border py-5 px-6 rounded-xl text-center about-box transition duration-700 hover:-translate-y-0.5"
+              >
                 <i
-                  class="fa-solid fa-award about_icon text-portfolioTextcolorCard hover:text-portfolioBlueHover transition-all duration-700"
+                  class="bx bx-award text-2xl text-portfolioBlue hover:text-portfolioBlueHover transition-all duration-700"
                 ></i>
-
                 <h5
-                  class="font-bold text-portfolioTextcolorCard hover:text-portfolioBlueHover transition-all duration-700"
+                  class="font-bold text-portfolioBlue hover:text-portfolioBlueHover transition-all duration-700"
                 >
                   Experience
                 </h5>
                 <small
-                  class="md:w-28 text-portfolioSecondaryText text-xs text-center"
+                  class="md:w-28 text-portfolioGrayText text-xs text-center"
                   >8+ Years Working</small
                 >
-              </article>
-              <article class="about_card box-shadow">
-                <i
-                  class="fa-solid fa-briefcase about_icon text-portfolioTextcolorCard hover:text-portfolioBlueHover transition-all duration-700"
-                ></i>
+              </div>
 
+              <div
+                class="box-shadow flex flex-col space-y-3 border-portfolioBlue hover:border-portfolioBlueHover bg-portfolioWhiteBg hover:bg-portfolioGrayBg border py-5 px-6 rounded-xl text-center about-box transition duration-700 hover:-translate-y-0.5"
+              >
+                <i
+                  class="bx bx-briefcase-alt text-2xl text-portfolioBlue hover:text-portfolioBlueHover transition-all duration-700"
+                ></i>
                 <h5
-                  class="font-bold text-portfolioTextcolorCard hover:text-portfolioBlueHover transition-all duration-700"
+                  class="font-bold text-portfolioBlue hover:text-portfolioBlueHover transition-all duration-700"
                 >
                   Completed
                 </h5>
-                <small
-                  class="w-28 text-portfolioSecondaryText text-xs text-center"
+                <small class="w-28 text-portfolioGrayText text-xs text-center"
                   >48+ Projects</small
                 >
-              </article>
-              <article class="about_card box-shadow">
-                <i
-                  class="fa-solid fa-headset about_icon text-portfolioTextcolorCard hover:text-portfolioBlueHover transition-all duration-700"
-                ></i>
+              </div>
 
+              <div
+                class="box-shadow flex flex-col space-y-3 border-portfolioBlue hover:border-portfolioBlueHover bg-portfolioWhiteBg hover:bg-portfolioGrayBg border py-5 px-6 rounded-xl text-center about-box transition duration-700 hover:-translate-y-0.5"
+              >
+                <i
+                  class="bx bx-support text-2xl text-portfolioBlue hover:text-portfolioBlueHover transition-all duration-700"
+                ></i>
                 <h5
-                  class="font-bold text-portfolioTextcolorCard hover:text-portfolioBlueHover transition-all duration-700"
+                  class="font-bold text-portfolioBlue hover:text-portfolioBlueHover transition-all duration-700"
                 >
                   Support
                 </h5>
-                <small class="w-28 text-portfolioSecondaryText text-xs"
+                <small class="w-28 text-portfolioGrayText text-xs"
                   >Online 24/7</small
                 >
-              </article>
+              </div>
             </div>
 
             <p
-              class="text-justify max-w-fit px-2 py-10 text-md lg:text-xl leading-6 md:leading-7 text-portfolioSecondaryText"
+              class="text-justify text-md lg:text-xl leading-6 md:leading-7 mb-8 text-portfolioTextP"
             >
-              I like to
-              <q class="text-portfolioGreenText"
-                ><strong>keep it simple</strong></q
-              >
-              and this is the main reason that I like coding in
-              <q class="text-portfolioGreenText"><strong>GoLang</strong></q
+              I like to <q><strong>keep it simple</strong></q> and this is the
+              main reason that I like coding in <q><strong>GoLang</strong></q
               >. I focus a lot on crafting clean and testable code based on
               common design patterns. Am looking to develop go based
               applications with any mix of the technology listed In my skills
               section.
             </p>
 
-            <div class="text-center md:text-left">
+            <div class="py-6 text-center md:text-left">
               <a
                 href="pdf/RESUME - FRANCOIS XAVIER OWONA.pdf"
-                class="group px-6 py-3 btn-hover transition text-center bg-portfolioBlueText text-white hover:bg-portfolioBlueHover rounded-full w-72 mt-10 duration-700 text-xl font-medium mx-auto md:ml-0"
+                class="p-3 btn-hover transition border border-portfolioGreenBg hover:bg-portfolioGreenBg hover:text-portfolioWhiteBg rounded-[5px] w-52 mt-10 bg-transparent text-portfolioGreenBg duration-700 text-xl font-medium mx-auto md:ml-0"
                 download
               >
                 Download CV
@@ -400,20 +469,18 @@
 
     <!--================= Section Skills ==================================-->
     <!-- Skills Section -->
-    <section id="skills" class="dark:bg-darkBlue1 pt-20">
-      <!--===========================  SKILLS TITLE SECTION ==================================-->
+    <section id="skills" class="bg-portfolioWhiteBg dark:bg-darkBlue1 pt-20">
       <div
-        id="section-title"
-        class="container max-w-6xl mx-auto text-center pt-16 xl:pt-36 mb-0"
+        class="mx-auto text-center pt-14 mb-0 section-title"
         data-aos="zoom-in-up"
       >
         <h1
-          class="section-title-01 text-5xl md:text-7xl font-bold bg-white dark:bg-fxBgBody mb-10 md:mb-8"
+          class="section-title-01 text-5xl md:text-7xl font-bold bg-portfolioSectionTitle1 dark:bg-fxBgBody mb-10 md:mb-8"
         >
           Skills
         </h1>
         <h2
-          class="section-title-02 text-3xl md:text-4xl w-48 text-portfolioPrimaryText mx-auto before:w-6 md:before:w-10 md:right-0"
+          class="section-title-02 text-3xl md:text-4xl w-48 text-portfolioTitle mx-auto before:w-6 md:before:w-10 md:right-0"
         >
           Skills
         </h2>
@@ -422,12 +489,12 @@
       <!-- Main Skills Container -->
 
       <div
-        class="container max-w-6xl mx-auto px-10 grid grid-cols-1 lg:grid-cols-2 gap-y-14 gap-x-6 py-20"
+        class="section-container px-10 grid grid-cols-1 lg:grid-cols-2 gap-y-14 gap-x-6 py-20"
       >
         <!-- Main Frontend Skills Container -->
-        <div class="skills_content py-20" data-aos="zoom-in-right">
+        <div class="skills_content" data-aos="zoom-in-right">
           <h3
-            class="text-portfolioPrimaryText skills_title text-base md:text-xl font-semibold font-jamjuree flex justify-center items-center gap-x-2 mb-10"
+            class="text-portfolioTitle skills_title text-base md:text-xl font-semibold font-jamjuree flex justify-center items-center gap-x-2 mb-10"
           >
             <i class="ri-braces-line text-base font-normal"></i>Frontend
             Developer
@@ -506,7 +573,7 @@
 
         <!-- Main BackEnd Skills Container -->
         <div
-          class="skills_content py-20"
+          class="skills_content"
           data-aos="zoom-in-left"
           data-aos="flip-left"
           data-aos-easing="ease-out-cubic"
@@ -514,7 +581,7 @@
           data-aos-duration="1500"
         >
           <h3
-            class="text-portfolioPrimaryText skills_title text-base md:text-xl font-semibold font-jamjuree flex justify-center items-center gap-x-2 mb-10"
+            class="text-portfolioTitle skills_title text-base md:text-xl font-semibold font-jamjuree flex justify-center items-center gap-x-2 mb-10"
           >
             <i class="ri-share-forward-box-fill text-base font-normal"></i>
             <!-- <i class="ri-braces-line text-base font-normal"></i> -->
@@ -598,23 +665,18 @@
 
     <!--================= Section Work ==================================-->
     <!-- Work Section -->
-    <section
-      id="work"
-      class="bg-portfolioBlueBackGroundColor dark:bg-darkBlue1 pt-20"
-    >
-      <!--===========================  Work TITLE SECTION ==================================-->
+    <section id="work" class="bg-portfolioGrayBg dark:bg-darkBlue1 pt-20">
       <div
-        id="section-title"
-        class="container max-w-6xl mx-auto text-center pt-16 xl:pt-36 mb-0"
+        class="mx-auto text-center pt-14 mb-0 section-title"
         data-aos="zoom-in-up"
       >
         <h1
-          class="section-title-01 text-5xl md:text-7xl font-bold bg-white dark:bg-fxBgBody mb-10 md:mb-8"
+          class="section-title-01 text-5xl md:text-7xl font-bold bg-portfolioSectionTitle1 dark:bg-fxBgBody mb-10 md:mb-8"
         >
           Work
         </h1>
         <h2
-          class="section-title-02 text-3xl md:text-4xl w-48 text-portfolioPrimaryText mx-auto before:w-6 md:before:w-10 md:right-0"
+          class="section-title-02 text-3xl md:text-4xl w-48 text-portfolioTitle mx-auto before:w-6 md:before:w-10 md:right-0"
         >
           Work
         </h2>
@@ -623,7 +685,7 @@
       <!-- Main Work Container -->
 
       <div
-        class="container max-w-6xl mx-auto px-10 grid grid-cols-1 lg:grid-cols-2 gap-y-40 gap-x-28 py-20 place-items-center"
+        class="section-container px-10 grid grid-cols-1 lg:grid-cols-2 gap-y-40 gap-x-28 py-20 place-items-center"
       >
         <!--========== Project 1 ==============-->
         <div class="work-content box-shadow p-6" data-aos="fade-up-right">
@@ -657,8 +719,8 @@
           </div>
         </div>
 
-        <div class="work-image data-aos="fade-up-left">
-          <img src="img/golang-clone-responsive.png" alt="" class="w-48 md:w-[425px]" />
+        <div class="work-image" data-aos="fade-up-left">
+          <img src="img/golang-clone-responsive.png" alt="" />
         </div>
 
         <!--========== Project 2 ==============-->
@@ -693,8 +755,8 @@
           </div>
         </div>
 
-        <div class="work-image max-w-3/4" data-aos="fade-up-left">
-          <img src="img/Final-responsive-portfolio.png" alt="" class="w-48 md:w-[425px]" />
+        <div class="work-image" data-aos="fade-up-left">
+          <img src="img/Final-responsive-portfolio.png" alt="" />
         </div>
 
         <!--========== Project 3 ==============-->
@@ -729,8 +791,8 @@
           </div>
         </div>
 
-        <div class="work-image max-w-3/4" data-aos="fade-up-left">
-          <img src="img/golang-clone-responsive.png" alt=""  class="w-48 md:w-[425px]"/>
+        <div class="work-image" data-aos="fade-up-left">
+          <img src="img/golang-clone-responsive.png" alt="" />
         </div>
 
         <!--========== Project 4 ==============-->
@@ -765,51 +827,47 @@
           </div>
         </div>
 
-        <div class="work-image max-w-3/4" data-aos="fade-up-left">
-          <img src="img/Final-responsive-portfolio.png" alt="" class="w-48 md:w-[425px]" />
+        <div class="work-image" data-aos="fade-up-left">
+          <img src="img/Final-responsive-portfolio.png" alt="" />
         </div>
       </div>
     </section>
 
-     <!--================= Section Contact ==================================-->
+    <!--================= Section Contact ==================================-->
     <!-- Skills Section -->
     <section
       id="contact"
-      class="container max-w-6xl mx-auto bg-portfolioWhiteBg dark:bg-darkBlue1 md:pt-28 md:mb-28"
+      class="bg-portfolioWhiteBg dark:bg-darkBlue1 pt-28 mb-28"
     >
-       <!--===========================  ABOUT TITLE SECTION ==================================-->
-        <div
-          id="section-title"
-          class="container max-w-6xl mx-auto text-center pt-16 xl:pt-28 mb-32 xl:mb-32"
-          data-aos="zoom-in-up"
+      <div
+        class="mx-auto text-center pt-14 mb-0 section-title"
+        data-aos="zoom-in-up"
+      >
+        <h1
+          class="section-title-01 text-5xl md:text-7xl font-bold bg-portfolioSectionTitle1 dark:bg-fxBgBody mb-10 md:mb-8"
         >
-          <h1
-            class="section-title-01 text-5xl md:text-7xl font-bold bg-white dark:bg-fxBgBody mb-10 md:mb-8"
-          >
-            Contact
-          </h1>
-          <h2
-            class="section-title-02 text-3xl md:text-4xl w-48 text-portfolioPrimaryText mx-auto before:w-6 md:before:w-10 md:right-0"
-          >
-            Contact
-          </h2>
-        </div>
+          Contact
+        </h1>
+        <h2
+          class="section-title-02 text-3xl md:text-4xl w-48 text-portfolioTitle mx-auto before:w-6 md:before:w-10 md:right-0"
+        >
+          Contact
+        </h2>
+      </div>
 
-         <!-- Main Contact Container -->
+      <!-- Main Contact Container -->
 
       <div
-        class="container max-w-6xl mx-auto px-10 grid grid-cols-1 lg:grid-cols-2 gap-y-14 gap-x-6 py-20 contact-container rounded-xl bg-portfolioFooterBg"
+        class="section-container px-10 grid grid-cols-1 lg:grid-cols-2 gap-y-14 gap-x-6 py-20 contact-container rounded-xl bg-portfolioFooterBg"
         data-aos="flip-up"
       >
-
-
-          <div class="contact-container-content">
+        <div class="contact-container-content">
           <h3 class="text-portfolioWhiteBg text-2xl font-semibold py-10">
             Get In Touch
           </h3>
 
           <div
-            class="contact-container-description gap-x-10 flex justify-center items-center py-2"
+            class="contact-container-description w-full gap-x-10 flex justify-center items-center py-2"
           >
             <i class="fa-brands fa-skype text-portfolioGreenBg"> </i>
             <span
@@ -818,7 +876,7 @@
             >
           </div>
           <div
-            class="contact-container-description gap-x-6 flex justify-center items-center py-2"
+            class="contact-container-description w-full gap-x-6 flex justify-center items-center py-2"
           >
             <i class="fas fa-map-marker-alt text-portfolioGreenBg"> </i>
             <span
@@ -827,7 +885,7 @@
             >
           </div>
           <div
-            class="contact-container-description gap-x-2 flex justify-center items-center py-2"
+            class="contact-container-description w-full gap-x-2 flex justify-center items-center py-2"
           >
             <i class="fas fa-phone text-portfolioGreenBg"> </i>
             <span
@@ -837,7 +895,7 @@
           </div>
 
           <div
-            class="contact-container-description gap-x-2 flex justify-center items-center py-2"
+            class="contact-container-description w-full gap-x-2 flex justify-center items-center py-2"
           >
             <i class="far fa-envelope-open text-portfolioGreenBg"> </i>
             <span
@@ -847,7 +905,7 @@
           </div>
 
           <div
-            class="contact-container-img flex justify-center items-center py-11 w-fit mx-auto"
+            class="contact-container-img flex justify-center items-center py-11 w-80 mx-auto"
           >
             <img src="img/map.png" alt="" />
           </div>
@@ -858,14 +916,22 @@
           text-fxRealDarkGray
           --
         >
-
+          <!-- text-2xl font-semibold -->
+          <!-- py-10">  -->
+          <!-- Leave a Message</h3>  -->
+          <!-- <h2 class="text-subtitle my-3 h2">Leave a Message</h2> -->
           <div class="contact-form py-10">
             <h3
               class="text-portfolioTitle text-2xl font-semibold pt-5 pb-10 bg-portfolioWhiteBg"
             >
               Leave a Message
             </h3>
-            <form method='POST' name='contact'>
+            <form
+              name="contact"
+              method="POST"
+              netlify-honeypot="bot-field"
+              data-netlify="true"
+            >
               <input type="hidden" name="form-name" value="contact" />
               <p class="hidden">
                 <label>
@@ -873,7 +939,10 @@
                   <input name="bot-field" />
                 </label>
               </p>
-
+              <!-- <div class="form-control">
+                  <i class="fas fa-user prefix grey-text fa-2x" aria-hidden="true"></i>
+                  <input type="text" name="name" placeholder="Name" required="">
+                </div> -->
               <label
                 for="name"
                 class="contact-form-label flex justify-start mb-2 ml-2 font-semibold"
@@ -881,6 +950,10 @@
               >
               <input type="text" name="name" placeholder="Name" required="" />
 
+              <!-- <div class="form-control">
+                  <i class="fas fa-envelope prefix grey-text fa-2x" aria-hidden="true"></i>
+                  <input type="email" name="email" placeholder="Email" required="">
+                </div> -->
 
               <label
                 for="email"
@@ -894,6 +967,11 @@
                 required=""
               />
 
+              <!-- <div class="form-control">
+                  <i class="fas fa-pencil-alt prefix grey-text fa-2x" aria-hidden="true"></i>
+                  <textarea name="message" placeholder="Type Your Message Here" required="" rows="7"></textarea>
+                </div> -->
+
               <label
                 for="message"
                 class="contact-form-label flex justify-start mb-2 ml-2 font-semibold"
@@ -905,30 +983,26 @@
                 name="message"
                 placeholder="Type Your Message Here"
               ></textarea>
-       <!-- <input type="submit" value="Send" class="btn btn-primary"> -->
+
+              <!-- <input type="submit" value="Send" class="btn btn-primary"> -->
               <div class="flex justify-start">
                 <button
                   type="submit"
-                  class="group px-6 py-3 btn-hover transition text-center md:justify-start bg-portfolioLigthBlueBackGroundColor hover:bg-portfolioLigthBlueBackGroundHoverColor rounded-full w-48 md:w-72 mt-10 text-portfolioBlueText duration-700 text-xl font-medium mx-auto"
+                  class="p-3 btn-hover transition border bg-portfolioGreenBg border-portfolioGreenBg hover:bg-portfolioGreenBg hover:text-portfolioWhiteBg rounded-[5px] w-52 mt-10 bg-transparent text-portfolioGreenBg duration-700 text-xl font-medium mx-auto md:ml-0"
                 >
-                  Contact Me <i class="fa fa-paper-plane ml-2 group-hover:ml-4 duration-700 transition"
-                aria-hidden="true"></i>
+                  Contact Me <i class="fa fa-paper-plane"></i>
                 </button>
               </div>
-              
             </form>
           </div>
         </div>
       </div>
-
-
     </section>
 
-
-     <!--========================== Footer Section =====================================-->
+    <!--========================== Footer Section =====================================-->
     <!-- Footer -->
     <footer class="bg-portfolioFooterBg">
-      <div class="container max-w-6xl mx-auto px-10 py-14 mt-20">
+      <div class="section-container px-10">
         <div
           class="flex flex-col items-center justify-between md:flex-row mx-auto place-items-center border-b border-portfolioFooterTextColor py-10"
         >
@@ -1055,12 +1129,9 @@
         </div>
       </div>
     </footer>
+
     <!-- <h1 class="h1 font-bold font-nunito">Xavier Owona.</h1> -->
     <!-- To use font awsome and use icons -->
-    <script
-      src="https://kit.fontawesome.com/4547905d38.js"
-      crossorigin="anonymous"
-    ></script>
     <script
       src="https://kit.fontawesome.com/4547905d38.js"
       crossorigin="anonymous"
@@ -1075,7 +1146,7 @@
     <!-- AOS Js JS -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <!-- Include js file -->
-    <!-- <script src="js/darkmode.js"></script> -->
+    <script src="js/darkmode.js"></script>
     <script src="js/mobile-menu.js"></script>
     <script src="js/main.js"></script>
 
