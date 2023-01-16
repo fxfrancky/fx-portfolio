@@ -167,7 +167,7 @@ function Contact() {
               <br />
               <button
                 type="submit"
-                className="px-4 py-2 w-full rounded-md text-white text-xs cursor-pointer hover:shadow-md bg-teal-500"
+                className="px-4 py-2 w-full rounded-md text-white text-xs cursor-pointer hover:shadow-md bg-teal-500 transform transition duration-500 hover:scale-105"
               >
                 Send
               </button>

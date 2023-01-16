@@ -43,14 +43,14 @@ function Projects() {
                   <div className="card-actions justify-center py-5">
                     <a
                       href={liveLink}
-                      className="py-2 px-4 w-36 text-center border-[2px] border-solid border-teal-500 text-[0.9rem] rounded-[2.2rem] shadow-md"
+                      className="py-2 px-4 w-36 text-center border-[2px] border-solid border-teal-500 text-[0.9rem] rounded-[2.2rem] shadow-md transform transition duration-500 hover:scale-105"
                       target="_blank"
                     >
                       Live Demo
                     </a>
                     <a
                       href={github}
-                      className="py-2 px-4 w-36 text-center border-[2px] border-solid bg-teal-500 border-teal-500 text-ghostWhite text-[0.9rem] rounded-[2.2rem] shadow-md"
+                      className="py-2 px-4 w-36 text-center border-[2px] border-solid bg-teal-500 border-teal-500 text-ghostWhite text-[0.9rem] rounded-[2.2rem] shadow-md transform transition duration-500 hover:scale-105"
                       target="_blank"
                     >
                       GitHub

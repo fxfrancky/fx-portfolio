@@ -8,7 +8,7 @@ function Home() {
       <div className="grid md:grid-cols-2 place-items-center gap-8">
         <div
           className="w-[250px] h-[250px] sm:w-[350px] sm:h-[350px] rounded-full bg-gradient-to-r from-cyan-500 to-teal-500
-         overflow-hidden shadow-heroSadow border-[20px] border-solid border-ghostWhite"
+         overflow-hidden shadow-heroSadow border-[20px] border-solid border-ghostWhite transform transition duration-500 hover:scale-105"
         >
           <motion.img
             initial={{ x: -200, opacity: 0 }}
@@ -16,7 +16,7 @@ function Home() {
             whileInView={{ opacity: 1, x: 0 }}
             src={bgImg}
             alt="Fx Image"
-            className="w-full h-full object-cover"
+            className="w-full h-full object-cover "
           />
         </div>
 
@@ -43,14 +43,14 @@ function Home() {
           <div className="flex mt-4 gap-4">
             <a
               href="../assets/docs/RESUME-FRANCOIS XAVIER OWONA.pdf"
-              className="py-2 px-4 w-36 text-center border-[2px] border-solid border-teal-500 text-[0.9rem] rounded-[2.2rem] shadow-md"
+              className="py-2 px-4 w-36 text-center border-[2px] border-solid border-teal-500 text-[0.9rem] rounded-[2.2rem] shadow-md transform transition duration-500 hover:scale-105"
               download
             >
               Download Cv
             </a>
             <a
               href="mailto:contact@owonafx.com"
-              className="py-2 px-4 w-36 text-center border-[2px] border-solid bg-teal-500 border-teal-500 text-ghostWhite text-[0.9rem] rounded-[2.2rem] shadow-md"
+              className="py-2 px-4 w-36 text-center border-[2px] border-solid bg-teal-500 border-teal-500 text-ghostWhite text-[0.9rem] rounded-[2.2rem] shadow-md transform transition duration-500 hover:scale-105"
               download
             >
               Contact
