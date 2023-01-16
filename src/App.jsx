@@ -1,3 +1,4 @@
+import {StrictMode} from "react"
 import { useState, useEffect } from "react";
 import { themeChange } from "theme-change";
 import Footer from "./components/Footer";
@@ -10,6 +11,7 @@ import Projects from "./pages/Projects";
 
 function App() {
   return (
+    <StrictMode>
     <div className="font-poppins bg-ghostWhite">
       <Navbar />
       <Home />
@@ -19,6 +21,7 @@ function App() {
       <Contact />
       <Footer />
     </div>
+    </StrictMode>
   );
 }
 
