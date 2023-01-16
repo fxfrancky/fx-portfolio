@@ -1,0 +1,102 @@
+@import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;500;600;700&family=Lato:wght@100;300;400;700;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  @font-face {
+    font-family: "burtons";
+    src: url("./assets/fonts/Burtons.otf");
+  }
+
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  img {
+    width: 100%;
+  }
+
+  html,
+  body {
+    scroll-behavior: smooth;
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+  }
+  body {
+    position: relative;
+  }
+  .section {
+    @apply container mx-auto py-[6rem] min-h-screen px-6;
+  }
+  .p {
+    @apply text-base py-5 leading-8 md:text-xl max-w-xl sm:max-w-2xl mx-auto md:py-8 dark:text-gray-200 opacity-80;
+  }
+
+  .hidden {
+    display: none;
+  }
+
+  .skills_info {
+    @apply grid grid-cols-2 lg:grid-cols-3 gap-x-2 gap-y-20;
+  }
+
+  .skills_data {
+    @apply justify-center text-center;
+  }
+
+  .skills_blob {
+    @apply mb-4 place-items-center rounded-[3rem] bg-gray-300 h-[100px] w-20 mx-auto grid bg-opacity-40;
+  }
+
+  .skills_blob:hover img {
+    animation: bounce-skills 0.6s;
+  }
+
+  @keyframes bounce-skills {
+    0% {
+      transform: translate(0);
+    }
+    20% {
+      transform: translateY(-6px);
+    }
+    40% {
+      transform: translate(0);
+    }
+    60% {
+      transform: translateY(-3px);
+    }
+    80% {
+      transform: translate(0);
+    }
+  }
+
+  .skills_blob img {
+    @apply w-10;
+  }
+
+  .skills_name {
+    @apply text-sm mb-1 justify-center text-center mx-auto w-full;
+  }
+
+  .skills_subtitle {
+    @apply text-xs text-gray-800;
+  }
+
+  .skills_content {
+    @apply border py-16 rounded-xl;
+  }
+
+  @media only screen and (max-width: 768px) {
+    #contact_info {
+      display: none;
+    }
+  }
+}
