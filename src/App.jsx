@@ -1,4 +1,4 @@
-import {StrictMode} from "react"
+import React from "react";
 import { useState, useEffect } from "react";
 import { themeChange } from "theme-change";
 import Footer from "./components/Footer";
@@ -10,18 +10,25 @@ import Navbar from "./pages/Navbar";
 import Projects from "./pages/Projects";
 
 function App() {
+  const [darkMode, setDarkMode] = useState(
+    JSON.parse(localStorage.getItem("darkMode"))
+  );
+  const toggleDarkmode = () => {
+    localStorage.setItem("darkMode", JSON.stringify(!darkMode));
+    setDarkMode(!darkMode);
+  };
   return (
-    <StrictMode>
-    <div className="font-poppins bg-ghostWhite">
-      <Navbar />
-      <Home />
-      <About />
-      <Skills />
-      <Projects />
-      <Contact />
-      <Footer />
-    </div>
-    </StrictMode>
+    <React.StrictMode>
+      <div className="font-poppins bg-ghostWhite">
+        <Navbar darkMode={darkMode} toggleDarkmode={toggleDarkmode} />
+        <Home darkMode={darkMode} toggleDarkmode={toggleDarkmode} />
+        <About darkMode={darkMode} toggleDarkmode={toggleDarkmode} />
+        <Skills darkMode={darkMode} toggleDarkmode={toggleDarkmode} />
+        <Projects darkMode={darkMode} toggleDarkmode={toggleDarkmode} />
+        <Contact darkMode={darkMode} toggleDarkmode={toggleDarkmode} />
+        <Footer darkMode={darkMode} toggleDarkmode={toggleDarkmode} />
+      </div>
+    </React.StrictMode>
   );
 }
 

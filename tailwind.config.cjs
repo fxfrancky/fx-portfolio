@@ -22,9 +22,7 @@ module.exports = {
       sm: "768px",
       md: "1060px",
       lg: "1280px",
-      // xl: "1536px",
     },
   },
   plugins: [require("daisyui")],
-  // plugins: [],
 };
