@@ -82,6 +82,12 @@ function Navbar(props) {
                   />
                 );
               })}
+              <BsFillMoonStarsFill
+                className="cursor-pointer text-2xl dark:text-gray-200"
+                onClick={() => {
+                  props.toggleDarkmode();
+                }}
+              />
             </div>
             <HiX
               className="absolute right-4 text-3xl top-8 cursor-pointer"
