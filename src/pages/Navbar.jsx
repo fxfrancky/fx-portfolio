@@ -67,7 +67,11 @@ function Navbar(props) {
           </div>
         </div>
         {toggle && (
-          <div className="fixed right-0 top-0 bg-teal-500 h-screen text-white w-80">
+          <motion.div
+            initial={{ x: 500 }}
+            animate={{ x: 0 }}
+            className="fixed right-0 top-0 bg-teal-500 h-screen text-white w-80 dark:text-ghostWhite"
+          >
             <div className="flex flex-col gap-8 mt-[40%] ml-[30%]">
               {navLinks.map((navlink) => {
                 return (
@@ -83,7 +87,7 @@ function Navbar(props) {
               className="absolute right-4 text-3xl top-8 cursor-pointer"
               onClick={() => setToggle(!toggle)}
             />
-          </div>
+          </motion.div>
         )}
       </div>
     </div>
