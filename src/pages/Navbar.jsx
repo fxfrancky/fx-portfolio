@@ -83,7 +83,7 @@ function Navbar(props) {
                 );
               })}
               <BsFillMoonStarsFill
-                className="cursor-pointer text-2xl dark:text-gray-200"
+                className="cursor-pointer mx-auto text-2xl dark:text-gray-200"
                 onClick={() => {
                   setToggle((prev) => {
                     !prev;
