@@ -39,7 +39,7 @@ function Navbar(props) {
               <p className="text-[17px] font-semibold">
                 <span>
                   &#60; &#123; Xavier{" "}
-                  <span className="opacity-70">Owona &#125; /&#62;</span>
+                  <span className="opacity-60">Owona &#125; /&#62;</span>
                 </span>
               </p>
             </motion.div>
