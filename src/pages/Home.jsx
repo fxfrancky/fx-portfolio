@@ -30,7 +30,7 @@ function Home(props) {
               <div className="text-grey sm:text-[1.25rem] mb-4 font-semibold dark:text-gray-300">
                 Golang Freelancer
               </div>
-              <h2 className="font-jamjuree text-[2rem] sm:text-[3rem] font-bold mb-4 dark:text-ghostWhite ">
+              <h2 className="font-reggae text-[2rem] sm:text-[3rem] font-bold mb-4 dark:text-ghostWhite ">
                 Xavier Owona
               </h2>
               <p className="text-base text-justify py-5 leading-8 md:text-xl max-w-2xl mx-auto md:py-8 opacity-80 dark:text-ghostWhite">

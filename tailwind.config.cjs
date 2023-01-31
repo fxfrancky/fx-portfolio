@@ -8,6 +8,8 @@ module.exports = {
       poppins: ["Poppins"],
       jamjuree: "Bai Jamjuree",
       lato: "lato",
+      aclonica: "Aclonica",
+      reggae: "Reggae One",
     },
     extend: {
       colors: {

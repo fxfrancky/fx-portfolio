@@ -30,13 +30,13 @@ function Navbar(props) {
               initial={{ x: -200, opacity: 0 }}
               transition={{ duration: 0.5 }}
               whileInView={{ opacity: 1, x: 0 }}
-              className="flex items-center gap-2 font-jamjuree"
+              className="flex items-center gap-2 font-reggae"
             >
               <div className="rounded-full w-10 h-10 bg-gradient-to-r from-cyan-500 to-teal-500 flex items-center justify-center text-white font-bold">
                 XO
               </div>
 
-              <p className="text-xl font-medium">
+              <p className="text-[17px] font-semibold">
                 <span>
                   &#60; &#123; Xavier{" "}
                   <span className="opacity-70">Owona &#125; /&#62;</span>
