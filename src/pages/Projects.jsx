@@ -7,7 +7,7 @@ function Projects(props) {
       <div className="dark:bg-gray-800">
         <div className="section" id="projects">
           <div className="mb-8">
-            <h2 className="text-2xl md:text-3xl font-bold dark:text-ghostWhite">
+            <h2 className="font-jamjuree text-2xl md:text-3xl font-bold dark:text-ghostWhite">
               Projects
             </h2>
             <div className="w-14 h-[3px] rounded-sm bg-gradient-to-r from-cyan-500 to-teal-500"></div>

@@ -6,6 +6,8 @@ module.exports = {
     fontFamily: {
       burtons: "burtons",
       poppins: ["Poppins"],
+      jamjuree: "Bai Jamjuree",
+      lato: "lato",
     },
     extend: {
       colors: {

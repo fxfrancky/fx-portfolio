@@ -22,7 +22,7 @@ function Skills(props) {
       <div className="dark:bg-gray-800">
         <div id="skills" className="section snap-start overflow-hidden">
           <div className="mb-8">
-            <h2 className="text-2xl md:text-3xl font-bold dark:text-ghostWhite">
+            <h2 className="font-jamjuree text-2xl md:text-3xl font-bold dark:text-ghostWhite">
               My Skills
             </h2>
             <div className="w-14 h-[3px] rounded-sm bg-gradient-to-r from-cyan-500 to-teal-500"></div>

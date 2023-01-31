@@ -30,15 +30,15 @@ function Home(props) {
               <div className="text-grey sm:text-[1.25rem] mb-4 font-semibold dark:text-gray-300">
                 Golang Freelancer
               </div>
-              <h2 className=" text-[2rem] sm:text-[3rem] font-bold mb-4 dark:text-ghostWhite ">
+              <h2 className="font-jamjuree text-[2rem] sm:text-[3rem] font-bold mb-4 dark:text-ghostWhite ">
                 Xavier Owona
               </h2>
               <p className="text-base text-justify py-5 leading-8 md:text-xl max-w-2xl mx-auto md:py-8 opacity-80 dark:text-ghostWhite">
-                A<span className="text-teal-500"> Freelancer </span>providing
+                A<span className="text-teal-600"> Freelancer </span>providing
                 services based on
-                <span className="text-teal-500"> Golang </span>
+                <span className="text-teal-600"> Golang </span>
                 technologies. Mainly passionate about web design and development
-                of <span className="text-teal-500"> Go </span> based
+                of <span className="text-teal-600"> Go </span> based
                 applications. Lets build solid and scalable products with great
                 user experiences. Join me down below and lets get cracking!
               </p>

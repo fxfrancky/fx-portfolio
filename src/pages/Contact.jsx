@@ -12,7 +12,7 @@ function Contact(props) {
           id="contact"
         >
           <div className="mb-8">
-            <h2 className="text-2xl md:text-3xl font-bold dark:text-ghostWhite">
+            <h2 className="font-jamjuree text-2xl md:text-3xl font-bold dark:text-ghostWhite">
               Contact Me
             </h2>
             <div className="w-14 h-[3px] rounded-sm bg-teal-500"></div>

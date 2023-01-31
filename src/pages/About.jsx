@@ -13,7 +13,7 @@ function About(props) {
       <div className="dark:bg-gray-800">
         <div className="section overflow-hidden" id="about">
           <div className="mb-8">
-            <h2 className="text-2xl md:text-3xl font-bold dark:text-gray-300">
+            <h2 className="font-jamjuree text-2xl md:text-3xl font-bold dark:text-gray-300">
               About Me
             </h2>
             <div className="w-14 h-[3px] rounded-sm bg-gradient-to-r from-cyan-500 to-teal-500"></div>
@@ -43,12 +43,12 @@ function About(props) {
                   Here is a little bit about me. I have been coding for more
                   than 7 years now. Generally for large corporations. I like to
                   keep it simple and this is the main reason that I like coding
-                  in <span className="text-teal-500"> Golang </span>. I focus a
+                  in <span className="text-teal-600"> Golang </span>. I focus a
                   lot on crafting clean and testable code based on common design
                   patterns. I started my career by developping{" "}
-                  <span className="text-teal-500"> Java JEE </span>{" "}
+                  <span className="text-teal-600"> Java JEE </span>{" "}
                   applications. Am looking to develop{" "}
-                  <span className="text-teal-500"> Go </span> based applications
+                  <span className="text-teal-600"> Go </span> based applications
                   with any mix of the technology listed In my skills section.
                 </p>
 

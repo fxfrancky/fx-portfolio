@@ -19,7 +19,9 @@ function App() {
   };
   return (
     <React.StrictMode>
-      <div className="font-poppins bg-ghostWhite">
+      {/* <div className="font-poppins bg-ghostWhite"> */}
+      {/* <div className="font-jamjuree bg-ghostWhite"> */}
+      <div className="font-lato bg-ghostWhite">
         <Navbar darkMode={darkMode} toggleDarkmode={toggleDarkmode} />
         <Home darkMode={darkMode} toggleDarkmode={toggleDarkmode} />
         <About darkMode={darkMode} toggleDarkmode={toggleDarkmode} />

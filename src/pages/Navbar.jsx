@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import NavLinks from "../components/NavLinks";
 import { navLinks } from "../Data";
 import { BsFillMoonStarsFill } from "react-icons/bs";
+import { Link } from "react-router-dom";
 
 function Navbar(props) {
   const [toggle, setToggle] = useState(false);
@@ -24,26 +25,40 @@ function Navbar(props) {
     >
       <div className="w-full dark:bg-gray-900 dark:text-ghostWhite">
         <div className="container mx-auto flex items-center justify-between py-4 px-2 ">
-          <div className="flex items-center gap-2">
-            <div className="rounded-full w-10 h-10 bg-gradient-to-r from-cyan-500 to-teal-500 flex items-center justify-center text-white font-bold">
-              XO
-            </div>
+          <a href="#home">
+            <motion.div
+              initial={{ x: -200, opacity: 0 }}
+              transition={{ duration: 0.5 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              className="flex items-center gap-2 font-jamjuree"
+            >
+              <div className="rounded-full w-10 h-10 bg-gradient-to-r from-cyan-500 to-teal-500 flex items-center justify-center text-white font-bold">
+                XO
+              </div>
 
-            <p className="text-xl font-medium">
-              <span>
-                &#60;Xavier <span className="opacity-70">Owona /&#62;</span>
-              </span>
-            </p>
-          </div>
+              <p className="text-xl font-medium">
+                <span>
+                  &#60; &#123; Xavier{" "}
+                  <span className="opacity-70">Owona &#125; /&#62;</span>
+                </span>
+              </p>
+            </motion.div>
+          </a>
 
           {/* Normal Menu */}
-          <div className="md:flex hidden items-center gap-6">
+
+          <motion.div
+            initial={{ x: 200, opacity: 0 }}
+            transition={{ duration: 0.7 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            className="md:flex hidden items-center gap-6"
+          >
             {navLinks.map((navlink) => {
               return (
                 <div key={navlink.id}>
                   <a
                     href={navlink.href}
-                    className="transition duration-700 ease-in-out font-normal text-base md:text-lg lg:text-xl text-slate-700 hover:text-teal-500 dark:text-ghostWhite dark:opacity-80 dark:hover:text-teal-500"
+                    className="transition duration-700 ease-in-out font-normal text-base md:text-lg lg:text-xl text-slate-700 hover:text-teal-600 dark:text-ghostWhite dark:opacity-80 dark:hover:text-teal-500"
                   >
                     {navlink.text}
                   </a>
@@ -51,12 +66,14 @@ function Navbar(props) {
               );
             })}
             <BsFillMoonStarsFill
-              className="cursor-pointer text-2xl dark:text-gray-200"
+              className="cursor-pointer text-xl dark:text-gray-200 ml-5"
               onClick={() => {
                 props.toggleDarkmode();
               }}
             />
-          </div>
+          </motion.div>
+
+          {/* </a> */}
 
           {/* Mobile Menu */}
           <div className="flex md:hidden">
@@ -83,7 +100,7 @@ function Navbar(props) {
                 );
               })}
               <BsFillMoonStarsFill
-                className="cursor-pointer mx-auto text-2xl dark:text-gray-200"
+                className="cursor-pointer text-xl dark:text-gray-200"
                 onClick={() => {
                   setToggle((prev) => {
                     !prev;
