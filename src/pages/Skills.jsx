@@ -11,7 +11,10 @@ import goImg from "../assets/img/skills/go-8.svg";
 import dockerImg from "../assets/img/skills/docker.svg";
 import javaImg from "../assets/img/skills/java-14.svg";
 import postgresqlImg from "../assets/img/skills/postgresql.svg";
-import kafkaImg from "../assets/img/skills/kafka.svg";
+// import kafkaImg from "../assets/img/skills/kafka.svg";
+import gormImg from "../assets/img/skills/gorm.svg";
+import reduxImg from "../assets/img/skills/redux.svg";
+import rtkQueryImg from "../assets/img/skills/rtkQuery.png";
 import websocketImg from "../assets/img/skills/websocket.svg";
 import grpcImg from "../assets/img/skills/grpc-stacked-color.svg";
 import linuxImg from "../assets/img/skills/tux.svg";
@@ -152,27 +155,27 @@ function Skills(props) {
                     </div>
                     <div className="skills_data">
                       <div className="skills_blob">
-                        <img src={kafkaImg} alt="Skill image" />
+                        <img src={gormImg} alt="Skill image" />
                       </div>
 
-                      <h3 className="skills_name">Kafka</h3>
+                      <h3 className="skills_name">Gorm</h3>
                       <span className="skills_subtitle">Intermediate</span>
                     </div>
                     <div className="skills_data">
                       <div className="skills_blob">
-                        <img src={websocketImg} alt="Skill image" />
+                        <img src={reduxImg} alt="Skill image" />
                       </div>
 
-                      <h3 className="skills_name">Websocket</h3>
+                      <h3 className="skills_name">Redux</h3>
                       <span className="skills_subtitle">Intermediate</span>
                     </div>
 
                     <div className="skills_data">
                       <div className="skills_blob">
-                        <img src={grpcImg} alt="Skill image" />
+                        <img src={rtkQueryImg} alt="Skill image" />
                       </div>
 
-                      <h3 className="skills_name">Grpc</h3>
+                      <h3 className="skills_name">Rtk Query</h3>
                       <span className="skills_subtitle">Intermediate</span>
                     </div>
                     <div className="skills_data">

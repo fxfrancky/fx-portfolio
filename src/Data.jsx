@@ -8,12 +8,16 @@ import { TfiHeadphoneAlt } from "react-icons/tfi";
 import { HiOutlineLocationMarker } from "react-icons/hi";
 import { GoMailRead } from "react-icons/go";
 
-import project1 from "./assets/img/web1.png";
-import project2 from "./assets/img/web2.png";
-import project3 from "./assets/img/web3.png";
-import project4 from "./assets/img/web4.png";
-import project5 from "./assets/img/web5.png";
-import project6 from "./assets/img/web6.png";
+import project1 from "./assets/img/project1.png";
+// import project1 from "./assets/img/web1.png";
+import project2 from "./assets/img/project2.png";
+// import project2 from "./assets/img/web2.png";
+import project3 from "./assets/img/project3.png";
+// import project3 from "./assets/img/web3.png";
+import project4 from "./assets/img/project4.png";
+// import project4 from "./assets/img/web4.png";
+// import project5 from "./assets/img/web5.png";
+// import project6 from "./assets/img/web6.png";
 
 import htmlImg from "./assets/img/skills/html-1.svg";
 import css3Img from "./assets/img/skills/css-3.svg";
@@ -27,7 +31,8 @@ import goImg from "./assets/img/skills/go-8.svg";
 import dockerImg from "./assets/img/skills/docker.svg";
 import javaImg from "./assets/img/skills/java-14.svg";
 import postgresqlImg from "./assets/img/skills/postgresql.svg";
-import kafkaImg from "./assets/img/skills/kafka.svg";
+// import kafkaImg from "./assets/img/skills/kafka.svg";
+import gormImg from "./assets/img/skills/gorm.svg";
 import websocketImg from "./assets/img/skills/websocket.svg";
 import grpcImg from "./assets/img/skills/grpc-stacked-color.svg";
 import linuxImg from "./assets/img/skills/tux.svg";
@@ -77,68 +82,68 @@ export const projects = [
   {
     id: 2,
     image: project2,
-    demo: "https://www.owonafx.com/",
-    liveLink: "https://www.owonafx.com/",
-    github: "https://github.com/fxfrancky/fx-portfolio",
-    title: "React Js Portfolio",
-    desc: "React Js Portfolio is an amazing portfolio presenting my background, my skills and some projects",
-    tech1: reactImg,
-    tech2: tailwindImg,
-    tech3: vsCodeImg,
-    tech4: linuxImg,
+    demo: "https://place2connect.com/",
+    liveLink: "https://place2connect.com/",
+    github: "https://github.com/fxfrancky/place2connect",
+    title: "Place to Connect",
+    desc: "Place to Connect is social medial app using a golang api and a react front end",
+    tech1: goImg,
+    tech2: reactImg,
+    tech3: postgresqlImg,
+    tech4: vsCodeImg,
   },
   {
     id: 3,
     image: project3,
-    demo: "https://www.owonafx.com/",
-    liveLink: "https://www.owonafx.com/",
-    github: "https://github.com/fxfrancky/fx-portfolio",
-    title: "React Js Portfolio",
-    desc: "React Js Portfolio is an amazing portfolio presenting my background, my skills and some projects",
-    tech1: reactImg,
-    tech2: tailwindImg,
+    demo: "https://api.place2connect.com/api/v1/swagger/index.html",
+    liveLink: "https://api.place2connect.com/api/v1/swagger/index.html",
+    github: "https://github.com/fxfrancky/place2connect",
+    title: "Api Place to connect",
+    desc: "Api Place to connect is a go api for place to connect social media. its written in golang an fiber",
+    tech1: goImg,
+    tech2: postgresqlImg,
     tech3: vsCodeImg,
     tech4: linuxImg,
   },
   {
     id: 4,
     image: project4,
-    demo: "https://www.owonafx.com/",
-    liveLink: "https://www.owonafx.com/",
-    github: "https://github.com/fxfrancky/fx-portfolio",
-    title: "React Js Portfolio",
-    desc: "React Js Portfolio is an amazing portfolio presenting my background, my skills and some projects",
-    tech1: reactImg,
-    tech2: tailwindImg,
+    demo: "https://goapi-eshop.shop/api/v1/swagger/index.html",
+    liveLink: "https://goapi-eshop.shop/api/v1/swagger/index.html",
+    github: "https://github.com/fxfrancky/go-api-eshop",
+    title: "Api Go Eshop",
+    desc: "Api Go Eshop to connect is a go api for an ecommerce. its written in golang an fiber",
+    tech1: goImg,
+    tech2: postgresqlImg,
     tech3: vsCodeImg,
     tech4: linuxImg,
   },
-  {
-    id: 5,
-    image: project5,
-    demo: "https://www.owonafx.com/",
-    liveLink: "https://www.owonafx.com/",
-    github: "https://github.com/fxfrancky/fx-portfolio",
-    title: "React Js Portfolio",
-    desc: "React Js Portfolio is an amazing portfolio presenting my background, my skills and some projects",
-    tech1: reactImg,
-    tech2: tailwindImg,
-    tech3: vsCodeImg,
-    tech4: linuxImg,
-  },
-  {
-    id: 6,
-    image: project6,
-    demo: "https://www.owonafx.com/",
-    liveLink: "https://www.owonafx.com/",
-    github: "https://github.com/fxfrancky/fx-portfolio",
-    title: "React Js Portfolio",
-    desc: "React Js Portfolio is an amazing portfolio presenting my background, my skills and some projects",
-    tech1: reactImg,
-    tech2: tailwindImg,
-    tech3: vsCodeImg,
-    tech4: linuxImg,
-  },
+  // {
+  //   id: 5,
+  //   image: project5,
+  //   demo: "https://www.owonafx.com/",
+  //   liveLink: "https://www.owonafx.com/",
+  //   github: "https://github.com/fxfrancky/fx-portfolio",
+  //   title: "React Js Portfolio",
+  //   desc: "React Js Portfolio is an amazing portfolio presenting my background, my skills and some projects",
+  //   tech1: reactImg,
+  //   tech2: tailwindImg,
+  //   tech3: vsCodeImg,
+  //   tech4: linuxImg,
+  // },
+  // {
+  //   id: 6,
+  //   image: project6,
+  //   demo: "https://www.owonafx.com/",
+  //   liveLink: "https://www.owonafx.com/",
+  //   github: "https://github.com/fxfrancky/fx-portfolio",
+  //   title: "React Js Portfolio",
+  //   desc: "React Js Portfolio is an amazing portfolio presenting my background, my skills and some projects",
+  //   tech1: reactImg,
+  //   tech2: tailwindImg,
+  //   tech3: vsCodeImg,
+  //   tech4: linuxImg,
+  // },
 ];
 
 export const contacts = [
