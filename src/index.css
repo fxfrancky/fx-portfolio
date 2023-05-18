@@ -83,7 +83,7 @@
   }
 
   .skills_name {
-    @apply text-sm mb-1 justify-center text-center mx-auto w-full;
+    @apply text-sm mb-1 justify-center text-center mx-auto w-full dark:text-ghostWhite;
   }
 
   .skills_subtitle {
