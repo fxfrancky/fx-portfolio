@@ -13,6 +13,7 @@ import javaImg from "../assets/img/skills/java-14.svg";
 import postgresqlImg from "../assets/img/skills/postgresql.svg";
 // import kafkaImg from "../assets/img/skills/kafka.svg";
 import gormImg from "../assets/img/skills/gorm.svg";
+import fiberImg from "../assets/img/skills/fiber.svg";
 import reduxImg from "../assets/img/skills/redux.svg";
 import rtkQueryImg from "../assets/img/skills/rtkQuery.png";
 import websocketImg from "../assets/img/skills/websocket.svg";
@@ -108,10 +109,10 @@ function Skills(props) {
                     </div>
                     <div className="skills_data">
                       <div className="skills_blob">
-                        <img src={intellijImg} alt="Skill image" />
+                        <img src={fiberImg} alt="Skill image" />
                       </div>
 
-                      <h3 className="skills_name">Intellij</h3>
+                      <h3 className="skills_name">Golang Fiber</h3>
                       <span className="skills_subtitle">Advanced</span>
                     </div>
                   </motion.div>
