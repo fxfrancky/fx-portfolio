@@ -44,7 +44,7 @@ function Home(props) {
               </p>
               <div className="flex mt-4 gap-4">
                 <a
-                  href="../assets/docs/RESUME-FRANCOIS XAVIER OWONA.pdf"
+                  href="../assets/docs/RESUME-FRANCOIS-XAVIER-OWONA.pdf"
                   className="py-2 px-4 w-36 text-center border-[2px] border-solid border-teal-500 text-[0.9rem] rounded-[2.2rem] shadow-md transform transition duration-500 hover:scale-105 dark:text-ghostWhite"
                   download
                 >
