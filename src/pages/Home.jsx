@@ -1,6 +1,7 @@
 import { useState } from "react";
 import bgImg from "../assets/img/img_cv head_clean_headless2.png";
 import { motion } from "framer-motion";
+import resumePDF from "../assets/docs/RESUME.pdf"
 
 function Home(props) {
   return (
@@ -43,8 +44,8 @@ function Home(props) {
                 user experiences. Join me down below and lets get cracking!
               </p>
               <div className="flex mt-4 gap-4">
-                <a
-                  href="../assets/docs/RESUME-FRANCOIS-XAVIER-OWONA.pdf"
+                <a 
+                  href={resumePDF}
                   className="py-2 px-4 w-36 text-center border-[2px] border-solid border-teal-500 text-[0.9rem] rounded-[2.2rem] shadow-md transform transition duration-500 hover:scale-105 dark:text-ghostWhite"
                   download
                 >
