@@ -21,6 +21,7 @@ import grpcImg from "../assets/img/skills/grpc-stacked-color.svg";
 import linuxImg from "../assets/img/skills/tux.svg";
 import redisImg from "../assets/img/skills/redis.svg";
 import oracleImg from "../assets/img/skills/oracle.svg";
+import postmanImg from "../assets/img/skills/postman.svg";
 
 function Skills(props) {
   return (
@@ -183,10 +184,10 @@ function Skills(props) {
                     </div>
                     <div className="skills_data">
                       <div className="skills_blob">
-                        <img src={intellijImg} alt="Skill image" />
+                        <img src={postmanImg} alt="Skill image" />
                       </div>
 
-                      <h3 className="skills_name">Intellij IDEA</h3>
+                      <h3 className="skills_name">Postman</h3>
                       <span className="skills_subtitle">Intermediate</span>
                     </div>
                   </motion.div>
