@@ -19,6 +19,8 @@ import rtkQueryImg from "../assets/img/skills/rtkQuery.png";
 import websocketImg from "../assets/img/skills/websocket.svg";
 import grpcImg from "../assets/img/skills/grpc-stacked-color.svg";
 import linuxImg from "../assets/img/skills/tux.svg";
+import redisImg from "../assets/img/skills/redis.svg";
+import oracleImg from "../assets/img/skills/oracle.svg";
 
 function Skills(props) {
   return (
@@ -53,26 +55,26 @@ function Skills(props) {
                   >
                     <div className="skills_data">
                       <div className="skills_blob">
-                        <img src={htmlImg} alt="Skill image" />
+                        <img src={goImg} alt="Skill image" />
                       </div>
 
-                      <h3 className="skills_name">HTML</h3>
+                      <h3 className="skills_name">Golang</h3>
+                      <span className="skills_subtitle">Intermediate</span>
+                    </div>
+                    <div className="skills_data">
+                      <div className="skills_blob">
+                        <img src={fiberImg} alt="Skill image" />
+                      </div>
+
+                      <h3 className="skills_name">Golang Fiber</h3>
                       <span className="skills_subtitle">Advanced</span>
                     </div>
                     <div className="skills_data">
                       <div className="skills_blob">
-                        <img src={css3Img} alt="Skill image" />
+                        <img src={gormImg} alt="Skill image" />
                       </div>
 
-                      <h3 className="skills_name">CSS</h3>
-                      <span className="skills_subtitle">Advanced</span>
-                    </div>
-                    <div className="skills_data">
-                      <div className="skills_blob">
-                        <img src={javascriptImg} alt="Skill image" />
-                      </div>
-
-                      <h3 className="skills_name">JavaSript</h3>
+                      <h3 className="skills_name">Gorm</h3>
                       <span className="skills_subtitle">Advanced</span>
                     </div>
                     <div className="skills_data">
@@ -85,50 +87,19 @@ function Skills(props) {
                     </div>
                     <div className="skills_data">
                       <div className="skills_blob">
-                        <img src={tailwindImg} alt="Skill image" />
+                        <img src={reduxImg} alt="Skill image" />
                       </div>
 
-                      <h3 className="skills_name">Tailwind Css</h3>
+                      <h3 className="skills_name">Redux</h3>
                       <span className="skills_subtitle">Intermediate</span>
                     </div>
                     <div className="skills_data">
                       <div className="skills_blob">
-                        <img src={gitImg} alt="Skill image" />
+                        <img src={rtkQueryImg} alt="Skill image" />
                       </div>
 
-                      <h3 className="skills_name">Git</h3>
+                      <h3 className="skills_name">RTK Query</h3>
                       <span className="skills_subtitle">Advanced</span>
-                    </div>
-                    <div className="skills_data">
-                      <div className="skills_blob">
-                        <img src={vsCodeImg} alt="Skill image" />
-                      </div>
-
-                      <h3 className="skills_name">Vs Code</h3>
-                      <span className="skills_subtitle">Advanced</span>
-                    </div>
-                    <div className="skills_data">
-                      <div className="skills_blob">
-                        <img src={fiberImg} alt="Skill image" />
-                      </div>
-
-                      <h3 className="skills_name">Golang Fiber</h3>
-                      <span className="skills_subtitle">Advanced</span>
-                    </div>
-                  </motion.div>
-                  <motion.div
-                    initial={{ x: 200, opacity: 0 }}
-                    transition={{ duration: 1 }}
-                    whileInView={{ opacity: 1, x: 0 }}
-                    className="skills-right grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-x-6 gap-y-10"
-                  >
-                    <div className="skills_data">
-                      <div className="skills_blob">
-                        <img src={goImg} alt="Skill image" />
-                      </div>
-
-                      <h3 className="skills_name">Golang</h3>
-                      <span className="skills_subtitle">Intermediate</span>
                     </div>
                     <div className="skills_data">
                       <div className="skills_blob">
@@ -146,37 +117,51 @@ function Skills(props) {
                       <h3 className="skills_name">Java</h3>
                       <span className="skills_subtitle">Advanced</span>
                     </div>
+                  </motion.div>
+                  <motion.div
+                    initial={{ x: 200, opacity: 0 }}
+                    transition={{ duration: 1 }}
+                    whileInView={{ opacity: 1, x: 0 }}
+                    className="skills-right grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-x-6 gap-y-10"
+                  >
+                    <div className="skills_data">
+                      <div className="skills_blob">
+                        <img src={redisImg} alt="Skill image" />
+                      </div>
+
+                      <h3 className="skills_name">Redis</h3>
+                      <span className="skills_subtitle">Intermediate</span>
+                    </div>
                     <div className="skills_data">
                       <div className="skills_blob">
                         <img src={postgresqlImg} alt="Skill image" />
                       </div>
 
-                      <h3 className="skills_name">PostGreSQL</h3>
+                      <h3 className="skills_name">PostgreSQL</h3>
+                      <span className="skills_subtitle">Advanced</span>
+                    </div>
+                    <div className="skills_data">
+                      <div className="skills_blob">
+                        <img src={tailwindImg} alt="Skill image" />
+                      </div>
+
+                      <h3 className="skills_name">Tailwind Css</h3>
+                      <span className="skills_subtitle">Advanced</span>
+                    </div>
+                    <div className="skills_data">
+                      <div className="skills_blob">
+                        <img src={vsCodeImg} alt="Skill image" />
+                      </div>
+
+                      <h3 className="skills_name">VS Code</h3>
                       <span className="skills_subtitle">Intermediate</span>
                     </div>
                     <div className="skills_data">
                       <div className="skills_blob">
-                        <img src={gormImg} alt="Skill image" />
+                        <img src={gitImg} alt="Skill image" />
                       </div>
 
-                      <h3 className="skills_name">Gorm</h3>
-                      <span className="skills_subtitle">Intermediate</span>
-                    </div>
-                    <div className="skills_data">
-                      <div className="skills_blob">
-                        <img src={reduxImg} alt="Skill image" />
-                      </div>
-
-                      <h3 className="skills_name">Redux</h3>
-                      <span className="skills_subtitle">Intermediate</span>
-                    </div>
-
-                    <div className="skills_data">
-                      <div className="skills_blob">
-                        <img src={rtkQueryImg} alt="Skill image" />
-                      </div>
-
-                      <h3 className="skills_name">Rtk Query</h3>
+                      <h3 className="skills_name">Git</h3>
                       <span className="skills_subtitle">Intermediate</span>
                     </div>
                     <div className="skills_data">
@@ -185,6 +170,23 @@ function Skills(props) {
                       </div>
 
                       <h3 className="skills_name">Linux</h3>
+                      <span className="skills_subtitle">Intermediate</span>
+                    </div>
+
+                    <div className="skills_data">
+                      <div className="skills_blob">
+                        <img src={oracleImg} alt="Skill image" />
+                      </div>
+
+                      <h3 className="skills_name">Oracle Database</h3>
+                      <span className="skills_subtitle">Intermediate</span>
+                    </div>
+                    <div className="skills_data">
+                      <div className="skills_blob">
+                        <img src={intellijImg} alt="Skill image" />
+                      </div>
+
+                      <h3 className="skills_name">Intellij IDEA</h3>
                       <span className="skills_subtitle">Intermediate</span>
                     </div>
                   </motion.div>

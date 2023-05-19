@@ -3,6 +3,7 @@ import bgImg from "../assets/img/img_cv head_clean_headless2.png";
 import { motion } from "framer-motion";
 import resumePDF from "../assets/docs/RESUME.pdf"
 
+
 function Home(props) {
   return (
     <div className={`w-full h-full  ${props.darkMode ? "dark" : ""}`}>
