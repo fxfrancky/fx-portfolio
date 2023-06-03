@@ -11,6 +11,7 @@ import goImg from "../assets/img/skills/go-8.svg";
 import dockerImg from "../assets/img/skills/docker.svg";
 import javaImg from "../assets/img/skills/java-14.svg";
 import postgresqlImg from "../assets/img/skills/postgresql.svg";
+import kubernetesImg from "../assets/img/skills/kubernetes.png";
 // import kafkaImg from "../assets/img/skills/kafka.svg";
 import gormImg from "../assets/img/skills/gorm.svg";
 import fiberImg from "../assets/img/skills/fiber.svg";
@@ -88,18 +89,18 @@ function Skills(props) {
                     </div>
                     <div className="skills_data">
                       <div className="skills_blob">
-                        <img src={reduxImg} alt="Skill image" />
+                        <img src={kubernetesImg} alt="Skill image" />
                       </div>
 
-                      <h3 className="skills_name">Redux</h3>
+                      <h3 className="skills_name">Kubernetes</h3>
                       <span className="skills_subtitle">Intermediate</span>
                     </div>
                     <div className="skills_data">
                       <div className="skills_blob">
-                        <img src={rtkQueryImg} alt="Skill image" />
+                        <img src={grpcImg} alt="Skill image" />
                       </div>
 
-                      <h3 className="skills_name">RTK Query</h3>
+                      <h3 className="skills_name">GRPC</h3>
                       <span className="skills_subtitle">Advanced</span>
                     </div>
                     <div className="skills_data">
